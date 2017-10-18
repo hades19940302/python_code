@@ -1,0 +1,21 @@
+{
+    "server":"13.56.174.51",
+    "port_password":{
+        "8388":"password",
+        "15257":"Ph4nt0m.org",
+        "15258":"Ph4nt0m.org",
+        "15259":"Ph4nt0m.org"
+    },
+    "timeout":600,
+    "method":"aes-256-cfb"
+}
+
+{
+	"server":"13.56.174.51",     
+	"server_port":15256,             
+	"local_address":"127.0.0.1",    
+	"local_port":1080,              
+	"password":"Ph4nt0m.org",        
+	"timeout":300,                
+	"method":"aes-256-cfb"         
+}

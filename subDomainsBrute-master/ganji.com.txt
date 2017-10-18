@@ -1,0 +1,44 @@
+www.ganji.com                 	111.206.172.150
+homepage3.ganji.com           	111.206.172.150
+en.ganji.com                  	124.251.6.122
+news.ganji.com                	124.251.6.106
+web.ganji.com                 	211.151.202.164
+mail.ganji.com                	122.11.37.188
+cp.ganji.com                  	124.250.6.151
+passport.ganji.com            	124.251.6.131, 124.250.6.152
+union.ganji.com               	124.251.6.109
+help.ganji.com                	119.28.48.236, 119.28.48.215
+home.ganji.com                	36.110.174.20
+regione.ganji.com             	36.110.174.20
+cms.ganji.com                 	124.251.6.106
+data.ganji.com                	124.251.6.117
+love.ganji.com                	124.251.6.101
+top.ganji.com                 	115.159.231.173
+lvyou.ganji.com               	124.251.6.122
+biz.ganji.com                 	115.159.231.173
+m.ganji.com                   	124.250.6.151
+analytics.ganji.com           	122.11.37.149
+mobile.ganji.com              	124.251.6.100
+service.ganji.com             	211.151.202.151
+sta1.ganji.com                	124.251.6.22
+s2.ganji.com                  	36.110.174.101
+auth.ganji.com                	124.251.6.136
+mm.ganji.com                  	211.151.202.112
+tg.ganji.com                  	119.28.48.215, 119.28.48.236
+crm.ganji.com                 	124.251.6.136
+log.ganji.com                 	59.151.19.202
+post.ganji.com                	124.250.6.153
+8.ganji.com                   	211.151.202.211
+smtp.ganji.com                	208.70.139.25
+svn.ganji.com                 	10.9.21.116
+edm.ganji.com                 	124.251.6.124
+weixin.ganji.com              	124.250.6.155
+click.ganji.com               	124.251.6.137
+mail01.ganji.com              	122.11.37.204
+s4.ganji.com                  	218.60.107.136
+s5.ganji.com                  	61.179.105.19, 119.188.139.176, 27.195.145.95, 119.188.139.109, 218.58.209.15
+i2.ganji.com                  	101.36.92.25
+i1.ganji.com                  	111.206.172.157
+i3.ganji.com                  	124.251.6.142
+sta.ganji.com                 	124.251.6.22
+cha.ganji.com                 	124.251.6.109

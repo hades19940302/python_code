@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+# coding=utf-8
+# author=hades
+import threadpool as tp
+import requests
+import json
+
+datas = ('test','xxx')
+test(args):
+	r = requests.get('http://blog.sina.com.cn/u/6387724042')
+	
+	
+pool = tp.ThreadPool(20)
+reqs = tp.makeRequests(test, datas)
+[pool.putRequest(req) for req in reqs]
+pool.wait()

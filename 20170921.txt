@@ -1,0 +1,26 @@
+新增api未读消息总数和清空未读消息
+读消息总数 ：根据前端提交的session找到对应的用户，在帖子互动这个表找到该用户相关的未读消息，取总数返回到前端
+清空未读消息 ：　根据前端提交的session找到对应的用户，在帖子互动这个表找到该用户相关的未读消息，设置为已读。
+将session_key 改为session
+django profiling sql sql性能检测
+学习google map api https://developers.google.com/maps/documentation/embe
+租房和个人转租和二手车帖子详情调用google map  api返回位置信息也就是经度和纬度，加入偏移量，得到偏移后的经度和纬度，并将原本的经度纬度，偏移量，偏移后的经度纬度存到数据库
+ssh连接失败问题：
+https://www.digitalocean.com/community/questions/site-crashed-due-to-a-possible-memory-allocation-issue
+http://bbs.51cto.com/thread-1489418-1.html
+http://www.cnblogs.com/xd502djj/archive/2011/03/01/1968041.html
+按照上面三篇文章
+占用内存最多的就是systemd 
+解决办法 ：systemctl daemon-reexec或者提升服务器性能也就是增加内存这个阿里云的工程师看过我们服务器日志也说过。
+
+https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+ Add Swap on Ubuntu 
+按照这个人说的做了一个临时的解决办法，以观后效。
+
+
+Conclusion
+Following the steps in this guide will give you some breathing room in terms of your RAM usage. Swap space is incredibly useful in avoiding some common problems.
+
+If you are running into OOM (out of memory) errors, or if you find that your system is unable to use the applications you need, the best solution is to optimize your application configurations or upgrade your server. Configuring swap space, however, can give you more flexibility and can help buy you time on a less powerful server.
+
+By Justin Ellingwood

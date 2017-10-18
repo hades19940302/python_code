@@ -1,0 +1,7 @@
+ssh连接失败问题：
+https://www.digitalocean.com/community/questions/site-crashed-due-to-a-possible-memory-allocation-issue
+http://bbs.51cto.com/thread-1489418-1.html
+http://www.cnblogs.com/xd502djj/archive/2011/03/01/1968041.html
+按照上面三篇文章
+占用内存最多的就是systemd 
+解决办法 ：systemctl daemon-reexec或者提升服务器性能也就是增加内存这个阿里云的工程师看过我们服务器日志也说过。
