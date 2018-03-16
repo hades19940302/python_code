@@ -12,6 +12,7 @@ import json
 import codecs
 import sys
 import random
+import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -43,6 +44,9 @@ def test():
 		html = response.content.decode('utf-8')
 		selector = etree.HTML(html)
 		links = selector.xpath('//li[@class="cf"]/@href')
+		requests.adapters.DEFAULT_RETRIES = 5
+		s = requests.session()
+		s.keep_alive = False
 		# links = selector.xpath('//h2[@class="ask_title"]/span/text()')
 		for link in links:
 			url = 'http://you.ctrip.com'+link
@@ -53,11 +57,14 @@ def test():
 				r = requests.get(url,headers=headers,timeout=5)
 		        
 				html = r.content.decode("utf-8")  # 解码
+				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				title = selector.xpath('//h1[@class="ask_title"]/text()')
 				# answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
-				answers = selector.xpath('//p[@class="answer_text"]/text()'
-										)
+				answers = selector.xpath('//p[@class="answer_text"]/text()')
+				requests.adapters.DEFAULT_RETRIES = 5
+				s = requests.session()
+				s.keep_alive = False
 				if len(answers)==0:
 					rb['答案']='尚未有人回答此问题'
 					# rb['答案'] = answer
@@ -68,7 +75,7 @@ def test():
 					rb['IN'] = 1
 					tmp = json.dumps(rb).replace(' ', '')
 					data = tmp.decode('unicode-escape')
-					with codecs.open('ctrip.txt', 'a+', 'utf-8') as f:
+					with codecs.open('ctrip1.txt', 'a+', 'utf-8') as f:
 						f.write(str(data) + '\r\n')
 						f.close()
 				else:
@@ -82,7 +89,7 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('ctrip.txt','a+','utf-8') as f:
+						with codecs.open('ctrip1.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 			else:

@@ -12,6 +12,7 @@ import json
 import codecs
 import sys
 import random
+import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -54,7 +55,7 @@ headers = {
 	}
 
 def test():
-	for i in range(500):
+	for i in range(50):
 		url = 'https://zhidao.baidu.com/msearch/ajax/getsearchlist?word=%E6%97%A5%E6%9C%AC%E6%97%85%E6%B8%B8&pn='+str(i)
 		response = requests.get(url,headers=headers,timeout=20,verify=False)
 
@@ -71,6 +72,7 @@ def test():
 				r = requests.get(url,headers=headers,timeout=5)
 		        
 				html = r.content.decode("utf-8")  # 解码
+				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				title = selector.xpath('//div[@class="wgt-question-title"]/h2/text()')
 				answers = selector.xpath('//div[@class="full-content"]/text()')
@@ -87,7 +89,7 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('zhidao.txt','a+','utf-8') as f:
+						with codecs.open('zhidao1.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 

@@ -1,0 +1,3 @@
+requests.adapters.DEFAULT_RETRIES = 5
+s = requests.session()
+s.keep_alive = False
