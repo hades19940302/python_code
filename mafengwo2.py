@@ -46,6 +46,7 @@ header = {
 def test():
 	for i in range(1):
 		url = 'http://www.mafengwo.cn/qa/ajax_qa/more?type=3&mddid=10183&tid=&sort=9&key=&page=0&time=2018-03-14+20%3A44%3A54'
+		# urk = 'https://m.mafengwo.cn/wenda/ajax_qa/more?type=3&mddid=10183&tid=&sort=4&key=&page=1'
 		response = requests.get(url,headers=header,timeout=20,verify=False)
 
 		json_data = json.loads(response.content)
@@ -57,17 +58,23 @@ def test():
 		s = requests.session()
 		s.keep_alive = False
 		for link in links:
-			url = 'http://m.www.mafengwo.cn'+link
+			url = 'https://m.mafengwo.cn'+link
+			print(url)
 			# url = 'http://www.mafengwo.cn/wenda/detail-9196334.html'
 			if url not in url_list:
 				url_list.append(url)
-				r = requests.get(url,headers=header,timeout=5)
+				headers = {
+
+					'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+				}
+				r = requests.get(url,headers=headers,timeout=5,verify=False)
 		        
 				html = r.content.decode("utf-8")  # 解码
-				selector = etree.HTML(html)
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
-				title = selector.xpath('//div[@class="q-title"]/h3/text()')
-				answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
+				selector = etree.HTML(html)
+				title = selector.xpath('//div[@class="container no-padding"]/div[@class="q-detail"]/h3/text()')
+				answers = selector.xpath('//div[@class="expandable"]/p/text()')
+				likes = selector.xpath('//a[@class="btn-ding _j_vote on"]/b/text()')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
@@ -79,12 +86,15 @@ def test():
 						rb['答案'] = answer
 						rb['问题'] = title
 						rb['QID'] = link[14:22]
-						rb['LIKE'] = 0
+						try:
+							rb['LIKE'] = likes[answers.index(answer)]
+						except Exception as e:
+							rb['LIKE'] = 0
 						rb['BEST'] = 0
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('mafengwo1.txt','a+','utf-8') as f:
+						with codecs.open('mafengwo2.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 

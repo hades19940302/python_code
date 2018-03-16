@@ -49,19 +49,35 @@ def test():
 		s.keep_alive = False
 		# links = selector.xpath('//h2[@class="ask_title"]/span/text()')
 		for link in links:
-			url = 'http://you.ctrip.com'+link
+			url = 'http://m.ctrip.com/html5/you'+link
 			id_ = link[13:5]
 			# url = 'http://www.mafengwo.cn/wenda/detail-2630437.html'
 			if url not in url_list:
 				url_list.append(url)
+				header = {
+					':authority': 'm.ctrip.com',
+					':method': 'GET',
+					':path': '/html5/you/asks'+link,
+					':scheme': 'https',
+					'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+					'accept-encoding': 'gzip, deflate, br',
+					'accept-language': 'zh-CN,zh;q=0.9',
+					'cache-control': 'max-age=0',
+					'cookie': '_ga=GA1.2.2100437650.1521162446; _gid=GA1.2.1096026302.1521162446; _RF1=218.24.167.7; _RSG=_BKku5Zq8NEdX0CJo5qDYB; _RDG=288a8867e48c7c28da28f130eb8ad7c640; _RGUID=e5c8d231-78b9-42ff-b88d-d05c93300867; adscityen=Dalian; ASP.NET_SessionSvc=MTAuMTUuMTI4LjMwfDkwOTB8b3V5YW5nfGRlZmF1bHR8MTUwOTk3MjM0Mjc5Ng; _fpacid=09031138211238383664; GUID=09031138211238383664; appFloatCnt=9; manualclose=1; _bfs=1.4; __zpspc=9.3.1521173634.1521173699.4%234%7C%7C%7C%7C%7C%23; _bfi=p1%3D290102%26p2%3D290104%26v1%3D20%26v2%3D16; _gat=1; _bfa=1.1521162446138.6gi8fe.1.1521173530178.1521174225551.4.23.214073; MKT_Pagesource=H5; _jzqco=%7C%7C%7C%7C1521162449231%7C1.2101986320.1521162448284.1521174199254.1521174225957.1521174199254.1521174225957.0.0.0.20.20',
+					'upgrade-insecure-requests': '1',
+					'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+					
+				}
 				r = requests.get(url,headers=headers,timeout=5)
 		        
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//h1[@class="ask_title"]/text()')
+				title = selector.xpath('//div[@class="pnl_askInfo"]/div[@class="title"]/text()')
 				# answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
-				answers = selector.xpath('//p[@class="answer_text"]/text()')
+				# answers = selector.xpath('//div[@class="answers_box"]/ul/li/div[@class="titile"]/text()')
+				answers = selector.xpath('//div[@class="answers_box"]/ul/li/div[@class="title"]/text()')
+				likes = selector.xpath('//span[@class="usefulCount"]/text()')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
@@ -75,7 +91,7 @@ def test():
 					rb['IN'] = 1
 					tmp = json.dumps(rb).replace(' ', '')
 					data = tmp.decode('unicode-escape')
-					with codecs.open('ctrip12.txt', 'a+', 'utf-8') as f:
+					with codecs.open('ctrip2.txt', 'a+', 'utf-8') as f:
 						f.write(str(data) + '\r\n')
 						f.close()
 				else:
@@ -84,12 +100,15 @@ def test():
 						rb['答案'] = answer
 						rb['问题'] = title
 						rb['QID'] = id_
-						rb['LIKE'] = 0
+						try:
+							rb['LIKE'] = likes[answers.index(answer)]
+						except Exception as e:
+							rb['LIKE'] = 0
 						rb['BEST'] = 0
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('ctrip12.txt','a+','utf-8') as f:
+						with codecs.open('ctrip2.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 			else:
