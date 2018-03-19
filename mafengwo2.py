@@ -73,17 +73,17 @@ def test():
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				title = selector.xpath('//div[@class="container no-padding"]/div[@class="q-detail"]/h3/text()')
-				answers = selector.xpath('//div[@class="expandable"]/p/text()')
+				answers = selector.xpath('//div[@class="expandable"]')
 				likes = selector.xpath('//a[@class="btn-ding _j_vote on"]/b/text()')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
+				print(answers)
 				if len(answers)==0:
 					pass
 				else:
 					for answer in answers:
-						print(answer)
-						rb['答案'] = answer
+						rb['答案'] = answer.xpath('string(.)').strip()
 						rb['问题'] = title
 						rb['QID'] = link[14:22]
 						try:
@@ -94,11 +94,10 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('mafengwo2.txt','a+','utf-8') as f:
+						with codecs.open('mafengwo.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 
-				print(data)
 			else:
 				print('else')
 
