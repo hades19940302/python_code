@@ -83,8 +83,8 @@ def test():
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//h2[@class="ask_detail_content_title qyer_spam_text_filter"]/text()')
-				answers = selector.xpath('//div[@class="mod_discuss_box_text qyer_spam_text_filter"]/text()')
+				title = selector.xpath('//h2[@class="ask_detail_content_title qyer_spam_text_filter"]')
+				answers = selector.xpath('//div[@class="mod_discuss_box_text qyer_spam_text_filter"]')
 				like = selector.xpath('//a[@class="jsaskansweruseful useful_left"]/span/text()')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
@@ -93,19 +93,17 @@ def test():
 					pass
 				else:
 					for answer in answers:
-						rb['答案'] = answer
-						rb['问题'] = title
+						rb['答案'] = answer.xpath('string(.)').strip()
+						rb['问题'] = title[0].xpath('string(.)').strip()
 						rb['QID'] = link[24:-5]
 						rb['LIKE'] = like[random.choice(range(len(like)))]
 						rb['BEST'] = 1
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('qyer2.txt','a+','utf-8') as f:
+						with codecs.open('qyer1.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
-
-				print(data)
 			else:
 				pass
 
