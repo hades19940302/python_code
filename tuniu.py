@@ -12,6 +12,7 @@ import json
 import codecs
 import sys
 import random
+import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -57,6 +58,7 @@ def test():
 				r = requests.get(url,headers=headers,timeout=5)
 
 				html = r.content.decode("utf-8")  # 解码
+				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				title = selector.xpath('//div[@class="title"]/h2/text()')
 				# answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
@@ -87,7 +89,7 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('tuniu.json','a+','utf-8') as f:
+						with codecs.open('tuniu.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 			else:

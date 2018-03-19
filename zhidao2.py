@@ -55,7 +55,7 @@ headers = {
 	}
 
 def test():
-	for i in range(50):
+	for i in range(15):
 		url = 'https://zhidao.baidu.com/msearch/ajax/getsearchlist?word=%E6%97%A5%E6%9C%AC%E6%97%85%E6%B8%B8&pn='+str(i)
 		response = requests.get(url,headers=headers,timeout=20,verify=False)
 
@@ -89,8 +89,8 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('zhidao1.txt','a+','utf-8') as f:
-							f.write(str(data)+'\r\n')
+						with codecs.open('zhidao2.txt','a+','utf-8') as f:
+							f.write(str(data)+'\r\n\t')
 							f.close()
 
 				print(data)

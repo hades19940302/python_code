@@ -12,6 +12,7 @@ import json
 import codecs
 import sys
 import random
+import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -80,6 +81,7 @@ def test():
 				r = requests.get(url,headers=header,timeout=5)
 				print(r.status_code)		        
 				html = r.content.decode("utf-8")  # 解码
+				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				title = selector.xpath('//h2[@class="ask_detail_content_title qyer_spam_text_filter"]/text()')
 				answers = selector.xpath('//div[@class="mod_discuss_box_text qyer_spam_text_filter"]/text()')
@@ -99,7 +101,7 @@ def test():
 						rb['IN'] = 1
 						tmp = json.dumps(rb).replace(' ','')
 						data = tmp.decode('unicode-escape')
-						with codecs.open('qyer.txt','a+','utf-8') as f:
+						with codecs.open('qyer2.txt','a+','utf-8') as f:
 							f.write(str(data)+'\r\n')
 							f.close()
 
