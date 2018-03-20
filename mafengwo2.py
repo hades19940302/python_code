@@ -59,6 +59,7 @@ def test():
 		s.keep_alive = False
 		for link in links:
 			url = 'https://m.mafengwo.cn'+link
+			id_ = link[14:22]
 			print(url)
 			# url = 'http://www.mafengwo.cn/wenda/detail-9196334.html'
 			if url not in url_list:
@@ -72,7 +73,9 @@ def test():
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//div[@class="container no-padding"]/div[@class="q-detail"]/h3/text()')
+				title = selector.xpath('//div[@class="container no-padding"]/div[@class="q-detail"]')[0]
+				title_h = title.xpath('./h3/text()')
+				title_p = title.xpath('./p/text()')
 				answers = selector.xpath('//div[@class="expandable"]')
 				likes = selector.xpath('//a[@class="btn-ding _j_vote on"]/b/text()')
 				requests.adapters.DEFAULT_RETRIES = 5
@@ -83,19 +86,8 @@ def test():
 					pass
 				else:
 					for answer in answers:
-						rb['答案'] = answer.xpath('string(.)').strip()
-						rb['问题'] = title
-						rb['QID'] = link[14:22]
-						try:
-							rb['LIKE'] = likes[answers.index(answer)]
-						except Exception as e:
-							rb['LIKE'] = 0
-						rb['BEST'] = 0
-						rb['IN'] = 1
-						tmp = json.dumps(rb).replace(' ','')
-						data = tmp.decode('unicode-escape')
-						with codecs.open('mafengwo.txt','a+','utf-8') as f:
-							f.write(str(data)+'\r\n')
+						with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
+							f.write(str('1'+'\t'+'qid:'+id_+'\t'+question+'#'+question_desc+'\t'+title[0]+'\t'+'0'+'\t'+tmp[0]+'\r\n')
 							f.close()
 
 			else:

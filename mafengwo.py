@@ -57,7 +57,8 @@ def test():
 		s = requests.session()
 		s.keep_alive = False
 		for link in links:
-			url = 'http://m.www.mafengwo.cn'+link
+			url = 'http://www.mafengwo.cn'+link
+			id_ = link[14:22]
 			# url = 'http://www.mafengwo.cn/wenda/detail-9196334.html'
 			if url not in url_list:
 				url_list.append(url)
@@ -66,30 +67,30 @@ def test():
 				html = r.content.decode("utf-8")  # 解码
 				selector = etree.HTML(html)
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
-				title = selector.xpath('//div[@class="q-title"]/h3/text()')
-				answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
+				title = selector.xpath('//div[@class="q-title"]/h1/text()')[0].strip()
+				desc = selector.xpath('//div[@class="q-desc"]/text()')
+				related_qts = selector.xpath('//div[@class="related-qt"]/ul/li/a/text()')
+				if desc == []:
+					desc = ''
+				else:
+					desc = desc[0]				
+
+				for related_qt in related_qts :
+					with codecs.open('mafengwo_question_question.txt','a+','utf-8') as f:
+						f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_qt+'\r\n')
+						f.close()					
+
+				answers = selector.xpath('//div[starts-with(@class,"answer-item")]')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
-				if len(answers)==0:
-					pass
-				else:
-					for answer in answers:
-						print(answer)
-						rb['答案'] = answer
-						rb['问题'] = title
-						rb['QID'] = link[14:22]
-						rb['LIKE'] = 0
-						rb['BEST'] = 0
-						rb['IN'] = 1
-						tmp = json.dumps(rb).replace(' ','')
-						data = tmp.decode('unicode-escape')
-						with codecs.open('mafengwo1.txt','a+','utf-8') as f:
-							f.write(str(data)+'\r\n')
-							f.close()
+				print(len(answers))
 
-				print(data)
-			else:
-				print('else')
+				# for answer in answers:
+				# 	title_answer = answer.xpath('string(.)').strip()
+				# 	with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
+				# 		f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+title[0]+'\t'+'0'+'\t'+tmp[0]+'\r\n')
+				# 		f.close()
+
 
 test()

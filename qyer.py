@@ -18,28 +18,15 @@ sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-# import pymysql
-# from multiprocessing.dummy import Pool as ThreadPool
+from requests.adapters import HTTPAdapter
+
+s = requests.Session()
+s.mount('http://', HTTPAdapter(max_retries=3))
+s.mount('https://', HTTPAdapter(max_retries=3))
 url_list=[]
 # url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
 rb = {}
-pro = ['112.95.56.203:8118',
-		'222.76.187.42:8118',
-		'221.224.49.237:3128',
-		'113.105.201.31:3128',
-		'1.196.55.187:61202',
-		'27.215.245.246:61234',
-		'61.135.217.7:80',
-		'122.114.31.177:808',
-		'180.113.45.132:8118',
-		'183.143.53.87:61234',
-		'116.55.77.81:61202',
-		'27.19.77.33:61202',
-		'183.23.75.66:61234',
-		'59.48.148.226:61202',
-		'221.224.49.237:3128']
-
 headers = {
 	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 	'Accept-Encoding': 'gzip, deflate',
@@ -54,8 +41,7 @@ headers = {
 def test():
 	for i in range(1,5):
 		url = 'http://bbs.qyer.com/forum-57-5-'+str(i)+'.html'
-		print(url)
-		response = requests.get(url,headers=headers,timeout=20,verify=False)
+		response = requests.get(url,headers=headers,timeout=50,verify=False)
 		html = response.content.decode('utf-8')
 		selector = etree.HTML(html)
 		links = selector.xpath('//dt[@class="title fontYaHei"]/a/@href')
@@ -64,47 +50,52 @@ def test():
 		s.keep_alive = False
 		for link in links:
 			# url = 'http://ask.qyer.com/question/3387775.html'
-			header = {
-				'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-				'Accept-Encoding': 'gzip, deflate',
-				'Accept-Language': 'zh-CN,zh;q=0.9',
-				'Cache-Control': 'max-age=0',
-				'Connection': 'keep-alive',
-				'Cookie': '_guid=R235046d-c351-7518-8e2b-da9c5c7e8cd9; new_uv=1; __utma=253397513.1465259844.1521095861.1521095861.1521095861.1; __utmc=253397513; __utmz=253397513.1521095861.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); new_session=0; session_time=; init_refer=; als=0; isnew=1521095868361; PHPSESSID=30745789d7190404da54efedede076f6; __utmt=1; __utmb=253397513.11.10.1521095861',
-				'Host': 'ask.qyer.com',
-				'Upgrade-Insecure-Requests': '1',
-				'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
-				}
-			url = 'http:'+link
+			id_ = link[24:-5]
+			url = 'http://m.qyer.com/ask/'+link[15:]
 			if url not in url_list:
 				url_list.append(url)
-				r = requests.get(url,headers=header,timeout=5)
+				header_mobile = {
+					'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+					'Accept-Encoding': 'gzip, deflate',
+					'Accept-Language': 'zh-CN,zh;q=0.9',
+					'Cache-Control': 'max-age=0',
+					'Connection': 'keep-alive',
+					'Cookie': '_guid=R21a0462-78a9-d55b-3648-fbca346e3d27; __utmz=253397513.1521094067.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); isnew=1521094075373; als=0; __utma=253397513.1530515317.1521094067.1521427592.1521526278.4; __utmc=253397513; __utmt=1; session_time=1521526278.129; init_refer=; new_uv=4; new_session=0; __utmb=253397513.3.10.1521526278',
+					'Host': 'm.qyer.com',
+					'Upgrade-Insecure-Requests': '1',
+					'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+				}
+				r = requests.get(url,headers=header_mobile,timeout=50)
 				print(r.status_code)		        
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//h2[@class="ask_detail_content_title qyer_spam_text_filter"]')
-				answers = selector.xpath('//div[@class="mod_discuss_box_text qyer_spam_text_filter"]')
-				like = selector.xpath('//a[@class="jsaskansweruseful useful_left"]/span/text()')
+				question  = selector.xpath('//section[@class="askQuestion"]/h3')[0].xpath('string(.)').strip()
+				question_desc = selector.xpath('//section[@class="askQuestion"]/article')[0].xpath('string(.)').strip()	
+				if question_desc  == '':
+					desc = ''
+				else:
+					desc = question_desc
+				answers = selector.xpath('//div[@class="askAnswer__box"]')
+				about_questions = selector.xpath('//dl[@class="about-question"]/dd/a/text()')
+				for about_question in about_questions:
+					with codecs.open('qyer_question_question.txt','a+','utf-8') as f:
+						f.write('1'+'\t'+'qid:'+id_+'\t'+question+'#'+question_desc+'\t'+about_question+'\r\n')
+						f.close()				
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
-				if len(answers)==0:
+				if answers == []:
 					pass
+
 				else:
 					for answer in answers:
-						rb['答案'] = answer.xpath('string(.)').strip()
-						rb['问题'] = title[0].xpath('string(.)').strip()
-						rb['QID'] = link[24:-5]
-						rb['LIKE'] = like[random.choice(range(len(like)))]
-						rb['BEST'] = 1
-						rb['IN'] = 1
-						tmp = json.dumps(rb).replace(' ','')
-						data = tmp.decode('unicode-escape')
-						with codecs.open('qyer1.txt','a+','utf-8') as f:
-							f.write(str(data)+'\r\n')
-							f.close()
-			else:
-				pass
+						print(question)
+						title = answer.xpath('./article/text()')
+						tmp = answer.xpath('./div[@class="askAnswer__box__revert"]/span[@class="support js-support"]/text()')
+						like = tmp[0]
+						with codecs.open('qyer_question_answer.txt','a+','utf-8') as f:
+							f.write('1'+'\t'+'qid:'+id_+'\t'+question+'#'+question_desc+'\t'+title[0]+'\t'+'0'+'\t'+tmp[0]+'\r\n')
+							f.close()					
 
 test()
