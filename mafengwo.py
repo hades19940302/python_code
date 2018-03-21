@@ -24,28 +24,13 @@ url_list=[]
 # url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
 rb = {}
-pro = ['112.95.56.203:8118',
-		'222.76.187.42:8118',
-		'221.224.49.237:3128',
-		'113.105.201.31:3128',
-		'1.196.55.187:61202',
-		'27.215.245.246:61234',
-		'61.135.217.7:80',
-		'122.114.31.177:808',
-		'180.113.45.132:8118',
-		'183.143.53.87:61234',
-		'116.55.77.81:61202',
-		'27.19.77.33:61202',
-		'183.23.75.66:61234',
-		'59.48.148.226:61202',
-		'221.224.49.237:3128']
 header = {
 	'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'}  # 构造浏览器头信息
 
 
 def test():
 	for i in range(1):
-		url = 'http://www.mafengwo.cn/qa/ajax_qa/more?type=3&mddid=10183&tid=&sort=9&key=&page=0&time=2018-03-14+20%3A44%3A54'
+		url = 'http://www.mafengwo.cn/qa/ajax_qa/more?type=3&mddid=10183&tid=&sort=9&key=&page=0&time=2018-03-19+20%3A44%3A54'
 		response = requests.get(url,headers=header,timeout=20,verify=False)
 
 		json_data = json.loads(response.content)
@@ -69,7 +54,14 @@ def test():
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				title = selector.xpath('//div[@class="q-title"]/h1/text()')[0].strip()
 				desc = selector.xpath('//div[@class="q-desc"]/text()')
-				related_qts = selector.xpath('//div[@class="related-qt"]/ul/li/a/text()')
+				related_url = 'https://m.mafengwo.cn'+link
+				related_r = requests.get(url,headers=header,timeout=5,verify=False)
+		        
+				html_r = related_r.content.decode("utf-8")  # 解码
+				html_r = re.sub(r'<br[ ]?/?>', '\n', html_r)
+				selector_r = etree.HTML(html_r)
+				related_qts = selector_r.xpath('//div[@class="info"]/h3/text()')
+				print(len(related_qts))
 				if desc == []:
 					desc = ''
 				else:
@@ -80,17 +72,16 @@ def test():
 						f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_qt+'\r\n')
 						f.close()					
 
-				answers = selector.xpath('//div[starts-with(@class,"answer-item")]')
+				answers = selector.xpath('//li[starts-with(@class,"answer-item")]')
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
-				print(len(answers))
-
-				# for answer in answers:
-				# 	title_answer = answer.xpath('string(.)').strip()
-				# 	with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
-				# 		f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+title[0]+'\t'+'0'+'\t'+tmp[0]+'\r\n')
-				# 		f.close()
+				for  answer in answers:
+					answer_content = answer.xpath('./div[@class="answer-content _js_answer_content"]/div[@class="_j_long_answer_item"]/div[@class="_j_answer_html"]')[0].xpath('string(.)').strip()
+					like = answer.xpath('./div[@class="answer-side _js_answerAva"]/a/span/text()')[0]
+					with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
+						f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+like+'\r\n')
+						f.close()
 
 
 test()

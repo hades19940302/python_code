@@ -39,7 +39,7 @@ headers = {
 }
 
 def test():
-	for i in range(298):
+	for i in range(2):
 		url = 'http://www.tuniu.com/papi/wenda/index/searchQuestion?d={"poiId":"","key":"日本","pageSize":20,"pageNumber":'+str(i)+'}&c={"ct":100}&_=1521081102723'
 		response = requests.get(url,headers=headers,timeout=5,verify=False)
 		json_data = json.loads(response.content)
@@ -60,39 +60,16 @@ def test():
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//div[@class="title"]/h2/text()')
-				# answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
-				answers = selector.xpath('//p[@class="desc"]/text()'
+				title = selector.xpath('//div[@class="title"]/h2/text()')[0]
+				answers = selector.xpath('//li[@class="item clearfix J_answerItem"]'
 										)
-				# likes = selector.xpath('//a[@class="btn-ding _js_zan "]/span/text()')
-				if len(answers)==0:
-					rb['答案']='尚未有人回答此问题'
-					# rb['答案'] = answer
-					rb['问题'] = title
-					rb['QID'] = id_
-					rb['LIKE'] = 0
-					rb['BEST'] = 0
-					rb['IN'] = 1
-					tmp = json.dumps(rb).replace(' ', '')
-					data = tmp.decode('unicode-escape')
-					with codecs.open('tuniu.json', 'a+', 'utf-8') as f:
-						f.write(str(data) + '\r\n')
-						f.close()
-				else:
 
-					for answer in answers:
-						rb['答案'] = answer
-						rb['问题'] = title
-						rb['QID'] = id_
-						rb['LIKE'] = 0
-						rb['BEST'] = 0
-						rb['IN'] = 1
-						tmp = json.dumps(rb).replace(' ','')
-						data = tmp.decode('unicode-escape')
-						with codecs.open('tuniu.txt','a+','utf-8') as f:
-							f.write(str(data)+'\r\n')
-							f.close()
-			else:
-				pass
+				for answer in answers:
+					answer_content = answer.xpath('./div[@class="col-2"]/div[@class="col-2-bd"]/p/text()')[0]
+					like = answer.xpath('./div[@class="col-1"]/a/p/text()')[0]
+					with codecs.open('tuniu_question_answer.txt','a+','utf-8') as f:
+						f.write('1'+'\t'+'qid:'+str(id_)+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)+'\r\n')
+						f.close()
+
 
 test()

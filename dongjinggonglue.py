@@ -80,8 +80,8 @@ def test():
           print(rb)
           tmp = json.dumps(rb).replace(' ', '')
           data = tmp.decode('unicode-escape')
-          with codecs.open('dongjinggonglue.txt', 'a+', 'utf-8') as f:
-              f.write(str(data) + '\r\n')
+          with codecs.open('dongjinggonglue_question_answer.txt', 'a+', 'utf-8') as f:
+              f.write('1'+'\t'+'qid:'+str(id_)+'\t'+dts[0]+'#'+'\t'+dds[dts.index(dt)]+'\t'+'0'+'\t'+'0'+'\r\n')
               f.close()
 
 test()
