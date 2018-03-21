@@ -68,9 +68,14 @@ def test():
 					desc = desc[0]				
 
 				for related_qt in related_qts :
-					with codecs.open('mafengwo_question_question.txt','a+','utf-8') as f:
-						f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_qt+'\r\n')
-						f.close()					
+					if desc == '':
+						s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+related_qt).strip().replace('\n','').replace('\r','')
+						f1.write(s+'\r\n')
+						f1.close()
+					else:
+						s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_qt).strip().replace('\n','').replace('\r','')
+						f1.write(s+'\r\n')
+						f1.close()					
 
 				answers = selector.xpath('//li[starts-with(@class,"answer-item")]')
 				requests.adapters.DEFAULT_RETRIES = 5
@@ -80,8 +85,13 @@ def test():
 					answer_content = answer.xpath('./div[@class="answer-content _js_answer_content"]/div[@class="_j_long_answer_item"]/div[@class="_j_answer_html"]')[0].xpath('string(.)').strip()
 					like = answer.xpath('./div[@class="answer-side _js_answerAva"]/a/span/text()')[0]
 					with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
-						f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+like+'\r\n')
-						f.close()
-
+						if desc == '':
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							f.write(s+'\r\n')
+							f.close()
+						else:
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							f.write(s+'\r\n')
+							f.close()
 
 test()

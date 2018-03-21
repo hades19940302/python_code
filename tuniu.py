@@ -63,13 +63,21 @@ def test():
 				title = selector.xpath('//div[@class="title"]/h2/text()')[0]
 				answers = selector.xpath('//li[@class="item clearfix J_answerItem"]'
 										)
+				desc = ''
 
 				for answer in answers:
 					answer_content = answer.xpath('./div[@class="col-2"]/div[@class="col-2-bd"]/p/text()')[0]
 					like = answer.xpath('./div[@class="col-1"]/a/p/text()')[0]
 					with codecs.open('tuniu_question_answer.txt','a+','utf-8') as f:
-						f.write('1'+'\t'+'qid:'+str(id_)+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)+'\r\n')
-						f.close()
+						if desc == '' :
+	
+						    s = ('1'+'\t'+'qid:'+str(id_)+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+						    f.write(s+'\r\n')
+						    f.close()
+						else:
+						    s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+						    f.write(s+'\r\n')
+						    f.close()
 
 
 test()

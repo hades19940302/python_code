@@ -60,7 +60,7 @@ headers = {
 	}
 
 def test():
-	for i in range(50,100):
+	for i in range(1):
 		url = 'https://zhidao.baidu.com/msearch/ajax/getsearchlist?word=%E6%97%A5%E6%9C%AC%E6%97%85%E6%B8%B8&pn='+str(i)
 		response = requests.get(url,headers=headers,timeout=50,verify=False)
 		requests.adapters.DEFAULT_RETRIES = 5
@@ -73,19 +73,21 @@ def test():
 			# url = 'https://zhidao.baidu.com/question/1732180052597957147.html'
 			en = json.dumps(en)
 			en = json.loads(en)
-			url = 'https://zhidao.baidu.com'+en['url']
+			# url = 'https://zhidao.baidu.com'+en['url']
+			url = 'https://zhidao.baidu.com/question/587241032.html'
 			if url not in url_list:
 				url_list.append(url)
 				r = requests.get(url,headers=headers,timeout=50)
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
-				id_ = en['url'][10:-5]
+				# id_ = en['url'][10:-5]
+				id_ = '587241032'
 		        
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				question = selector.xpath('//div[@class="wgt-question-title"]/h2/text()')
+				question = selector.xpath('//div[@class="wgt-question-title"]/h2/text()')[0]
 				question_desc = selector.xpath('//div[@class="wgt-question-desc-inner"]/text()')
 				r_question_list_titles  = selector.xpath('//span[@class="r-question-list-title "]/text()')
 
@@ -96,10 +98,16 @@ def test():
 
 				for r_question_list_title in r_question_list_titles:
 
-					with codecs.open('zhidao_question_to_question.txt','a+','utf-8') as f1:
+					with codecs.open('zhidao_question_to_question_1.txt','a+','utf-8') as f1:
 						try:
-							f1.write('1'+'\t'+'qid:'+id_+'\t'+question[0]+'#'+desc+'\t'+r_question_list_title+'\r\n')
-							f1.close()
+							if desc == '':
+								s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question+'#'+'\t'+r_question_list_title).strip().replace('\n','').replace('\r','')
+								f1.write(s+'\r\n')
+								f1.close()
+							else:
+								s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question+'#'+desc+'\t'+r_question_list_title).strip().replace('\n','').replace('\r','')
+								f1.write(s+'\r\n')
+								f1.close()
 						except Exception as e:
 							print(id_)
 
@@ -110,19 +118,28 @@ def test():
 					pass
 				else:
 					for answer1 in answers:
-						tmp = answer1.xpath('./following-sibling::div[1]/div/div[@class="question-meta-support question-meta-support-area"]/span/@data-support')
-						title = answer1.xpath('./div[@class="w-detail-container w-detail-1"]/div/div/text()')
-						if tmp == [] or title == []:
+						tmp = answer1.xpath('../div[@class="append"]/div/div')[3].xpath('./span/text()')
+						title = answer1.xpath('./div/div/div/text()')[0]
+						print(tmp)
+						if tmp == [] or tmp[0]==0:
 							pass
 						else:
 							like = tmp[0]
 							if len(bingo)==0:
-								right = str(0)+'\t'
+								right = str(0)
 							else:
-								right = str(1)+'\t'
-							with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
-								f.write('1'+'\t'+'qid:'+id_+'\t'+question[0]+'#'+desc+'\t'+title[0]+'\t'+right+'\t'+like+'\r\n')
-								f.close()
+								right = str(1)
+								print(title)
+							with codecs.open('zhidao_question_to_answer_1.txt','a+','utf-8') as f:
+									if desc == '':
+										s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+										f.write(s+'\r\n')
+										f.close()
+									else:
+										s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+										f.write(s+'\r\n')
+										f.close()
+
 
 
 				r2_url = 'https://zhidao.baidu.com/mobile/replies?rn=6&new=1&hasLoadArgue=0&qid='+id_+'&samp_hit=246&pn=0&deleteArgue=0'
@@ -146,25 +163,33 @@ def test():
 				selector2 = etree.HTML(html2)	
 				answers2 = selector2.xpath('//div[@class="w-detail-full"]')
 				bingo2 = selector2.xpath('//div[@class="best-answer-icon"]')
+				print(answers2)
 
 				if answers2 == [] :
 					pass
 				else:
 					for answer2 in answers2:
 						tmp = answer2.xpath('./following-sibling::div[1]/div/div[@class="question-meta-support question-meta-support-area"]/span/@data-support')
-						title = answer2.xpath('./div')[0].xpath('./div/div/text()')
-						if tmp==[]:
+						title = answer2.xpath('./div')[0].xpath('./div/div/text()')[0]
+						if tmp==[] or title == [] or tmp[0] == 0 or tmp[0] == '0' :
 							pass
 						else:
 							like = tmp[0]
 							if len(bingo2)==0:
-								right = str(0)+'\t'
+								right = str(0)
 							else:
-								right = str(1)+'\t'
-							with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
+								right = str(1)
+							with codecs.open('zhidao_question_to_answer_1.txt','a+','utf-8') as f:
 								# f.write(str(data)+'\r\n')
-								f.write('1'+'\t'+'qid:'+id_+'\t'+question[0]+'#'+desc+'\t'+title[0]+'\t'+right+'\t'+like+'\r\n')
-								f.close()
+									if desc == '':
+										s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','').strip('\n')
+										f.write(s+'\r\n')
+										f.close()
+									else:
+										s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','').strip('\n')
+										f.write(s+'\r\n')
+										f.close()
+
 	
 
 

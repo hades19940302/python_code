@@ -56,9 +56,9 @@ def test():
 		for link in links:
 			url = 'http://m.ctrip.com/html5/you'+link
 			id_ = link[-12:-5]
-			# url = 'http://www.mafengwo.cn/wenda/detail-2630437.html'
 			if url not in url_list:
-				url_list.append(url)
+				id_list.append(url)
+				# url = 'http://www.mafengwo.cn/wenda/detail-2630437.html'
 				header = {
 					'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 					'Accept-Encoding': 'gzip, deflate',
@@ -74,7 +74,7 @@ def test():
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//div[@class="pnl_askInfo"]/div[@class="title"]/text()')
+				title = selector.xpath('//div[@class="pnl_askInfo"]/div[@class="title"]/text()')[0]
 				desc = selector.xpath('//div[@class="summary replayContent"]/p/span/text()')
 				if desc == []:
 					desc = ''
@@ -83,28 +83,38 @@ def test():
 				answers = selector.xpath('//li[@class="pnl_answerInfo"]')
 				related_asks = selector.xpath('//div[@class="related_issues"]/ul/li/p/text()')
 				for related_ask in related_asks:
-					with codecs.open('ctrip_question_question.txt','a+','utf-8') as f:
-						f.write('1'+'\t'+'qid:'+id_+'\t'+title[0]+'#'+desc+'\t'+related_ask+'\r\n')
-						f.close()					
+					with codecs.open('ctrip_question_question.txt','a+','utf-8') as f1:
+						if desc == '':
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+related_ask).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()
+						else:
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_ask).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()			
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
-				print(answers)
 				if answers == []:
 					pass
 				else:
 					for answer in answers:
-						like = answer.xpath('./div[@class="prop"]/div[@class="common-iconfont control active"]/span/text()')
-						answer_title = answer.xpath('./div[@class="title"]/text()')
-						print(like,answer_title)
+						like = answer.xpath('./div[@class="prop"]/div')[2].xpath('./span/text()')
+						answer_title = answer.xpath('./div[@class="title"]/text()')[0]
 						if like == []:
 							like = 0
 						else:
 							like = like[0]
+						print(like)
 						with codecs.open('ctrip_question_answer.txt','a+','utf-8') as f:
-							f.write('1'+'\t'+'qid:'+id_+'\t'+title[0]+'#'+desc+'\t'+answer_title[0]+'\t'+'0'+'\t'+str(like)+'\r\n')
-							f.close()
-
+								if desc == '':
+									s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer_title+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+									f.write(s+'\r\n')
+									f.close()
+								else:
+									s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_title+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+									f.write(s+'\r\n')
+									f.close()
 			else:
 				pass
 

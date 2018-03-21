@@ -92,24 +92,38 @@ def test():
 								desc = ''
 							else:
 								desc = desc[0]
-							answers = selector.xpath('//div[@class="word"]/text()')
-							relations = selector.xpath('//ul[@class="wd-bot"]/li/a/text()')
+							answers = selector.xpath('//div[@class="word"]')
+							relations = selector.xpath('//ul[@class="wd-bot"]')[1].xpath('./li/a/text()')
 							for relation in relations:
 								with codecs.open('zhcpic_question_question.txt','a+','utf-8') as f1 :
-
-									print(relation)
-									f1.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+relation+'\r\n')
-									f1.close()
+									if desc == '':
+										s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+relation).strip().replace('\n','').replace('\r','')
+										f1.write(s+'\r\n')
+										f1.close()
+									else:
+										s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+relation).strip().replace('\n','').replace('\r','')
+										f1.write(s+'\r\n')
+										f1.close()
 							requests.adapters.DEFAULT_RETRIES = 5
 							s = requests.session()
 							s.keep_alive = False
-							if len(answers)==0:
-								pass
-							else:
-								for answer in answers:
-									with codecs.open('zhcpic_question_answer.txt','a+','utf-8') as f:
-										f.write('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer+'\t'+'0'+'\t'+'0'+'\r\n')
-										f.close()
+							# if len(answers)==0:
+							# 	pass
+							# else:
+							# 	for answer in answers[:-1]:
+							# 		if answer == '' :
+							# 			pass
+							# 		else:
+							# 			answer = answer.xpath('string(.)').strip()
+							# 			with codecs.open('zhcpic_question_answer.txt','a+','utf-8') as f:
+							# 				if desc == '':
+							# 					s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+							# 					f.write(s+'\r\n')
+							# 					f.close()
+							# 				else:
+							# 					s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+							# 					f.write(s+'\r\n')
+							# 					f.close()
 
 
 

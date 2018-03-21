@@ -71,17 +71,19 @@ def test():
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
 				question  = selector.xpath('//section[@class="askQuestion"]/h3')[0].xpath('string(.)').strip()
-				question_desc = selector.xpath('//section[@class="askQuestion"]/article')[0].xpath('string(.)').strip()	
-				if question_desc  == '':
-					desc = ''
-				else:
-					desc = question_desc
+				desc = selector.xpath('//section[@class="askQuestion"]/article')[0].xpath('string(.)').strip()	
 				answers = selector.xpath('//div[@class="askAnswer__box"]')
 				about_questions = selector.xpath('//dl[@class="about-question"]/dd/a/text()')
 				for about_question in about_questions:
-					with codecs.open('qyer_question_question.txt','a+','utf-8') as f:
-						f.write('1'+'\t'+'qid:'+id_+'\t'+question+'#'+question_desc+'\t'+about_question+'\r\n')
-						f.close()				
+					with codecs.open('qyer_question_question.txt','a+','utf-8') as f1:
+						if desc == '':
+							s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+about_question).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()
+						else:
+							s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+about_question).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()			
 				requests.adapters.DEFAULT_RETRIES = 5
 				s = requests.session()
 				s.keep_alive = False
@@ -90,12 +92,16 @@ def test():
 
 				else:
 					for answer in answers:
-						print(question)
-						title = answer.xpath('./article/text()')
+						title = answer.xpath('./article/text()')[0]
 						tmp = answer.xpath('./div[@class="askAnswer__box__revert"]/span[@class="support js-support"]/text()')
 						like = tmp[0]
 						with codecs.open('qyer_question_answer.txt','a+','utf-8') as f:
-							f.write('1'+'\t'+'qid:'+id_+'\t'+question+'#'+question_desc+'\t'+title[0]+'\t'+'0'+'\t'+tmp[0]+'\r\n')
-							f.close()					
-
+							if desc == '':
+								s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+								f.write(s+'\r\n')
+								f.close()
+							else:
+								s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+title+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+								f.write(s+'\r\n')
+								f.close()
 test()

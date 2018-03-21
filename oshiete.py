@@ -46,7 +46,7 @@ def getNewUrlList():
             s.keep_alive = False
             h = r.content.decode('utf-8')
             selector = etree.HTML(h)
-            question_h = selector.xpath('//h1[@class="articleQ_ttl"]/text()')
+            question = selector.xpath('//h1[@class="articleQ_ttl"]/text()')[0]
             question_p = selector.xpath('//p[@class="articleQ_text"]/text()')
             # question_h = selector.xpath('//*[@id="colLt"]/div/div[1]/div[1]/div[2]/div[1]/h1/text()')
             answer_h = selector.xpath('//ul[@class="listAnswer listQA"]/li/div[@class="list_detail"]/div[@class="list_text"]')
@@ -54,21 +54,33 @@ def getNewUrlList():
 
 
             if question_p == []:
-                question_desc = ''
+                desc = ''
             else:
-                question_desc = question_p[0]
+                desc = question_p[0]
             for  about_question in about_questions:
                 with codecs.open('oshiete_question_question.txt','a+','utf-8') as f1 :
-                    f1.write('1'+'\t'+'qid:'+id_+'\t'+question_h[0]+'#'+question_desc+'\t'+about_question+'\r\n')
-                    f1.close()
+                    if desc == '':
+                        s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+about_question).strip().replace('\n','').replace('\r','')
+                        f1.write(s+'\r\n')
+                        f1.close()
+                    else:
+                        s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+about_question).strip().replace('\n','').replace('\r','')
+                        f1.write(s+'\r\n')
+                        f1.close()
             for answer in answer_h:
                 print(answer)
-                desc = answer.xpath('./p')[0].xpath('string(.)').strip()
-                title = answer.xpath('./h2/text()')
+                answer_desc = answer.xpath('./p')[0].xpath('string(.)').strip()
+                title = answer.xpath('./h2/text()')[0]
 
                 print(desc,title[0])
                 with codecs.open('oshiete_question_answer.txt','a+','utf-8') as f:
-                    f.write('1'+'\t'+'qid:'+id_+'\t'+question_h[0]+'#'+question_desc+'\t'+title[0]+desc+'\t'+'0'+'\t'+'0'+'\r\n')
-                    f.close()
+                    if desc == '':
+                        s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+desc+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+                        f.write(s+'\r\n')
+                        f.close()
+                    else:
+                        s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+desc+'\t'+title+answer_desc+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+                        f.write(s+'\r\n')
+                        f.close()
 
 getNewUrlList()
