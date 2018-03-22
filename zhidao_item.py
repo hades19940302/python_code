@@ -45,8 +45,8 @@ headers = {
 def test():
 
 	# id_ = url[34:-7]
-	id_ = '984489770420233819'
-	url = 'https://zhidao.baidu.com/question/984489770420233819.html'
+	id_ = '587241032'
+	url = 'https://zhidao.baidu.com/question/587241032.html'
 	
 	if id_ not in id_list:
 		id_list.append(id)

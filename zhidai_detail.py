@@ -85,7 +85,7 @@ def test():
 				with codecs.open('zhidao_question_to_question.txt','a+','utf-8') as f1:
 					try:
 						if desc == '':
-							s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question+'#'+'\t'+r_question_list_title).strip().replace('\n','').replace('\r','')
+							s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question+'\t'+r_question_list_title).strip().replace('\n','').replace('\r','')
 							f1.write(s+'\r\n')
 							f1.close()
 						else:
@@ -113,7 +113,7 @@ def test():
 							right = str(1)
 						with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 								if desc == '':
-									s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+									s = ('1'+'\t'+'qid:'+id_+'\t'+question+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','')
 									f.write(s+'\r\n')
 									f.close()
 								else:
@@ -179,7 +179,7 @@ def test():
 									with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 										# f.write(str(data)+'\r\n')
 											if desc == '':
-												s = ('1'+'\t'+'qid:'+id_+'\t'+question+'#'+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','').strip('\n')
+												s = ('1'+'\t'+'qid:'+id_+'\t'+question+'\t'+title+'\t'+right+'\t'+str(like)).strip().replace('\n','').replace('\r','').strip('\n')
 												f.write(s+'\r\n')
 												f.close()
 											else:

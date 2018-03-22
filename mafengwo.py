@@ -43,39 +43,43 @@ def test():
 		s.keep_alive = False
 		for link in links:
 			url = 'http://www.mafengwo.cn'+link
-			id_ = link[14:22]
+			id_ = link[14:21]
 			# url = 'http://www.mafengwo.cn/wenda/detail-9196334.html'
 			if url not in url_list:
 				url_list.append(url)
 				r = requests.get(url,headers=header,timeout=5)
 		        
 				html = r.content.decode("utf-8")  # 解码
-				selector = etree.HTML(html)
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
+				selector = etree.HTML(html)
 				title = selector.xpath('//div[@class="q-title"]/h1/text()')[0].strip()
-				desc = selector.xpath('//div[@class="q-desc"]/text()')
-				related_url = 'https://m.mafengwo.cn'+link
-				related_r = requests.get(url,headers=header,timeout=5,verify=False)
+				desc = selector.xpath('//div[@class="q-desc"]')
+				relateds = selector.xpath('//div[@class="related-qt"]/ul/li/a/@title')
+				r_url = 'https://m.mafengwo.cn'+link
+				headers = {
+					'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+				}
+				r_r = requests.get(url,headers=headers,timeout=5)
 		        
-				html_r = related_r.content.decode("utf-8")  # 解码
+				html_r = r_r.content.decode("utf-8")  # 解码
 				html_r = re.sub(r'<br[ ]?/?>', '\n', html_r)
 				selector_r = etree.HTML(html_r)
-				related_qts = selector_r.xpath('//div[@class="info"]/h3/text()')
-				print(len(related_qts))
+				relateds = selector_r.xpath('//ul[@class="ques-box"]/li/a/div[@class="info"]/h3')
 				if desc == []:
 					desc = ''
 				else:
-					desc = desc[0]				
+					desc = desc[0].xpath('string(.)').strip()				
 
-				for related_qt in related_qts :
-					if desc == '':
-						s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+related_qt).strip().replace('\n','').replace('\r','')
-						f1.write(s+'\r\n')
-						f1.close()
-					else:
-						s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related_qt).strip().replace('\n','').replace('\r','')
-						f1.write(s+'\r\n')
-						f1.close()					
+				for related in relateds :
+					with codecs.open('mafengwo_question_question_1.txt','a+','utf-8') as f1:
+						if desc == '':
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'\t'+related.xpath('string(.)').strip()).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()
+						else:
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+related.xpath('string(.)').strip()).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()					
 
 				answers = selector.xpath('//li[starts-with(@class,"answer-item")]')
 				requests.adapters.DEFAULT_RETRIES = 5
@@ -84,9 +88,9 @@ def test():
 				for  answer in answers:
 					answer_content = answer.xpath('./div[@class="answer-content _js_answer_content"]/div[@class="_j_long_answer_item"]/div[@class="_j_answer_html"]')[0].xpath('string(.)').strip()
 					like = answer.xpath('./div[@class="answer-side _js_answerAva"]/a/span/text()')[0]
-					with codecs.open('mafengwo_question_answer.txt','a+','utf-8') as f:
+					with codecs.open('mafengwo_question_answer_1.txt','a+','utf-8') as f:
 						if desc == '':
-							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							s = ('1'+'\t'+'qid:'+id_+'\t'+title+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
 							f.write(s+'\r\n')
 							f.close()
 						else:
