@@ -1,31 +1,20 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author=hades
-# 携程网日本相关信息爬取
-import requests
-from lxml import etree
-import json
-import datetime
-import time
-# import pymysql
-# from multiprocessing.dummy import Pool as ThreadPool
-url_list=[]
-url='http://m.baidu.com/his?callback=json&type=3&pic=1&net=1&hisdata=[{"kw":"日本旅游","time":1520988178}]&_=1520988906089'
-topics = []
-def getItem():
-	r = requests.get(url)
-	json_data = json.loads(r.content[11:-2])
-	for data in json_data['his']:
-		start = url.index('kw')
-		end = url.index('time')
-		dt_time = datetime.datetime.now()
-		un_time = time.mktime(dt_time.timetuple())
-		un_time = str(un_time)[:-2]
-		new_url = url[:72]+data+url[85:94]+un_time+url[104:]
-		print new_url
-		print un_time
-		print start,end
-		
+# oshiete url
 
-
-getItem()
+import requests 
+headers = {
+	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+	'Accept-Encoding': 'gzip, deflate, br',
+	'Accept-Language': 'zh-CN,zh;q=0.9',
+	'Cache-Control': 'max-age=0',
+	'Cookie': 'tp_sid=7fed5ab240a624d7; Hm_lvt_d7f4104c23e10d73303b198308c9b82d=1521098959,1521598007,1521612944,1521775183; tp_lastrefresh=1; Hm_lpvt_d7f4104c23e10d73303b198308c9b82d=1521777085',
+	'Host': 'www.zhcpic.com',
+	'Upgrade-Insecure-Requests': '1',
+	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+		}
+def test():
+	r = requests.get('https://www.zhcpic.com/gonglue/ask-269862.html',headers=headers,verify=False)
+	print(r.content)
+test()

@@ -107,23 +107,23 @@ def test():
 							requests.adapters.DEFAULT_RETRIES = 5
 							s = requests.session()
 							s.keep_alive = False
-							# if len(answers)==0:
-							# 	pass
-							# else:
-							# 	for answer in answers[:-1]:
-							# 		if answer == '' :
-							# 			pass
-							# 		else:
-							# 			answer = answer.xpath('string(.)').strip()
-							# 			with codecs.open('zhcpic_question_answer.txt','a+','utf-8') as f:
-							# 				if desc == '':
-							# 					s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
-							# 					f.write(s+'\r\n')
-							# 					f.close()
-							# 				else:
-							# 					s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
-							# 					f.write(s+'\r\n')
-							# 					f.close()
+							if len(answers)==0:
+								pass
+							else:
+								for answer in answers[:-1]:
+									if answer == '' :
+										pass
+									else:
+										answer = answer.xpath('string(.)').strip()
+										with codecs.open('zhcpic_question_answer.txt','a+','utf-8') as f:
+											if desc == '':
+												s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+												f.write(s+'\r\n')
+												f.close()
+											else:
+												s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer+'\t'+'0'+'\t'+'0').strip().replace('\n','').replace('\r','')
+												f.write(s+'\r\n')
+												f.close()
 
 
 
