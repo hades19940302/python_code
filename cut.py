@@ -3,9 +3,10 @@
 # author=hades
 # oshiete urls
 
+import threadpool as tp
 import codecs
 mingan_list = []
-def test():
+def test(xxx):
 	with codecs.open('ctrip_question_question.txt','rb') as f :
 		for line in f.readlines():
 			f3 = open('min.txt','rb')
@@ -32,5 +33,9 @@ def test2():
 		f.close()
 		f2.close()
 
-test2()
-
+args = ['xxxx','aaa','a']
+pool = tp.ThreadPool(20)
+reqs = tp.makeRequests(test, args)
+[pool.putRequest(req) for req in reqs]
+pool.wait()
+		

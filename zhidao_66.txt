@@ -1,0 +1,948 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta content="address=no" name="format-detection" />
+        <meta name="referrer" content="always" />
+        <meta name="apple-mobile-web-app-capable" content="no" />
+        
+        
+<meta itemprop="dateUpdate" content="2017-11-27 05:04:49" />
+<meta itemprop="datePublished" content="2009-03-26 10:11:29" />
+<meta itemprop="dateLatestReply" content="2017-11-27 05:04:49" />
+
+        
+        <link rel="apple-touch-icon-precomposed" href="https://iknowwap.bdimg.com/static/m-common/add2desktop72.0717c27.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://iknowwap.bdimg.com/static/m-common/add2desktop.ea27137.png" />
+
+        <title>
+去日本旅游需要些什么
+</title>
+        
+                    
+<script>
+    window.alogObjectConfig = {
+        product: '102',  
+        page: '102_1020',  
+        monkey_page: '',  
+        speed_page: '',  
+        speed: {
+            sample: '0.02'   
+        },
+        monkey: {
+            sample: '0.01'   
+        },
+        exception: { 
+            sample: '0.01'   
+        },
+        feature: {
+            sample: '0.01'   
+        },
+        cus: {
+            sample: '0.01',
+            custom_metrics: ["c_sbox", "c_qat", "c_qrt"]  
+        },
+        csp: {
+            sample: '0.02',  
+            'default-src': [
+                {match: '*bae.baidu.com', target: 'Accept,Warn'},
+                {match: '*.baidu.com,*.bdstatic.com,*.baidustatic.com,*.baiduimg.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com', target: 'Accept'},
+                {match: /^(127|172|192|10)(\.\d+){3}$/, target: 'Accept'},
+                {match: '*', target: 'Accept,Warn'}
+            ]
+        }
+    };
+ 
+    void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.mobile.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+    void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+            
+            
+            
+            
+
+<style>
+        .iknow-root-dom-element .twwhv5ab897{background-color:#fff;line-height:1;position:relative;padding:0 17px}.iknow-root-dom-element .twwhv5ab897 a{padding:13px 0 13px 54px;position:relative;display:block;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.iknow-root-dom-element .twwhv5ab897 a:before{display:block;content:'';position:absolute;left:-50%;bottom:0;width:200%;height:1px;background:#e5e5e5;transform:scale(0.5);-webkit-transform:scale(0.5);pointer-events:none}.iknow-root-dom-element .twwhv5ab897 img{position:absolute;left:0;top:10px;width:39px;height:39px}.iknow-root-dom-element .twwhv5ab897 strong{font-size:16px;color:#333;display:block;font-weight:400}.iknow-root-dom-element .twwhv5ab897 .txt{font-size:12px;color:#999;margin-top:7px;display:block}.iknow-root-dom-element .twwhv5ab897 .btn{width:70px;height:25px;color:#333;position:absolute;font-size:14px;line-height:25px;background:#fff;text-align:center;right:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);font-style:normal;padding:0}.iknow-root-dom-element .twwhv5ab897 .btn:before{display:block;content:'';position:absolute;left:-50%;top:-50%;width:200%;height:200%;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #333;transform:scale(0.5) translate(-1px,-1px);-webkit-transform:scale(0.5) translate(-1px,-1px);pointer-events:none}.iknow-root-dom-element .twwhv5ab897 .boxhide{display:none}
+        .iknow-root-dom-element .oztpa5ab897{background:#fff}.iknow-root-dom-element .oztpa5ab897 a{display:block}.iknow-root-dom-element .oztpa5ab897 a.hide{display:none}.iknow-root-dom-element .oztpa5ab897 a.cur{border-bottom:0}.iknow-root-dom-element .oztpa5ab897 img{width:100%;display:block;margin:0 auto;height:auto}.iknow-root-dom-element .oztpa5ab897 .banner-list-dots{margin:0 auto;text-align:center;line-height:10px;position:relative;top:-10px}.iknow-root-dom-element .oztpa5ab897 .banner-list-dots .banner-list-dot{vertical-align:middle;display:inline-block;width:4px;height:4px;border-radius:4px;background:#d4d4d4}.iknow-root-dom-element .oztpa5ab897 .banner-list-dots .banner-list-dot.banner-list-dot-select{background:#333}
+        .iknow-root-dom-element .nfxdv5ab897.mm-content-box{padding:24px 17px 23px;margin:0}.iknow-root-dom-element .nfxdv5ab897.mm-content-box:before{display:block;content:'';position:absolute;left:-50%;bottom:-4px;width:200%;height:16px;background:#f5f5f5;transform:scale(0.5);-webkit-transform:scale(0.5);pointer-events:none}.iknow-root-dom-element .nfxdv5ab897.mm-content-box>.title{font-size:20px;padding-bottom:12px}.iknow-root-dom-element .nfxdv5ab897 .mhzqwzppikon-box{overflow:hidden}
+        .iknow-root-dom-element .zwawu5ab897{background-color:#fff;line-height:1;position:relative;padding:0 17px 10px}.iknow-root-dom-element .zwawu5ab897:before{display:block;content:'';position:absolute;left:-50%;bottom:-4px;width:200%;height:16px;background:#f5f5f5;transform:scale(0.5);-webkit-transform:scale(0.5);pointer-events:none}.iknow-root-dom-element .zwawu5ab897 a{padding:13px 0 13px 54px;position:relative;display:block;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.iknow-root-dom-element .zwawu5ab897 img{position:absolute;left:0;top:10px;width:39px;height:39px}.iknow-root-dom-element .zwawu5ab897 strong{font-size:16px;color:#333;display:block;font-weight:400}.iknow-root-dom-element .zwawu5ab897 .txt{font-size:12px;color:#999;margin-top:7px;display:block}.iknow-root-dom-element .zwawu5ab897 .btn{width:70px;height:25px;color:#333;position:absolute;font-size:14px;line-height:25px;background:#fff;text-align:center;right:0;top:32px;-webkit-transform:translateY(-50%);transform:translateY(-50%);padding:0;font-style:normal}.iknow-root-dom-element .zwawu5ab897 .btn:before{display:block;content:'';position:absolute;left:-50%;top:-50%;width:200%;height:200%;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #333;transform:scale(0.5) translate(-1px,-1px);-webkit-transform:scale(0.5) translate(-1px,-1px);pointer-events:none}
+        .iknow-root-dom-element .xmnnk5ab897{position:fixed;left:0;bottom:-50px;width:100%;z-index:10;background:rgba(0,0,0,.6)}.iknow-root-dom-element .xmnnk5ab897>div{height:33px;padding:11px 0 11px 69px;line-height:1;position:relative}.iknow-root-dom-element .xmnnk5ab897 img{position:absolute;left:15px;top:8px;width:39px;height:39px}.iknow-root-dom-element .xmnnk5ab897 strong{font-size:16px;color:#fff;display:block;font-weight:400}.iknow-root-dom-element .xmnnk5ab897 .txt{font-size:12px;color:#fff;margin-top:7px;display:block}.iknow-root-dom-element .xmnnk5ab897 .btn{width:79px;height:30px;color:#fff;position:absolute;font-size:14px;line-height:30px;background:#37b059;text-align:center;border-radius:15px;right:32px;top:12px}.iknow-root-dom-element .xmnnk5ab897 .close-btn{position:absolute;width:30px;height:50px;right:0;top:0}.iknow-root-dom-element .xmnnk5ab897 .close{width:21px;height:21px;border-radius:50%;background:rgba(0,0,0,.1);right:5px;top:5px;position:absolute}.iknow-root-dom-element .xmnnk5ab897 .close:before,.iknow-root-dom-element .xmnnk5ab897 .close:after{content:' ';width:1px;height:12px;background:#fff;display:block;position:absolute;left:10px;top:4px}.iknow-root-dom-element .xmnnk5ab897 .close:before{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}.iknow-root-dom-element .xmnnk5ab897 .close:after{transform:rotate(45deg);-webkit-transform:rotate(45deg)}
+    </style>
+
+            
+                <script> alog('speed.set', 'ht', +new Date); </script>
+            
+            <link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-common/pkg/m_stable.6880ca9.css" /><link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-question-new/pkg/qb.048bdbd.css" /><link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-question-new/pkg/common.6c7beca.css" /><link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-question-new/widget/raise-reward/raise-reward.888e7ac.css" /><link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-question-new/widget/question-answer/question-answer.888b277.css" /><link rel="stylesheet" type="text/css" href="https://iknowwap.bdimg.com/static/m-question-new/widget/replies-entry/replies-entry.05bbdfb.css" /></head>
+
+    <body>
+    <div id="sfr-app">
+    <div class="rt-view iknow-root-dom-element">
+
+
+                    <script>
+!function(){var n={},e={};n.context=function(n,t){var i=arguments.length;if(i>1)e[n]=t;else if(1==i){if("object"!=typeof n)return e[n];for(var o in n)n.hasOwnProperty(o)&&(e[o]=n[o])}},"undefined"!=typeof __IKNOW_GLOBAL__?__IKNOW_GLOBAL__.F=n:"F"in window||(window.F=n)}();;
+(function(){
+    var F = (window.__IKNOW_GLOBAL__ && window.__IKNOW_GLOBAL__.F) || window.F;
+    var param = '?uid=D36E55B433347B48F9BFE6BD1CB48B62&step=1'.substr(1);
+    var contextObj = {
+        user:{
+            uid:"",
+            user:"",
+            ssid:"",
+            lightapp:""
+        },
+        paramURL:function(url){
+            var urlParts = url.split("#");
+            var url = urlParts[0];
+            var hash = urlParts[1];
+            var query = url.indexOf('?') === -1 ? '':url.substr(url.indexOf("?")+1);
+            var origionParams = query.split(/=[^&]*&?/);
+            var tmpParam = param;
+            for(var i=0;i<origionParams.length;i++){
+                if(origionParams[i])
+                    tmpParam = tmpParam.replace(new RegExp(origionParams[i]+"[^&]*"),"");
+            }
+            tmpParam = tmpParam.replace(/&+/g,"&").replace(/^&/,"");
+            var res =  url+(query?"&":"?")+tmpParam;
+            hash && (res+=("#"+hash));
+            // 如果是sf外部访问知道, 需要加上域名，为了让replace识别，先将host结尾带斜杠
+            var currentDomain = 'https://zhidao.baidu.com/';
+            currentDomain = currentDomain.substring(0, currentDomain.length - 1);
+            var host = /^(zhidao|wapiknow)\.baidu\.com$/.test(location.host) ? '' : currentDomain;
+            // 由于转换的case太多，故只针对以//|http://|https://|/四种情况识别为URL，进行域名转换
+            var isUrl = /^((http|https):)?\/\/|^\//.test(res);
+            var wholeUrl = '';
+            if (isUrl) {
+                wholeUrl = /^((http|https):)?\/\//.test(res) ? res : (host + res);
+            }
+            else {
+                wholeUrl = res;
+            }
+            return wholeUrl;
+        },
+        isHybrid:0,//[0,1]
+        config:{
+            domain:{
+                wappass:"http://wappass.baidu.com/passport",
+                iknow:"http://zhidao.baidu.com",
+                doctor: ""
+            }
+        },
+        cifr:"",
+        __token__: '',
+        iknow_sf: '',
+    };
+    
+    F.context(contextObj);
+})();
+</script>
+            
+
+
+            
+<div id="iknow-common-header">
+        <div class="title-background">
+        <a class="js-header-festival header-festival-link" href="javascript:void(0);">百度知道</a>
+    </div>
+
+    <a class="go-to-ask" href="//zhidao.baidu.com/msubmit/new/?query=去日本旅游需要些什么">
+        <span class="iconfont-common header-ask-icon">&#xe70e;</span>提问
+    </a>
+    <header class="spect-header">
+        <span class="search-logo">
+            <span class="iconfont-common header-search-icon">&#xe70c;</span>
+        </span>
+        <span class="search-logo-sam"></span>
+        <div class="search-box" id="search-box">
+            <form class="search-form" action="//zhidao.baidu.com/index?lm=0" method="get">
+                    <input class="search-input"
+                           name="word"
+                           type="text"
+                           autocomplete="off"
+                           autocorrect="off"
+                           maxlength="100"
+                           placeholder="请输入关键字"
+                            />
+                    <input class="search-btn hide" data-action="search" type="button" value="搜索" />
+                    <input class="hide" type="hide" name="fr" value="iknow_common_search" />
+            </form>
+        </div>
+        <span class="search-action cancel-action">
+            <!-- <span class="devide-line"></span> -->
+            取消
+        </span>
+        <span class="search-action enter-action">
+            <span class="devide-line"></span>
+            搜索
+        </span>
+    </header>
+    <div class="appendix pa">
+        <span class="option dib"><span class="dib">
+            <span class="iconfont-common header-option-icon">&#xe711;</span></span>
+        </span>
+        <div class="iknow-msg-list">
+            <div class="msg-list">
+                <a class="msg-link" href="//zhidao.baidu.com/">
+                    <span class="ico ico-home"></span>知道首页
+                </a>
+                                    <a class="msg-link login">
+                        <span class="ico ico-login"></span>登录/注册
+                    </a>
+                    <a class="msg-link unlogin-msg">
+                        <span class="ico ico-msg"></span>消息提醒
+                    </a>
+                                <a class="msg-link share">
+                    <span class="ico ico-share"></span><span class="t">分享</span>
+                </a>
+                                <a class="msg-link" id="js-header-accusation-btn">
+                    <span class="ico ico-accusation"></span>
+                    <p><span class="t">举报反馈</span></p>
+                </a>
+                                            </div>
+        </div>
+    </div>
+</div>
+<script>
+        // 搜索框可用时间打点
+        window.alog && window.alog('speed.set', 'c_sbox', +new Date);
+        window.alog && window.alog.fire && window.alog.fire("mark");
+    </script>
+
+        
+        
+        <div class="wrapper common-main-content rt-body" id="main-content">
+            
+<div class="question-container">
+<div class="low-question-tips">该问答中所提及的号码未经验证，请注意甄别。<span class="low-question-tips-close"></span></div>
+<div class="wgt-question">
+<div class="wgt-question-title">
+<h2>去日本旅游需要些什么</h2>
+</div>
+<div class="wgt-question-meta">
+<div class="wgt-question-desc-container">
+<div class="wgt-question-desc">
+<div class="wgt-question-desc-inner">
+我十月底想跟老婆去日本旅游紶单官竿擢放规虱海僵,不知道具体手续怎么弄,想跟旅行社出去,本人在昆山,想从上海出发,还有签证问题,先声明本人是菜鸟,请回答得仔细些,出去过的朋友给点流程和注意事项最好了.
+放心好了会给你另外再加分的哦!!!!
+
+需要多少费用也请具体说名明,带多少钱才比较合适,那边有什么好玩的,特产什么的
+</div>
+</div>
+<div class="wgt-question-desc-action">展开</div>
+</div>
+<div class="wgt-question-image-container">
+<div class="wgt-question-image-inner">
+<a href="javascript:void(0);" data-src="https://gss0.baidu.com/-4o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/0b46f21fbe096b634aa614a407338744eaf8ac83.jpg" data-size="90x90" class="wgt-question-image-item">
+<img class="wgt-question-image" src="https://gss0.bdstatic.com/8_BSsjip0QIZ8tyhnq/timg?wh_rate=0&wapiknow&quality=60&size=h90&sec=1522046921&di=20cc20590393a644b55f4abfb4184494&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F0b46f21fbe096b634aa614a407338744eaf8ac83.jpg" />
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="question-answer-container" id="w-1">
+<div class="question-answer-hasbetter">我有更好回答</div>
+<div class="js-question-answer-content" style="display:none;">
+<div class="question-answer-area">
+<textarea class="question-answer-textarea" placeholder="请输入您的回答，好内容帮助更多人…"></textarea>
+</div>
+<div class="question-answer-deploy">
+<a class="question-answer-deploy-btn"
+                data-title="去日本旅游需要些什么"
+                data-qid="91145209"
+                                data-placeholder="如最佳答案内容有误，请提交正确答案..."
+                                                data-refer="">发布</a>
+</div>
+</div>
+<div class="hasbetter-anwser-vcode-container">
+<div class="hasbetter-anwser-vcode">
+<div class="hasbetter-anwser-vcode-body new-vcode-wrapper"></div>
+<div class="hasbetter-anwser-vcode-footer">
+<a class="hasbetter-anwser-vcode-btn hasbetter-anwser-vcode-cancel" href="javascript:void(0)">取消</a>
+<a class="hasbetter-anwser-vcode-btn" href="javascript:void(0)">确定</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+        window.alog && window.alog('speed.set', 'c_qat', +new Date);
+        window.alog && window.alog.fire && window.alog.fire("mark");
+    </script>
+<div class="question-line"></div>
+<div class="best-answer-container">
+<div class="best-answer-icon"></div>
+<div class="question-author-container">
+<div class="question-author-avatar">
+<a href="/mucenter/homepage?un=Isbww">
+<img src="https://gss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/05944973627777b106.jpg" alt="">
+</a>
+</div>
+<h3 class="question-author-name"><a href="/mucenter/homepage?un=Isbww">Isbww</a></h3>
+<p class="question-author-meta">
+LV.6
+<span class="question-author-split"></span>
+推荐于&nbsp;2017-11-27
+</p>
+</div>
+<div class="w-reply-item reply-item-300218826" >
+<div class="w-reply-container w-reply-item-best">
+
+<div id="w-2" class="w-detail-full">
+<div class="w-detail-container w-detail-1">
+<div id="w-detail-300218826" class="clear w-detail-content">
+<div class="full-content">
+我来以亲身体会告诉你：
+签证手续交旅行社就是。他们怎么说你就怎么做，说到底无非就是个人财产证明，有银行存折就可以让银行开的，另外还有单位证明，跟单位领导说一下一般开出来也没啥问题。其它就交旅行社操作就是。不麻烦。
+出去后要注意的事项，我的紶单官竿擢放规虱海僵经验如下：
+1）选行程：不知道你们主要想玩还是想买东西。一般来说，现在旅行社的行程中都会有什么迪斯尼，环球影城之类。想玩跟着就是，想买东西呢，可以跟导游申请自由活动。一般会同意的。导游不会安排那种特意去什么旅游商店的购物（至少我去的那次是没有安排），最多也就是带你去他们本地人常去的购物中心，这点确实很好，比什么泰国埃及的都好！所以，如果没打算狂买东西呢，这样走走也够了。
+2）如果平时不是日理万机型，度假还要接电话那种呢，去日本很合适。因为在那里中国的手机是不通的。所以，建议你不妨去开通语言信箱，说你什么时候回来。否则人家会以为你失踪。而你也可以放心的过一段离开手机的日子。多快乐！ 如果离开电话不行呢？就只能在浦东机场租个日本号码的手机（好像是600块预付电话+2000押金），然后把你的手机转给小秘，让有急事的谁打你日本号码。反正你接听是免费的。然后你也可以用里面的前，在富士山脚或什么地方给家里打个电话报平安用。
+3）现金不需要带多。办张可以在国外用的卡就是。准备花多少钱取决于个人腰包。为防止卡刷爆或者额度不够，可以预先在信用卡里存进现金。这样还可以起到控制预算内消费的作用
+4）其它的，还是建议带个大的空箱子去。日本确实是购物天堂，电器，化妆品以及小玩意都很让人心动的。相对国内都算便宜。推荐一下可以买的东西：男：Philip剃须刀，国内卖4000多那种，大阪的电器商场卖1000多人民币，女：各种资生堂的化妆品护肤品，都很好用。至于说特产呢，各个地方，以及景点都有那种小糕点，包装精美，价钱也便宜。可以带回来送人。还有一类看起来保证的很古老原始的酒也可以买一两瓶回来，摆摆也不错
+5）对泡温泉不要有太高期望，基本跟澡堂子没啥区别。就是露天而已。还有楼下兄弟说的什么礼仪跟习惯。个人觉得没必要这么僵化。人家跟你打招呼呢，你就点头，否则说什么早上好，什么辛苦了？没必要。
+6）吃东西，跟团活动是自然没啥好说的。万一自己有空单独出去吃饭，记得去吃那种回转寿司，你会发现跟国内完全不是一回事。味道好的不得了。而且做寿司的师傅，好的是中国人，你不妨试试在他们面前用普通话讨论味道，是中国厨师就一定会来搭腔。我在东京的一个寿司店碰到这样的情况。开心啊。还有就是路边的乌东面，也很好吃。既然去了那里，也要体会想当地人吃的是什么的。对不对？
+7）最后一点，记得问导游拿地铁地图，日文中好多都是中文，去那里虽然听不懂，但是基本都能看的懂。不会迷路。万一需要交流，拿出纸笔来，基本写几个字也就能懂了。
+8）对了，补充一点，你也许不喜欢日本人，而且，也有日本老百姓对中国有很多误会。但是不用担心他们对你有啥歧视或者特别举动，除非你去靖国神社去喊口号。尤其是你去买东西的时候，他们一定是点头哈腰的。因为，你是去花钱的，你是大爷！
+基本就这么多，我想应该可以得到你的加分了吧？
+</div></div>
+</div>
+<div class="w-detail-display-btn">
+<div class="w-detail-display-btn-background"></div>
+<div class="w-detail-display-btn-text">
+<span class="w-detail-display-btn-tips"></span>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAYCAYAAACBbx+6AAAAAXNSR0IArs4c6QAAAklJREFUWMPNlzksRFEUhp9dROxiiRB7RCIIhQSFQkGhUGkUKpVGpVOoVBqVRkFsBYmGQiIz82YzMSImwogRaywRWwTB859kJGPyzp3BzHtzk5N58+5Zvnvy7rnnSjabLdNgMEwZjcYjyILVai2QImQ4HI48sM162WbwnC3hYQ4Pio8cm0ymSr1hzWZzGVg8fmxLBHzl91KhdxaLpV4vWDDUQC5UuO5pctV/4ntSluVWrWERswmxbxmmdcpwCf6cMArPcNCpIWw74j6psUDOwVPxrViEF/sM9BukRwPYbsR5ZWAPMV/6wwDVIQcGWwz0BzZif7hg4b8Pcd6Z2DuIna9q6HQ606AkM6tUYDgUBthBLh7EhmqREaj2JUFxReBkNISwI4I4ay6XKzkoR1CMh7N5gbMJRVGi/woK2yj4H+f8Y27R7XYn/NZpNIEJnM7Twv4AGwvbaUEyJqET858iPipwvkKfULC+PB5PImCXBUkYo+z/+1ujzSaAlmmzBvKBKpRChV8AOxzS3UxljcobE2yLyqJgI2dBx8HYfkIGwlUve+ggYbLkpgNIJbMFsNllbN4x1xvWEwmZ7qAjm8nWKZqmKh/YcmoNGdgXLLBLkzMf0C3UHDEg15hvAEwtdC4ZnUfMt2ndr9aptabeTD/g946BvQFsoy59KzX61PALKoj/Qs5gU63rzQAAhQDZCwL2ANex4oi4e9FdC7IpAN622+25UiQN1NpUZNGgklkLJF2KxOGF3vCBdQZsD/Ue1Nzgu26m0ocFxIXa/xez0lmOIjRjJgAAAABJRU5ErkJggg==" class="w-detail-display-btn-arrow">
+</div>
+</div>
+</div>
+
+
+<div class="append" data-uid="112301061">
+<div class="question-meta-container js-question-meta-container">
+<div class="question-meta-support">
+<i  class="js-question-meta-more question-meta-icon question-meta-icon-more"
+            data-rid="300218826"
+            data-uid="112301061"
+            data-answertype="best"></i>
+</div>
+<div class="question-meta-support">
+<i class="question-meta-icon question-meta-icon-share share"></i>
+</div>
+<div class="question-meta-support">
+<i class="js-question-meta-support question-meta-icon question-meta-icon-unsupport
+        " data-rid="300218826"></i>
+</div>
+<div class="question-meta-support question-meta-support-area">
+<i class="js-question-meta-support question-meta-icon question-meta-icon-support
+        " data-rid="300218826"></i>
+<span class="js-question-meta-num question-meta-support-num" data-support="278">
+278
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wgt-replies-entry">
+<div class="show-more-replies wgt-replies-entry-btn" data-status="0">更多回答（<span class="remaining-reply-count">2</span>）</div>
+</div>
+<div class="question-line">
+</div>
+<div class="wgt-replies mm-content-box widget-replies-hide" id="other-replies-list">
+<h2 class="dec">2条回答</h2>
+<div class="js-replies" id="js-replies-container">
+</div>
+<script type="text/tpl" id="j-loading-state-html">
+        <div class="replies-more-loading-status">
+            <span class="is-loading">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAUlJREFUWMPVmU0KwjAQhSMKLnoC1y4UmgaaxI2r4KJSwWXvf5Tqo2BVqra1P28KA6I2+ZzpzLyMSvW8jMkird3WGGe1PhyNsack8RcYXlfv4TN8J4vUFFee5+skcXutfYhje+1iuAf3Yo3BwUIIK2P8Dt7pCvZulYf9DmsOAuec29wXPv8L1mBnrN0brCzLBX7pCGAvhj2wVye4oiiWWqd+bLj6+Uw99mztuSnhniFbeXKKsH4Ld5uEuM5pHxMHaT9StnbO7sYSNGdof4a66hD/F+GhDCwvHQctiAWuhnT7B2Cf3jp+2fHhoUrY4Opn8a6CIIdYAcGmoNl4PeisgrDk9eDhqKB+eT1oT4qp/jXVQ35A+hALSBL6MkNfqMlbHb1YECG36AUrveQXcWiiP3aKOLiLGH3QD49EjN9EDDDFjIBFDNHn/BviBi5eUF0I6/99AAAAAElFTkSuQmCC" class="loading-img">正在加载
+            </span>
+        </div>
+    </script>
+</div>
+<script>
+                void function(e,t){for(var n=t.getElementsByTagName("img"),a=+new Date,i=[],o=function(){this.removeEventListener&&this.removeEventListener("load",o,!1),i.push({img:this,time:+new Date})},s=0;s< n.length;s++)!function(){var e=n[s];e.addEventListener?!e.complete&&e.addEventListener("load",o,!1):e.attachEvent&&e.attachEvent("onreadystatechange",function(){"complete"==e.readyState&&o.call(e,o)})}();alog("speed.set",{fsItems:i,fs:a})}(window,document);
+            </script>
+<style type="text/css">
+        .ec_ad_new .ec_link_line {
+            color: #333;
+        }
+    </style>
+<div class="pjjgq5ab897-ecom-ads" id="pjjgq5ab897-youx">
+<style>body{background:#f0f0f0}.ec_ad{border-top:1px solid #eee;border-bottom:1px solid #eee;background-color:#fff}.ec-ad~.ec_cnxh{margin-top:.1rem}.ec_ad em{font-style:normal;color:#c00}.ec_ad h3{font-size:.16rem;line-height:.37rem;height:.37rem;border-bottom:1px solid #eee;color:#333;padding:0 .17rem;margin:0;font-weight:400}.ec_ad h3 a{color:#333;text-decoration:none}.ec_title{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ec_tg{font-weight:400;display:inline-block;color:#00b35e;font-size:.12rem;float:right}.ec_desc{display:block;padding:.07rem .17rem;line-height:.21rem;color:#333;text-decoration:none;font-size:.15rem}.ec_desc~.ec_content{padding:0 .17rem .04rem}.ec_content{padding:0 .17rem}.ec_link{font-size:.16rem;line-height:.29rem;height:.29rem;display:inline-block;width:50%;overflow:hidden;text-decoration:none;white-space:nowrap;color:#0073d2}.ec_title{position:relative}.ec_title .ec_tg{color:#9d9d9d}.ec_ad .ec_title{padding:.23rem .17rem .14rem;height:.2rem;line-height:.2rem;font-size:.2rem;color:#333;font-weight:700}.ec_ad h3.ec_padding{border-bottom:0}.ec_line{width:100%;display:-webkit-flex;display:flex}.ec_link_line{-webkit-flex:1;flex:1;width:48%;background:#f9f9f9;text-align:center;margin-bottom:.07rem;font-size:.14rem;overflow:hidden;text-decoration:none;white-space:nowrap;color:#333;display:inline-block}.ec_mt_oneline_text{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;word-wrap:break-word;white-space:nowrap}.ec_content .ec_link{font-size:.14rem}.ec_ad_new .ec_content{padding-bottom:.14rem}.ec_ad_new .ec_line{border-top:0}.ec_ad_new div.ec_firstline{border-top:0}.ec_ad_new .ec_link_line{text-align:left;background:#fff;margin-bottom:0;font-size:.17rem;height:.35rem;line-height:.35rem;color:#333}.ec_ad_new .ec_link_mid{border-left:1px solid #f1f1f1}</style><div class="ec_ad ec_ad_new"><h3 class="ec_title ec_padding">周围人还关注</h3><div class="ec_content"><div class="ec_line ec_firstline"><a class="ec_link_line ec_mt_oneline_text " href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%A5%C8%D5%B1%BE%B4%F2%B9%A4%B5%C4%CC%F5%BC%FE%26ppim%3D0%26im%3D-1%26rs%3D1%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">去日本打工的条件</a><a class="ec_link_line ec_mt_oneline_text ec_link_line_end" href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%A5%C8%D5%B1%BE%C2%C3%D3%CE%D2%AA%B6%E0%C9%D9%C7%AE%26ppim%3D0%26im%3D-1%26rs%3D2%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">去日本旅游要多少钱</a></div><div class="ec_line "><a class="ec_link_line ec_mt_oneline_text " href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%A5%C8%D5%B1%BE%C2%C3%D3%CE%D2%AA%B4%F8%CA%B2%C3%B4%26ppim%3D0%26im%3D-1%26rs%3D3%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">去日本旅游要带什么</a><a class="ec_link_line ec_mt_oneline_text ec_link_line_end" href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%A5%C8%D5%B1%BE%CE%F1%B9%A4%26ppim%3D0%26im%3D-1%26rs%3D4%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">去日本务工</a></div><div class="ec_line "><a class="ec_link_line ec_mt_oneline_text " href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%D5%B1%BE%D7%D4%D6%FA%D3%CE%26ppim%3D0%26im%3D-1%26rs%3D5%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">日本自助游</a><a class="ec_link_line ec_mt_oneline_text ec_link_line_end" href="http://youxuan.baidu.com/s?type=new&p=query%3D%D2%C6%B6%AF%B2%DE%CB%F9%26ppim%3D0%26im%3D-1%26rs%3D6%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">移动厕所</a></div><div class="ec_line "><a class="ec_link_line ec_mt_oneline_text " href="http://youxuan.baidu.com/s?type=new&p=query%3D%C8%D5%B1%BE%C2%C3%D3%CE%C7%A9%D6%A4%26ppim%3D0%26im%3D-1%26rs%3D7%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">日本旅游签证</a><a class="ec_link_line ec_mt_oneline_text ec_link_line_end" href="http://youxuan.baidu.com/s?type=new&p=query%3D%C7%E9%C2%C2%B1%ED%26ppim%3D0%26im%3D-1%26rs%3D8%26from%3Dwise_zhidao_qb%26chargename%3Dksws3%26flowsrc%3D0%26qid%3D0897ec28ae1ef73a%26cookie%3DD36E55B433347B48F9BFE6BD1CB48B62%26ip%3D218.24.167.7%26req_print%3Dwosid%3A1%3Bwpt%3A2%3Bwbwsid%3A5%3Bwbwsver%3A536%3Bwosver%3A6.0%3Bwos%3Aiphone%3Bwspeed%3A221%3Bwnettype%3A1%3Bwhost%3A%3Bua%3A%3Bgps%3A%3Bcuid%3A%3Bwgtag%3A0%3Bwatype%3A%3Bprefix%3A%3Bscreenwidth%3A1501%3Bscreenheight%3A2001%3BinnerWidth%3A-1%3BinnerHeight%3A-1%3B%26tag%3Duy-b5HnsPf">情侣表</a></div></div></div><script>!function(n,e){function t(n){var e=new RegExp("(^|&)"+n+"=([^&]*)(&|$)","i"),t=window.location.search.substr(1).match(e);return null!=t?unescape(t[2]):null}var o=e.documentElement,c=100,u=t("apsFontScale");u=u?u:1,o.style.fontSize=c*u+"px"}(window,document);</script>
+</div>
+<div class="zwawu5ab897 icon-ad">
+<a class="link">
+<img class="old_icon_ad" />
+<strong class="name"></strong>
+<span class="txt"></span>
+<em class="btn">立即下载</em>
+</a>
+</div>
+<div id="wgt-related-questions" class="wgt-related-questions mm-content-box">
+<h2 class="dec">相关问题</h2>
+<div class="w-question-list">
+<a class="question-list related-pi-item"
+       	data-qid="34ce6162633162653933321100" data-symbol-group="0" data-qtype=""    href="https://p.baidu.com/question/34ce6162633162653933321100?fr=zd_wap">
+<span class="r-question-list-title ">
+去日本旅游需要注意些什么？
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+7
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="1174263327028172419" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/1174263327028172419.html?&amp;mzl=qb_xg_0&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游，都需要带什么用品？需要什么常识？
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+348
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="921551551264123579" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/921551551264123579.html?&amp;mzl=qb_xg_1&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游需要准备什么？
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+3
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="585603974" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/585603974.html?&amp;mzl=qb_xg_2&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游需要注意什么
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+91
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="2201478557027872988" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/2201478557027872988.html?&amp;mzl=qb_xg_3&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游需要准备些什么？越具体越好啊！！
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+167
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="1732180052597957147" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/1732180052597957147.html?&amp;mzl=qb_xg_4&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游之前应该做哪些准备工作？
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+49
+</span>
+</span>
+</a>
+</div>
+<div class="w-question-list">
+<a class="question-list "
+       	data-qid="423988826334851852" data-symbol-group="0" data-qtype=""    href="//zhidao.baidu.com/question/423988826334851852.html?&amp;mzl=qb_xg_5&amp;mzl_jy=&amp;word=&amp;hitRelateOptimi=&amp;samplow_val=354">
+<span class="r-question-list-title ">
+去日本旅游，都需要带什么呢？
+</span>
+<span class="ico-tmb ico-tmb-ro ico-tmb-blue"><em></em>
+<span>
+5
+</span>
+</span>
+</a>
+</div>
+<a href="//zhidao.baidu.com/index/?word=去日本旅游需要些什么&from=qb&samplow_val=354" class="more-relate">更多相关问题<em class="arrow-right"></em></a>
+</div>
+<div class="question-line"></div>
+<script>
+                window.alog && window.alog('speed.set', 'c_qrt', +new Date);
+                window.alog && window.alog.fire && window.alog.fire("mark");
+            </script>
+</div>
+<div class="mm-content-box nfxdv5ab897 wm-73868">
+<h2 class="title">为您推荐</h2>
+<div id="cxpgpuuwgaedgm" class="mhzqwzppikon-box">
+<script type="text/javascript" src="//mountain.zhidao.baidu.com/cxpgpuuwgaedgm.js"></script>
+</div>
+</div>
+<div class="mm-content-box mm-content-line feed-recommend" id="feed-recommend">
+<h2 class="dec">精彩推荐</h2>
+<ul class="feed-recommend-list">
+</ul></div>
+<script id="t:feed-recommend-list-tmpl" type="text/html">
+    <#for(var i=0, len=data.length; i<len; i++) {
+        var item = data[i];
+    #>
+        <#if (item.qid && item.pid != -1) {#>
+            <li class="feed-recommend-item" data-qid="<#=item.qid#>" data-pid="<#=item.pid#>" data-rid="<#=item.rid#>" data-fid="<#=item.fid#>" data-url="<#=item.jumpUrl#>">
+                <#if (item.imgUrl.length >= 3 && item.displayType === 0) {#>
+                    <div class="item-text-pics">
+                        <h3 class="item-title"><#=item.title#></h3>
+                    </div>
+                    <div class="item-imgs-div-list">
+                        <#for (var j=0, leng=item.imgUrl.length; j<3; j++) {#>
+                            <div class="item-imgs-div" style="background-image: url(<#=__2ssl__(item.imgUrl[j])#>);"></div>
+                        <#}#>
+                    </div>
+                    <div class="item-info-pics">
+                        <span class="item-info-view"><em><#=item.viewCount#></em>浏览</span>
+                    </div>
+                <#}else if(item.displayType === 2){#>
+                    <div class="item-text-pics">
+                        <h3 class="item-title"><#=item.title#></h3>
+                    </div>
+                    <div class="item-img-big">
+                        <img class="big-img" src="<#-__2ssl__(item.imgUrl[0])#>">
+                    </div>
+                    <div class="item-info-pics">
+                        <span class="item-info-view"><em><#=item.viewCount#></em>浏览</span>
+                    </div>
+                <#}else{#>
+                    <div class="item-img-div <#if (i == 0) {#>fist-single<#}#>" style="background-image: url(<#=__2ssl__(item.imgUrl[0])#>);"></div>
+                    <div class="item-text">
+                        <h3 class="item-title"><#=item.title#></h3>
+                        <div class="item-info">
+                            <span class="item-info-view"><em><#=item.viewCount#></em>浏览</span>
+                        </div>
+                    </div>
+                <#}#>
+            </li>
+        <#}else if (item.qid){#>
+            <li class="feed-recommend-item feed-recommend-invite-item" data-qid="<#=item.qid#>" data-pid="<#=item.pid#>" data-rid="<#=item.rid#>">
+                <div class="item-invite-info">邀请你来回答</div>
+                <div class="item-invite-title">
+                    <#if (item.score && item.score > 0) {#><span class="score"><#=item.score#></span><#}#>
+                    <#=item.title#>
+                </div>
+                <div class="item-invite-extra">
+                    <div class="item-invite-tags <#if (!item.tags || item.tags.length == 0) {#>hide<#}#>">
+                        <#if (item.tags && item.tags.length) {#>
+                            <#for(var j = 0; j < item.tags.length; j++) {#>
+                                <span class="item-invite-tagitem"><#=item.tags[j]#></span>
+                            <#}#>
+                        <#}#>
+                    </div>
+                    <div class="item-invite-btn"><i class="icon-invite-submit"></i><span class="item-invite-btn-text">回答</span></div>
+                </div>
+            </li>
+        <#}#>
+    <#}#>
+    <div class="load-more">
+        <span class="load-text">点击或上拉加载更多</span>
+        <span class="is-loading">
+            <img src="https://iknowwap.bdimg.com/static/m-question-new/widget/feed-recommend/img/is-loading.852577f.png" class="loading-img">正在加载
+        </span>
+        <span class="load-error">加载失败 点击重新加载</span>
+    </div>
+</script>
+<a class="ask-for-friend" href="/msubmit/new?step=1">向网友提问</a>
+<div class="question-line"></div>
+<a href="" class="wgt-back-search" id="js-wgt-back-search" style="display: none;">
+<i class="arrow-left-back"></i>
+<i class="baidu-icon"></i>
+返回百度</a>
+<div class="wgt-bg-mask" id="js-bg-mask" style="display: none;"></div>
+<div class="wgt-morebar" id="js-wgt-morebar" style="display: none;">
+<div class="feature-list">
+<div class="feature-item" id="js-morebar-correct" style="display: none;">
+<i class="icon-feature icon-correct"></i>
+<p>答案纠错</p>
+</div>
+<div class="feature-item" id="js-morebar-accusation">
+<i class="icon-feature icon-accusation"></i>
+<p>举报</p>
+</div>
+</div>
+<div class="cancel-btn" id="js-morebar-cancelbtn">取消</div>
+</div>
+<div class="wgt-accusation" id="js-wgt-accusation" style="display: none;">
+<div class="title">
+<div class="back-btn" id="js-accusation-back-btn"></div>
+<span id="js-accusation-title" data-reason="选择举报类型" data-copyright="侵犯版权">选择举报类型</span>
+</div>
+<ul class="reasons" id="js-accusation-reason">
+<li class="reason-item" id="js-accusation-copyright-btn">
+侵犯版权<div class="link-arrow"></div>
+</li>
+<li class="reason-item js-accusation-reason-item" data-reason="1" id="js-accusation-reason-item-first" data-question="描述不清" data-answer="答案错误"></li>
+<li class="reason-item js-accusation-reason-item" data-reason="2">垃圾广告</li>
+<li class="reason-item js-accusation-reason-item" data-reason="3">低质灌水</li>
+<li class="reason-item js-accusation-reason-item" data-reason="4">色情、暴力</li>
+<li class="reason-item js-accusation-reason-item" data-reason="5">政治敏感</li>
+</ul>
+<div class="copyright" id="js-accusation-copyright" style="display: none">
+<p class="desc">根据知道侵权投诉举报规范，您需要向我们提交相关证明材料</p>
+<p>请登录桌面版网页进行侵权投诉：</p>
+<p>http://dwz.cn/6lsPRB</p>
+</div>
+</div>
+<div class="wgt-fold-desc" id="js-wgt-fold-desc" style="display: none;">
+<div class="title">
+<div class="close-btn" id="js-fold-desc-close-btn"></div>
+<span>答案为什么会折叠？</span>
+</div>
+<ul class="descs">
+<li class="desc-item">1.回答无意义，对问题无帮助，例如：盲目复制、过于简略、低质等；</li>
+<li class="desc-item">2.内容明显错误、内容真实性存疑、内容过时；</li>
+<li class="desc-item">3.内容违反知道协议，可能涉及答非所问、灌水、偏激、攻击性等；</li>
+<li class="desc-item">4.部分问题下提交的回答需要审核，审核通过前会暂时折叠。</li>
+</ul>
+</div>
+<script type="application/ld+json">
+            null
+        </script>
+
+
+            
+<footer class="respect" id="respect-footer">
+<a class="dl" data-cesxq5ab897="https://itunes.apple.com/cn/app/bai-du-zhi-dao-yu-yin-wen-da/id465885800?mt=8">
+<i></i>
+<span class="txt">十分钟内有问必答</span>
+<span class="s">立即下载</span>
+</a>
+<div class="bom-meta">
+<a class="btn login-btn" href="javascript:void(0);">登录</a>
+<a class="a btn" href="//zhidao.baidu.com/mobile/board?next=http%3A%2F%2Fwappass.baidu.com%2Fpassport%2Freg%3Fu%3Dhttp%253A%252F%252Fwapiknow.baidu.com%3Freg_success%3D1%26ssid%3D%26from%3D%26uid%3D%26pu%3D%26bd_page_type%3D1%26tn%3D%26tpl%3Dzd%26regtype%3D1&reg_iphone=1">注册</a>
+<a href="//zhidao.baidu.com/mmisc/feedback" class="a al">反馈</a>
+<a class="a al js-appeal-btn">申诉</a>
+<p class="mt5">
+<a href="//zhidao.baidu.com?device=pc" class="a al">电脑版</a>
+<span>&copy;2018&nbsp;Baidu</span>
+</p>
+<span style="margin-top:8px;">京ICP证030173号-1&nbsp;&nbsp;&nbsp;京网文【2013】0934-983号</span>
+</div>
+</footer>
+
+
+                        <!--[IKNOW_SUPERFRAME_JS_LINKS_HOOK]-->
+            
+
+        </div>
+
+                    
+                <script>
+                    void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.mobile.min.js");
+                </script>            
+            
+            </div><!-- rt-view iknow-root-dom-element END -->
+    </div><!-- sfr-app END -->
+    </body><script type="text/javascript" src="https://iknowwap.bdimg.com/static/m-common/lib/mod.49846fe.js"></script><script type="text/javascript">(window.__IKNOW_GLOBAL__ || window).require.resourceMap({"res":{"m-common:widget\/lib\/gmu\/zepto\/zepto.origin.js":{"pkg":"m-common:p1"},"m-common:widget\/lib\/gmu\/zepto\/zepto.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.origin.js"]},"m-common:widget\/lib\/gmu\/base\/extend\/extend.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/lib\/gmu\/base\/ui\/ui.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js"]},"m-common:widget\/lib\/gmu\/base\/highlight\/highlight.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js"]},"m-common:widget\/lib\/gmu\/base\/position\/position.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js"]},"m-common:widget\/lib\/gmu\/base\/fix\/fix.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js"]},"m-common:widget\/lib\/gmu\/base\/iscroll\/iscroll.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/lib\/gmu\/dialog\/dialog.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/highlight\/highlight.js"]},"m-common:widget\/lib\/gmu\/dialog\/position\/position.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/highlight\/highlight.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/base\/position\/position.js"]},"m-common:widget\/lib\/gmu\/gotop\/gotop.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/fix\/fix.js"]},"m-common:widget\/lib\/gmu\/gotop\/iscroll\/iscroll.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/iscroll\/iscroll.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/fix\/fix.js","m-common:widget\/lib\/gmu\/gotop\/gotop.js"]},"m-common:widget\/lib\/gmu\/suggestion\/suggestion.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/iscroll\/iscroll.js","m-common:widget\/lib\/gmu\/base\/highlight\/highlight.js"]},"m-common:widget\/lib\/gmu\/suggestion.default\/suggestion.default.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/suggestion\/suggestion.js"]},"m-common:widget\/lib\/gmu\/quickdelete\/quickdelete.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js"]},"m-common:widget\/lib\/gmu\/slider\/slider.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js"]},"m-common:widget\/js\/util\/https\/https.js":{"pkg":"m-common:p1"},"m-common:widget\/lib\/fis\/template\/template.js":{"pkg":"m-common:p1","deps":["m-common:widget\/js\/util\/https\/https.js"]},"m-common:widget\/js\/util\/alog\/alog.js":{"pkg":"m-common:p1","deps":["m-common:widget\/js\/util\/hunter\/hunter.js"]},"m-common:widget\/js\/util\/ck\/ck.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/util\/event\/event.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/util\/log\/log.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js"]},"m-common:widget\/js\/ui\/more\/more.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/util\/storage\/storage.js":{"pkg":"m-common:p1"},"m-common:widget\/js\/util\/string\/string.js":{"pkg":"m-common:p1"},"m-common:widget\/js\/util\/template\/template.js":{"pkg":"m-common:p1","deps":["m-common:widget\/lib\/fis\/template\/template.js"]},"m-common:widget\/js\/util\/url\/url.js":{"pkg":"m-common:p1","deps":["m-common:widget\/js\/util\/string\/string.js"]},"m-common:widget\/js\/util\/cookie\/cookie.js":{"pkg":"m-common:p1"},"m-common:widget\/js\/ui\/poptip\/poptip.js":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-common\/widget\/js\/ui\/poptip\/poptip.9662b68.js","deps":["m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/ui\/dialog\/dialog.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js"]},"m-common:widget\/js\/util\/location\/location.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js"]},"m-common:widget\/js\/logic\/login\/login.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/location\/location.js"]},"m-common:widget\/js\/logic\/submit\/submit.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/location\/location.js"]},"m-common:widget\/js\/util\/patch\/patch.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/ui\/list\/list.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js"]},"m-common:widget\/js\/util\/hunter\/hunter.js":{"pkg":"m-common:p2"},"m-common:widget\/js\/logic\/appeal\/appeal.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js"]},"m-common:widget\/js\/logic\/message\/message.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-common:widget\/js\/logic\/squarevcode\/squarevcode.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/https\/https.js"]},"m-common:widget\/js\/logic\/tune\/tune.js":{"pkg":"m-common:p2"},"m-common:widget\/js\/logic\/signin\/signin.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js"]},"m-common:widget\/js\/ui\/floater\/floater.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-common:widget\/js\/ui\/menu\/menu.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/base\/fix\/fix.js"]},"m-common:widget\/search\/search-async.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/suggestion.default\/suggestion.default.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/quickdelete\/quickdelete.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/string\/string.js","m-common:widget\/js\/util\/log\/log.js"]},"m-common:widget\/search-new\/search-new.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/suggestion.default\/suggestion.default.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/quickdelete\/quickdelete.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/string\/string.js","m-common:widget\/js\/util\/log\/log.js"]},"m-common:widget\/header\/header-async.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/ui\/more\/more.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/ui\/dialog\/dialog.js"]},"m-common:widget\/iknow-header\/iknow-header.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/event\/event.js"]},"m-common:widget\/iknow-header\/search.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/suggestion.default\/suggestion.default.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/quickdelete\/quickdelete.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/string\/string.js","m-common:widget\/js\/util\/log\/log.js"]},"m-common:widget\/header-new\/header-new.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/location\/location.js"]},"m-common:widget\/msg\/msg-async.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/template\/template.js","m-common:widget\/js\/logic\/message\/message.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-common:widget\/footer-new\/footer-new.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/cookie\/cookie.js","m-common:widget\/js\/ui\/poptip\/poptip.js"]},"m-common:widget\/product\/product-async.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/template\/template.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/alog\/alog.js"]},"m-common:widget\/signin\/signin-async.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/logic\/signin\/signin.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-common:widget\/js\/ui\/highdownDialog\/highdownDialog.js":{"pkg":"m-common:p2","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/js\/getScript\/getScript.js":{"pkg":"m-question-new:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/js\/tune\/tune.js":{"pkg":"m-question-new:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/tune\/tune.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/getScript\/getScript.js","m-common:widget\/js\/ui\/dialog\/dialog.js"]},"m-question-new:widget\/footer\/footer.js":{"pkg":"m-question-new:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/tune\/tune.js","m-common:widget\/js\/ui\/highdownDialog\/highdownDialog.js","m-common:widget\/js\/util\/cookie\/cookie.js","m-common:widget\/js\/ui\/poptip\/poptip.js"]},"m-question-new:widget\/gotop\/gotop.js":{"pkg":"m-question-new:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/related-question\/related-question.js":{"pkg":"m-question-new:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/tune\/tune.js","m-common:widget\/js\/util\/ck\/ck.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-common:widget\/js\/logic\/share\/qrcode.js":{"pkg":"m-common:p3"},"m-common:widget\/js\/logic\/share\/share.js":{"pkg":"m-common:p3","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/logic\/share\/qrcode.js"]},"m-question-new:widget\/js\/duration\/duration.js":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/widget\/js\/duration\/duration.9935a4d.js","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/js\/antiCheat\/antiCheat.js":{"pkg":"m-question-new:p4"},"m-question-new:widget\/js\/audio\/audio.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/js\/file\/file.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/logic\/tune\/tune.js","m-common:widget\/js\/util\/url\/url.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-question-new:widget\/js\/video\/video.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/js\/map\/map.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/bg-mask\/bg-mask.es.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/ad-top-banner\/ad-top-banner-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/tune\/tune.js"]},"m-question-new:widget\/ad-middle-promote\/ad-middle-promote.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/tune\/tune.js"]},"m-question-new:widget\/ad-bottom-banner\/ad-bottom-banner.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/ad-fix-bottom\/ad-fix-bottom.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/tune\/tune.js"]},"m-question-new:widget\/js\/PhotoSwipe\/photoswipe.min.js":{"pkg":"m-question-new:p4"},"m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-default.min.js":{"pkg":"m-question-new:p4"},"m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe.min.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-default.min.js"]},"m-question-new:widget\/detail-full\/detail-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/video\/video.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js"]},"m-question-new:widget\/index\/accusation\/accusation.es.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/ui\/poptip\/poptip.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/index\/back-search\/browser.es.js":{"pkg":"m-question-new:p4"},"m-question-new:widget\/index\/back-search\/back-search.es.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/url\/url.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/index\/back-search\/browser.es.js"]},"m-question-new:widget\/index\/fold-desc\/fold-desc.es.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/index\/morebar\/morebar.es.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/js\/util\/event\/event.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/login\/login.js"]},"m-question-new:widget\/reply-ask-submit\/reply-ask-submit-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/mavin-statistics\/mavin-statistics.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/seek-help\/seek-help.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/template\/template.js"]},"m-question-new:widget\/question\/question.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/event\/event.js"]},"m-question-new:widget\/question-desc\/question-desc.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/question-image\/question-image.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js"]},"m-question-new:widget\/low-question-tips\/low-question-tips.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/cookie\/cookie.js"]},"m-question-new:widget\/question-meta\/question-meta-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/ui\/poptip\/poptip.js","m-common:widget\/js\/util\/storage\/storage.js"]},"m-question-new:widget\/js\/mini-editor\/mini-editor.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/modified-desc\/modified-desc.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/mini-editor\/mini-editor.js"]},"m-question-new:widget\/replies-repeat\/replies-repeat-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/event\/event.js"]},"m-question-new:widget\/deleted-tips\/deleted-tips-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/appeal\/appeal.js"]},"m-question-new:widget\/reply-repeat\/reply-repeat-async.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js"]},"m-question-new:widget\/js\/page\/index.js":{"pkg":"m-question-new:p4"},"m-question-new:widget\/ad-ecom-inchain\/ad-ecom-inchain.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js"]},"m-question-new:widget\/raise-reward\/raise-reward.js":{"pkg":"m-question-new:p4","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/ui\/poptip\/poptip.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/log\/log.js"]},"m-question-new:widget\/question-answer\/question-answer.js":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/widget\/question-answer\/question-answer.cbacae0.js","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/logic\/squarevcode\/squarevcode.js","m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/patch\/patch.js"]},"m-question-new:widget\/replies-entry\/replies-entry-async.js":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/widget\/replies-entry\/replies-entry-async.d0a2729.js","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/event\/event.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js"]},"m-question-new:widget\/feed-recommend\/feed-recommend-async.js":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/widget\/feed-recommend\/feed-recommend-async.eff0669.js","deps":["m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/util\/template\/template.js"]}},"pkg":{"m-common:p1":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-common\/pkg\/m_stable.423320e.js","has":["m-common:widget\/lib\/gmu\/zepto\/zepto.origin.js","m-common:widget\/lib\/gmu\/zepto\/zepto.js","m-common:widget\/lib\/gmu\/base\/extend\/extend.js","m-common:widget\/lib\/gmu\/base\/ui\/ui.js","m-common:widget\/lib\/gmu\/base\/highlight\/highlight.js","m-common:widget\/lib\/gmu\/base\/position\/position.js","m-common:widget\/lib\/gmu\/base\/fix\/fix.js","m-common:widget\/lib\/gmu\/base\/iscroll\/iscroll.js","m-common:widget\/lib\/gmu\/dialog\/dialog.js","m-common:widget\/lib\/gmu\/dialog\/position\/position.js","m-common:widget\/lib\/gmu\/gotop\/gotop.js","m-common:widget\/lib\/gmu\/gotop\/iscroll\/iscroll.js","m-common:widget\/lib\/gmu\/suggestion\/suggestion.js","m-common:widget\/lib\/gmu\/suggestion.default\/suggestion.default.js","m-common:widget\/lib\/gmu\/quickdelete\/quickdelete.js","m-common:widget\/lib\/gmu\/slider\/slider.js","m-common:widget\/js\/util\/https\/https.js","m-common:widget\/lib\/fis\/template\/template.js","m-common:widget\/js\/util\/alog\/alog.js","m-common:widget\/js\/util\/ck\/ck.js","m-common:widget\/js\/util\/event\/event.js","m-common:widget\/js\/util\/log\/log.js","m-common:widget\/js\/ui\/more\/more.js","m-common:widget\/js\/util\/storage\/storage.js","m-common:widget\/js\/util\/string\/string.js","m-common:widget\/js\/util\/template\/template.js","m-common:widget\/js\/util\/url\/url.js","m-common:widget\/js\/util\/cookie\/cookie.js"]},"m-common:p2":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-common\/pkg\/m_common_qb.348fa55.js","has":["m-common:widget\/js\/ui\/dialog\/dialog.js","m-common:widget\/js\/util\/location\/location.js","m-common:widget\/js\/logic\/login\/login.js","m-common:widget\/js\/logic\/submit\/submit.js","m-common:widget\/js\/util\/patch\/patch.js","m-common:widget\/js\/ui\/list\/list.js","m-common:widget\/js\/util\/hunter\/hunter.js","m-common:widget\/js\/logic\/appeal\/appeal.js","m-common:widget\/js\/logic\/message\/message.js","m-common:widget\/js\/logic\/squarevcode\/squarevcode.js","m-common:widget\/js\/logic\/tune\/tune.js","m-common:widget\/js\/logic\/signin\/signin.js","m-common:widget\/js\/ui\/floater\/floater.js","m-common:widget\/js\/ui\/menu\/menu.js","m-common:widget\/search\/search-async.js","m-common:widget\/search-new\/search-new.js","m-common:widget\/header\/header-async.js","m-common:widget\/iknow-header\/iknow-header.js","m-common:widget\/iknow-header\/search.js","m-common:widget\/header-new\/header-new.js","m-common:widget\/msg\/msg-async.js","m-common:widget\/footer-new\/footer-new.js","m-common:widget\/product\/product-async.js","m-common:widget\/signin\/signin-async.js","m-common:widget\/js\/ui\/highdownDialog\/highdownDialog.js"]},"m-question-new:p3":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/pkg\/common.fd60454.js","has":["m-question-new:widget\/js\/getScript\/getScript.js","m-question-new:widget\/js\/tune\/tune.js","m-question-new:widget\/footer\/footer.js","m-question-new:widget\/gotop\/gotop.js","m-question-new:widget\/related-question\/related-question.js"]},"m-common:p3":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-common\/pkg\/m_common_share.8df5df4.js","has":["m-common:widget\/js\/logic\/share\/qrcode.js","m-common:widget\/js\/logic\/share\/share.js"]},"m-question-new:p4":{"url":"https:\/\/iknowwap.bdimg.com\/static\/m-question-new\/pkg\/qb.fbca5ff.js","has":["m-question-new:widget\/js\/antiCheat\/antiCheat.js","m-question-new:widget\/js\/audio\/audio.js","m-question-new:widget\/js\/file\/file.js","m-question-new:widget\/js\/video\/video.js","m-question-new:widget\/js\/map\/map.js","m-question-new:widget\/bg-mask\/bg-mask.es.js","m-question-new:widget\/ad-top-banner\/ad-top-banner-async.js","m-question-new:widget\/ad-middle-promote\/ad-middle-promote.js","m-question-new:widget\/ad-bottom-banner\/ad-bottom-banner.js","m-question-new:widget\/ad-fix-bottom\/ad-fix-bottom.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe.min.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-default.min.js","m-question-new:widget\/js\/PhotoSwipe\/photoswipe-ui-dom.js","m-question-new:widget\/detail-full\/detail-async.js","m-question-new:widget\/index\/accusation\/accusation.es.js","m-question-new:widget\/index\/back-search\/browser.es.js","m-question-new:widget\/index\/back-search\/back-search.es.js","m-question-new:widget\/index\/fold-desc\/fold-desc.es.js","m-question-new:widget\/index\/morebar\/morebar.es.js","m-question-new:widget\/reply-ask-submit\/reply-ask-submit-async.js","m-question-new:widget\/mavin-statistics\/mavin-statistics.js","m-question-new:widget\/seek-help\/seek-help.js","m-question-new:widget\/question\/question.js","m-question-new:widget\/question-desc\/question-desc.js","m-question-new:widget\/question-image\/question-image.js","m-question-new:widget\/low-question-tips\/low-question-tips.js","m-question-new:widget\/question-meta\/question-meta-async.js","m-question-new:widget\/js\/mini-editor\/mini-editor.js","m-question-new:widget\/modified-desc\/modified-desc.js","m-question-new:widget\/replies-repeat\/replies-repeat-async.js","m-question-new:widget\/deleted-tips\/deleted-tips-async.js","m-question-new:widget\/reply-repeat\/reply-repeat-async.js","m-question-new:widget\/js\/page\/index.js","m-question-new:widget\/ad-ecom-inchain\/ad-ecom-inchain.js","m-question-new:widget\/raise-reward\/raise-reward.js"]}}});</script><script type="text/javascript">
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    F.context({
+        question:{
+            qid:'91145209',
+            cid:'80',
+            quid: '43893807',
+            score:'50',
+            title:'去日本旅游需要些什么',
+            lbsLon:"",
+            lbsLat:"",
+            replyNum:"2" ,
+            bestAnswerCount : '0',
+            recAnswerCount:'0',
+            createTime: '1238033489'
+                                                            ,classID: '80'
+                                                        },
+                    hasBestAnswer: true,
+                isMyQuestion: 0,
+        adsAll:{
+            youx:'1',
+            adsEids: [305]
+        },
+        nettype:'1',
+                symbolGroup: '0',
+        excellentContrast: '0',
+        evaSampling_lowVal: '354',
+    });
+    F.context('user')['isRealName'] = '';
+    F.context('user')['role'] = 'browser';
+    F.context('feedbackInfo', {
+        feedback: '1',
+        feedback_rid: 0
+    });
+
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    var headerContainer = window.__IKNOW_GLOBAL__
+                            ? (window.__IKNOW_GLOBAL__.container + ' .rt-actions')
+                            : '#iknow-common-header';
+    var searchContainer = window.__IKNOW_GLOBAL__
+                            ? (window.__IKNOW_GLOBAL__.container + ' .rt-actions .spect-header')
+                            : '#search-box';
+    require.async(['m-common:widget/iknow-header/iknow-header'], function(header){
+        header.init(headerContainer,{
+            nettype: '1',
+            frameQids: [],
+            isLogin: 0,
+            searchWord: ""
+        });
+    });
+    require.async(['m-common:widget/iknow-header/search'],function(search){
+        var offsetX = -51;
+        var offsetY = 38;
+        search.init(searchContainer, {
+          x: offsetX,
+          y: offsetY
+        });
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    F.context('cmsKey', 'top:defs|tb:defs|mid:defs|fb:');
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/low-question-tips/low-question-tips']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/question-desc/question-desc'], function(){});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/question-image/question-image'], function(){});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-common:widget/lib/gmu/zepto/zepto','m-question-new:widget/question-answer/question-answer'],function($, answer){
+        answer.init($('#w-1'));
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/question/question'], function() {});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-common:widget/lib/gmu/zepto/zepto','m-question-new:widget/detail-full/detail-async'],function($, detail){
+        //这部分内容会被加载更多问题功能引用，整个html被写入，不加timeout会导致js执行的时候dom尚未渲染完毕
+        setTimeout(function(){
+            detail.init({
+                container: $("#w-2"),
+                businessId: '',
+                businessToken: ''
+            });
+        },0);
+    })
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/replies-entry/replies-entry-async'], function(){
+
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/replies-repeat/replies-repeat-async'], function(){});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-common:widget/js/util/log/log'],function(log){
+        log.addKey({
+            wapqbmarketing_count: $('#pjjgq5ab897-wapqbmarketing>div>div').length,
+            youx_count: $('#pjjgq5ab897-youx .ec_link_line').length,
+            wapqbbottom_count: $('#pjjgq5ab897-wapqbmarketing>div>div').length
+        });
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;        require.async(['m-question-new:widget/ad-middle-promote/ad-middle-promote'], function(b){
+            b.init('.zwawu5ab897', {
+                classId: '80',
+                data: 'zwawu5ab897',
+                // cms策略标识
+                cmsId: 'other',
+                appData: {
+                    url: 'https://itunes.apple.com/cn/app/bai-du-zhi-dao-yu-yin-wen-da/id465885800?mt=8',
+                    imgSrc: "https://gss0.bdstatic.com/8_BSsjip0QIZ8tyhnq/timg?wh_rate=0&wapiknow&quality=60&size=w78&sec=0&di=e561e31870592842753e321105aee9c7&src=http%3A%2F%2Fiknow01.bosstatic.bdimg.com%2Ffengsong%2Fzhidao.png",
+                    name: '百度知道',
+                    slogan: '十分钟内有问必答',
+                    btn: '立即下载'
+                }
+            });
+        });
+        F.context('AD_MIDDLE_PROMOTE', '.zwawu5ab897');
+        F.context('APP_DOWNLOAD_AD_TYPE', '');
+    }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;                require.async(["m-common:widget/js/util/log/log"],function(log){
+                    log.send({
+                        module: 'm-question',
+                        page: 'question-view',
+                        area: 'relate-hotspot',
+                        action: 'pv',
+                        tid: '',
+                        pai_qid: '34ce6162633162653933321100',
+                        refer_qid: '91145209'
+                    });
+                });
+            }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(["m-question-new:widget/related-question/related-question"],function(relateQuestion){
+        relateQuestion.init('#wgt-related-questions', '.ztknd5ab897');
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/feed-recommend/feed-recommend-async'], function (rec) {
+        rec.init({
+            tag:'',
+            adsEids: ["305"]
+        });
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/index/back-search/back-search.es'], function(backSearch) {
+        F.context('referrer', '');
+        backSearch.default.init();
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/bg-mask/bg-mask.es'], function(mask) {
+    mask.default.init();
+});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/index/morebar/morebar.es'], function(morebar) {
+    morebar.default.init(1);
+});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/index/accusation/accusation.es'], function(accusation) {
+    accusation.default.init();
+});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['m-question-new:widget/index/fold-desc/fold-desc.es'], function(foldDesc) {
+    foldDesc.default.init();
+});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;            require.async(["m-question-new:widget/js/page/index"]);
+        }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['m-question-new:widget/footer/footer'], function(a){
+        a.init({
+            data: 'cesxq5ab897'
+        });
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;            try{(function() {var param_a = 116;var param_b = 158;var param_c = 162;var param_d = 72;var string_a = param_a.toString();var string_b = param_b.toString();var string_c = param_c.toString();var string_d = param_d.toString();var str_all = string_a + "zhi" + string_b + "dao" + string_c + "good" + string_d;var int_all = str_all.length;var stop = parseInt(int_all/2);var result = 0;if (int_all < 18 ){ result = str_all.substr(2,stop); }else { result = str_all.substr(3,stop); }var xhr = null;if (window.XMLHttpRequest) {xhr = new XMLHttpRequest(); } else if (window.ActiveXObject) {xhr = new ActiveXObject("Microsoft.XMLHTTP");}if(xhr) {xhr.open("POST", "/mobile/api/replynum?t=" + new Date().getTime(), true);xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");xhr.onload = function(){};var qid = "91145209";var logid = 2921264954;xhr.send("qid=" + qid + "&replyT=" + result + "&logid=" + logid);}})();}catch(e){}
+    }();
+</script>
+            <script>
+            if(typeof PDC!="undefined"){PDC.tti();}
+        </script>
+
+        
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?16bc67e4f6394c05d03992ea0a0e9123";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        
+
+        <!-- 手百页面底部native或者框架右上角【...】弹出的分享配置 -->
+                <!-- 配置完成 -->
+    
+    
+    <script>
+        !function(document, window){
+            var log = {
+                list: [],
+                host: 'https://' + location.host + '/api/httpscheck',
+                log: function(param) {
+                    var a = [];
+                    a.push('wap=1');
+                    for(var k in param) {
+                        a.push(k + '=' + param[k]);
+                    }
+                    var msg = a.join('&');
+                    if(~this.list.indexOf(msg)){
+                        return;
+                    }
+                    this.list.push(msg);
+                    var img = new Image();
+                    var key = '_ik_log_' + (Math.random()*2147483648 ^ 0).toString(36);
+                    window[key] = img;
+                    img.onload = img.onerror = img.onabort = function() {
+                        img.onload = img.onerror = img.onabort = null;
+                        window[key] = null;
+                        img = null;
+                    };
+                    img.src = this.host + '?' + msg;
+                }
+            };
+
+            function HTTPSWarningLog(){
+                this.selector = [
+                    'link',
+                    'script',
+                    'img',
+                    'embed',
+                    'iframe'
+                ];
+                this.warningCounter = 0;
+                this.init();
+            };
+
+            HTTPSWarningLog.prototype = {
+                init: function(){
+                    this.fetch();
+                },
+
+                fetch: function(){
+                    for(var tags = this.selector, i =0, len = tags.length; i < len;i++) {
+                        this.getTag(tags[i]);
+                    }
+                },
+
+                getTag: function(tag) {
+                    var domList = document.getElementsByTagName(tag);
+                    if(!domList.length) {
+                        return;
+                    }
+                    for(var i = 0,len = domList.length;i<len;i++) {
+                        var el = domList[i];
+                        var url = el.getAttribute(el.tagName==='LINK' ? 'href' : 'src');
+                        if(el.getAttribute('rel') === 'canonical') {
+                            continue;
+                        }
+                        if(url && 'https:' === location.protocol && !url.indexOf('http:')){
+                            this.sendLog(el, el.tagName.toLowerCase(),url);
+                            this.warningCounter++;
+                        }
+                    }
+                },
+
+                sendLog: function(el, type, url){
+                    log.log({
+                        url: location.href,
+                        wtype: type,
+                        wurl: url
+                    });
+                }
+            };
+
+            function domReady(fn){
+                if(document.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', function() {
+                        document.removeEventListener('DOMContentLoaded',arguments.callee, false);
+                        fn();
+                    }, false);
+                }else if(document.attachEvent) {
+                    document.attachEvent('onreadystatechange', function() {
+                        if(document.readyState == 'complete') {
+                            document.detachEvent('onreadystatechange', arguments.callee);
+                            fn();
+                        }
+                    });
+                }
+            };
+
+            domReady(function(){
+                new HTTPSWarningLog();
+                for(var i=1; i<6; i++) {
+                    !function(i){
+                        setTimeout(function(){
+                            new HTTPSWarningLog();
+                        }, i*i*i*1000);
+                    }(i);
+                }
+            });
+        }(document, window);
+    </script>
+</html>

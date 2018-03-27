@@ -12,6 +12,7 @@ import json
 import codecs
 import sys
 import random
+import threadpool as tp
 import re
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
@@ -38,29 +39,63 @@ headers = {
 	'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36',
 }
 
-def test():
-	for i in range(2):
+def test(xxxx):
+	for i in range(300):
 		url = 'http://www.tuniu.com/papi/wenda/index/searchQuestion?d={"poiId":"","key":"日本","pageSize":20,"pageNumber":'+str(i)+'}&c={"ct":100}&_=1521081102723'
-		response = requests.get(url,headers=headers,timeout=5,verify=False)
+		# response = requests.get(url,headers=headers,timeout=5,verify=False)
+		while True:
+			try:
+				response = requests.get(url,headers=headers,timeout=20,verify=False)
+				requests.adapters.DEFAULT_RETRIES = 5
+				s = requests.session()
+				s.keep_alive = False
+				break
+			except:
+				print('let us go  sleep!!!')
+				sleep(20)
+				print('ogo')
+				continue
+
 		json_data = json.loads(response.content)
 		data = json_data['data']
-		list = data['list']
-		for link in list:
+		list_ = data['list']
+		for link in list_:
 			urls = json.dumps(link)
 			urls = json.loads(urls)
 			id_ = urls['questionId']
+			with codecs.open('tuniu_ids.txt','a+','utf-8') as f :
+				f.write(str(id_)+'\n')
+				f.close()
+				print(id_)
 			print(urls['questionId'])
 			url = 'http://www.tuniu.com/wenda/detail-' + str(urls['questionId'])
 
 			# url = 'http://www.mafengwo.cn/wenda/detail-2630437.html'
 			if url not in url_list:
 				url_list.append(url)
-				r = requests.get(url,headers=headers,timeout=5)
+				# r = requests.get(url,headers=headers,timeout=5)
+				while True:
+					try:
+						r = requests.get(url,headers=headers,timeout=20,verify=False)
+						requests.adapters.DEFAULT_RETRIES = 5
+						s = requests.session()
+						s.keep_alive = False
+						break
 
+
+					except:
+						print('let us go  sleep!!!')
+						sleep(20)
+						print('ogo')
+						continue	
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
-				title = selector.xpath('//div[@class="title"]/h2/text()')[0]
+				title = selector.xpath('//div[@class="title"]/h2/text()')
+				if title == []:
+					print(url)
+				else:
+					title =title[0]
 				answers = selector.xpath('//li[@class="item clearfix J_answerItem"]'
 										)
 				desc = ''
@@ -68,16 +103,33 @@ def test():
 				for answer in answers:
 					answer_content = answer.xpath('./div[@class="col-2"]/div[@class="col-2-bd"]/p/text()')[0]
 					like = answer.xpath('./div[@class="col-1"]/a/p/text()')[0]
-					with codecs.open('tuniu_question_answer.txt','a+','utf-8') as f:
-						if desc == '' :
-	
-						    s = ('1'+'\t'+'qid:'+str(id_)+'\t'+title+'#'+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
-						    f.write(s+'\r\n')
-						    f.close()
-						else:
-						    s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
-						    f.write(s+'\r\n')
-						    f.close()
+					bingo = answer.xpath('./div[@class="col-2"]/div[@class="col-2-hd"]/div[@class="hd-col-2 clearfix"]/a[@class="act on"]')
+					if bingo==[]:
+						with codecs.open('tuniu_question_answer.txt','a+','utf-8') as f:
+							if desc == '' :
+		
+							    s = ('1'+'\t'+'qid:'+str(id_)+'\t'+title+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							    f.write(s+'\r\n')
+							    f.close()
+							else:
+							    s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'0'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							    f.write(s+'\r\n')
+							    f.close()
+					else:
+						with codecs.open('tuniu_question_answer.txt','a+','utf-8') as f:
+							if desc == '' :
+		
+							    s = ('1'+'\t'+'qid:'+str(id_)+'\t'+title+'\t'+answer_content+'\t'+'1'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							    f.write(s+'\r\n')
+							    f.close()
+							else:
+							    s = ('1'+'\t'+'qid:'+id_+'\t'+title+'#'+desc+'\t'+answer_content+'\t'+'1'+'\t'+str(like)).strip().replace('\n','').replace('\r','')
+							    f.write(s+'\r\n')
+							    f.close()
 
 
-test()
+args = ['xxxx','aaa','a']
+pool = tp.ThreadPool(20)
+reqs = tp.makeRequests(test, args)
+[pool.putRequest(req) for req in reqs]
+pool.wait
