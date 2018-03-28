@@ -56,7 +56,7 @@ def test():
 	f1 = open('baiduzhidao_url_list_3.txt','rb')
 	i = 1
 	for url in f1.readlines():
-		id_ = url[34:-7]
+		id_ = url[33:-7]
 		if id_ not in id_list:
 			id_list.append(id_)
 			while True:
@@ -65,7 +65,7 @@ def test():
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
 					s.keep_alive = False
-					sleep(10)
+					sleep(5)
 					break
 
 
@@ -73,8 +73,10 @@ def test():
 					print('let us go  sleep!!!')
 					sleep(20)
 					print('ogo')
-					continue	
+					continue
+
 			try:
+
 				html = r.content.decode("utf-8")  # 解码
 				html = re.sub(r'<br[ ]?/?>', '\n', html)
 				selector = etree.HTML(html)
@@ -94,7 +96,7 @@ def test():
 				if question_desc == []:
 					desc = selector.xpath('//div[@class="wgt-question-desc-inner"]')
 					if desc == []:
-						print(url+'desc 空')
+						print(url+'desc empty')
 						desc = ''
 					else:
 						desc = selector.xpath('//div[@class="wgt-question-desc-inner"]')[0].xpath('string(.)').strip()
@@ -177,13 +179,19 @@ def test():
 							requests.adapters.DEFAULT_RETRIES = 5
 							s = requests.session()
 							s.keep_alive = False
-							sleep(10)
+							sleep(5)
 							break
 						except:
 							print('let us go  sleep!!!')
 							sleep(20)
 							print('ogo')
 							continue
+					len_content = len(r2.content)
+					print(len_content)
+					if len_content == 13 or len_content == 47 or len_content == 404:
+						break
+					else:
+						pass
 					try:
 						html2 = r2.content.decode("utf-8")  # 解码
 						html2 = re.sub(r'<br[ ]?/?>', '\n', html2)
@@ -222,7 +230,7 @@ def test():
 																	else:
 																		s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'#'+desc+'\t'+title[0].xpath('string(.)').strip()+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 																		f.write(s+'\r\n')
-																		f.close()										
+																		f.close()
 
 
 										else:
@@ -271,17 +279,15 @@ def test():
 
 					except:
 						print('utf-8 erro'+r2_url)
+
 			except:
-				print('utf-8 erro '+url)
+				print('utf-8 erro'+url)
 
 
 
 
 
-test()	
-# args = ['xxxx','aaa','a']
-# pool = tp.ThreadPool(20)
-# reqs = tp.makeRequests(test, args)
-# [pool.putRequest(req) for req in reqs]
-# pool.wait()
+
+test()
+
 		
