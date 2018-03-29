@@ -26,6 +26,7 @@ url_list=[]
 id_list = []
 from requests.adapters import HTTPAdapter
 from time import sleep
+from urllib import quote
 s = requests.Session()
 s.mount('http://', HTTPAdapter(max_retries=5))
 s.mount('https://', HTTPAdapter(max_retries=5))
@@ -36,7 +37,6 @@ headers = {
 	'Accept-Language': 'zh-CN,zh;q=0.9',
 	'Cache-Control': 'max-age=0',	
 	'Connection': 'keep-alive',
-	'Cookie': 'BAIDUID=D36E55B433347B48F9BFE6BD1CB48B62:FG=1; BIDUPSID=D36E55B433347B48F9BFE6BD1CB48B62; PSTM=1521028828; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; H_PS_PSSID=1446_21101_22158; Hm_lvt_6859ce5aaf00fb00387e6434e4fcc925=1521090106; Hm_lpvt_6859ce5aaf00fb00387e6434e4fcc925=1521090106; PSINO=2; Hm_lvt_16bc67e4f6394c05d03992ea0a0e9123=1521090535; Hm_lpvt_16bc67e4f6394c05d03992ea0a0e9123=1521090535',
 	'Host': 'zhidao.baidu.com',
 	'Upgrade-Insecure-Requests': '1',
 	'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
@@ -47,7 +47,6 @@ header = {
 	'Accept-Encoding': 'gzip, deflate, br',
 	'Accept-Language': 'zh-CN,zh;q=0.9',
 	'Connection': 'keep-alive',
-	'Cookie': 'BAIDUID=D36E55B433347B48F9BFE6BD1CB48B62:FG=1; BIDUPSID=D36E55B433347B48F9BFE6BD1CB48B62; PSTM=1521028828; BDORZ=AE84CDB3A529C0F8A2B9DCDD1D18B695; IKUT=2933; H_PS_PSSID=1446_21101_22158; Hm_lvt_16bc67e4f6394c05d03992ea0a0e9123=1521979881,1521983621,1522026279,1522026618; Hm_lpvt_16bc67e4f6394c05d03992ea0a0e9123=1522026726; PSINO=2; Hm_lvt_6859ce5aaf00fb00387e6434e4fcc925=1522026240,1522026245,1522026611,1522027070; Hm_lpvt_6859ce5aaf00fb00387e6434e4fcc925=1522027343; PMS_JT=%28%7B%22s%22%3A1522027345835%2C%22r%22%3A%22https%3A//zhidao.baidu.com/search%3Fword%3D%25C8%25D5%25B1%25BE%25B1%25D8%25C8%25A5%25CA%25AE%25B4%25F3%25BE%25B0%25B5%25E3%25C5%25C5%25C3%25FB%26ie%3Dgbk%26site%3D-1%26sites%3D0%26date%3D4%26pn%3D750%22%7D%29',
 	'Host': 'zhidao.baidu.com',
 	'Upgrade-Insecure-Requests': '1',
 	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
@@ -63,8 +62,16 @@ topics = ['去日本旅游要多少钱','日本必去十大景点排名','日本
 	'日本旅游北海道自由行','日本攻略购物篇','日本旅游攻略 冬季','日本旅行攻略','日本攻略 自由行','大阪晚上好玩的地方','大阪附近好玩的地方','大阪附近有什么好玩的','大阪有啥好玩的地方','千叶有哪些好玩的地方','奈良有什么好玩的',
 	'日本 奈良 鹿','日本永谷园','日本 必买 吃','去日本有历史的地方','东京有名的地方','东京必去的景点','东京哪些地方好玩','元旦到东京哪里好玩','大阪有哪些好玩的地方','东京购物去哪些地方好','京都有什么好玩的地方',
 	'日本度假城市','日本特色建筑有哪些','日本最好玩的城市','日本最值得去的地方','日本关西包括哪些城市','日本哪个海港城市好玩','日本大阪周边城市','北海道必去的地方','日本的温泉哪里最好','日本值得去的旅游名胜','东京哪些地方值得去','日本必去的几大景点','日本有意义的地方',]
+
+
+topics2 = []
 def test(xxx):
-	for topic in topics:
+	f =open('baiduzhidao_topics_list_1.txt','rb')
+	for line in f.readlines():
+		line = line.replace('\n','').replace('\r','').strip()
+		if line not in topics2:
+			topics2.append(line)
+	for topic in topics2:
 		for i in range(0,770,10):
 			url = 'https://zhidao.baidu.com/search?word='+topic+'&pn='+str(i)
 			while True:
@@ -92,12 +99,69 @@ def test(xxx):
 				# url = 'https://zhidao.baidu.com/question/1732180052597957147.html'
 				link = link[:link.index('?fr')]
 				print(link)
-				with codecs.open('baiduzhidao_url_list_3.txt','a+','utf-8') as f :
+				with codecs.open('baiduzhidao_url_list_4.txt','a+','utf-8') as f :
 						f.write(link+'\r\n')
 						f.close()
-args = ['xxxx']
-pool = tp.ThreadPool(20)
+
+topics_list = []
+def test2(xxx):
+	with open('baiduzhidao_topics_list_1.txt','rb') as f :
+		for line in f.readlines():
+			url = 'https://m.baidu.com/sf/vsearch?pd=wenda_tab&word='+quote(line)+'&tn=vsearch&sa=vs_tab&lid=6674709264707130762&ms=1&from=1012015a'
+			response = requests.get(url,headers=headers,timeout=20,verify=False)
+			requests.adapters.DEFAULT_RETRIES = 5
+			s = requests.session()
+			s.keep_alive = False
+			html = response.content # 解码
+			html = re.sub(r'<br[ ]?/?>', '\n', html)
+			selector = etree.HTML(html)	
+			topics = selector.xpath('//div[@class="c-result sfc-log"]/div/article/div/div/div')
+			for topic in topics:
+				topic = topic.xpath('string(.)').strip()
+				if topic not in topics_list:
+					topics_list.append(topic)
+					with codecs.open('baiduzhidao_topics_list_1.txt','a+','utf-8') as f1:
+
+						# f1 = open('baiduzhidao_topics_list.txt','a+')
+						f1.write(topic+'\n')
+						f1.close()
+
+	f.close()
+
+
+	print(topics)
+
+topics_list_has = []
+def test3(xx):
+	f= open('baiduzhidao_topics_list_1.txt','rb')
+	for line in f.readlines():
+		line = line.replace('\n','').replace('\r','').strip()
+		if line not in topics_list_has:
+			topics_list_has.append(line)
+			f1 = open('topics_list_has.txt','a+')
+			f1.write(line+'\n')
+			f1.close()
+			print(line)
+
+	f.close()
+def test4(xx):
+	with codecs.open('baiduzhidao_topics_list_1.txt','a+','utf-8') as f :
+		for line in f.readlines():
+			line = line.replace('\n','').replace('\r','').strip()
+			if line not in topics_list_has:
+				topics_list_has.append(line)
+				with codecs.open('topics_list_has.txt','a+','utf-8') as f1:
+					f1.write(line+'\n')
+					f1.close()
+
+	f.close()
+
+
+
+
+args = ['xxxx','aa','aaa']
+pool = tp.ThreadPool(10)
 reqs = tp.makeRequests(test, args)
 [pool.putRequest(req) for req in reqs]
 pool.wait()
-		
+# test2()

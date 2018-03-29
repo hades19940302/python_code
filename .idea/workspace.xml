@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file leaf-file-name="zhidai_detail.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zhidai_detail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="292" column="12" lean-forward="false" selection-start-line="292" selection-start-column="12" selection-end-line="292" selection-end-column="12" />
+            <state relative-caret-position="662">
+              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
               <folding>
                 <element signature="e#3291#3462#0" expanded="false" />
                 <element signature="e#3796#4038#0" expanded="false" />
@@ -41,8 +41,18 @@
       <file leaf-file-name="baiduzhidao_url_list_3.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_3.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="3555" column="52" lean-forward="false" selection-start-line="3555" selection-start-column="33" selection-end-line="3555" selection-end-column="52" />
+            <state relative-caret-position="-8380">
+              <caret line="6847" column="47" lean-forward="false" selection-start-line="6847" selection-start-column="33" selection-end-line="6847" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhidao_question_to_question_man.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhidao_question_to_question_man.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-729613">
+              <caret line="405" column="48" lean-forward="false" selection-start-line="405" selection-start-column="48" selection-end-line="405" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -61,8 +71,12 @@
     <findStrings>
       <find>utf-8</find>
       <find>878466969976922412</find>
-      <find>print</find>
       <find>2122469108966842507</find>
+      <find>52428610</find>
+      <find>151177</find>
+      <find>2078290</find>
+      <find>print</find>
+      <find>13725124120512</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -832,40 +846,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zhidao_question_to_question_man.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3500">
-          <caret line="405" column="48" lean-forward="false" selection-start-line="405" selection-start-column="48" selection-end-line="405" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zhidao_question_to_answer_man.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
+        <state relative-caret-position="-829723">
           <caret line="112" column="26" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="3555" column="52" lean-forward="false" selection-start-line="3555" selection-start-column="33" selection-end-line="3555" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="292" column="12" lean-forward="false" selection-start-line="292" selection-start-column="12" selection-end-line="292" selection-end-column="12" />
+        <state relative-caret-position="662">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
           <folding>
             <element signature="e#3291#3462#0" expanded="false" />
             <element signature="e#3796#4038#0" expanded="false" />
             <element signature="e#4131#5645#0" expanded="false" />
             <element signature="e#6619#7174#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8380">
+          <caret line="6847" column="47" lean-forward="false" selection-start-line="6847" selection-start-column="33" selection-end-line="6847" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidao_question_to_question_man.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729613">
+          <caret line="405" column="48" lean-forward="false" selection-start-line="405" selection-start-column="48" selection-end-line="405" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
