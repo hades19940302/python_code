@@ -55,7 +55,10 @@ header = {
 def test():
 	f1 = open('baiduzhidao_url_list_3.txt','rb')
 	i = 1
-	for url in f1.readlines():
+	for url in f1.readlines()[:10]:
+		f3 = open('has.txt','a')
+		f3.write(url)
+		f3.close()
 		id_ = url[33:-7]
 		if id_ not in id_list:
 			id_list.append(id_)
@@ -286,8 +289,11 @@ def test():
 
 
 
-
-
 test()
 
+# args = ['xxxx','aa','xx','xxx','aaa']
+# pool = tp.ThreadPool(10)
+# reqs = tp.makeRequests(test6, args)
+# [pool.putRequest(req) for req in reqs]
+# pool.wait()
 

@@ -1,0 +1,5 @@
+args = ['xxxx']
+pool = tp.ThreadPool(10)
+reqs = tp.makeRequests(test6, args)
+[pool.putRequest(req) for req in reqs]
+pool.wait()

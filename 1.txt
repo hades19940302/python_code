@@ -1,1 +1,1 @@
-+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+http://zhidao.baidu.com/question/421839018.html
