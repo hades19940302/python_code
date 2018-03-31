@@ -53,7 +53,7 @@ header = {
 	}
 
 def test():
-	f1 = open('baiduzhidao_url_list_3.txt','rb')
+	f1 = open('baiduzhidao_url_list_sh.txt','rb')
 	i = 1
 	for url in f1.readlines():
 		id_ = url[33:-7]
@@ -65,7 +65,7 @@ def test():
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
 					s.keep_alive = False
-					sleep(5)
+					sleep(20)
 					break
 
 
@@ -179,7 +179,7 @@ def test():
 							requests.adapters.DEFAULT_RETRIES = 5
 							s = requests.session()
 							s.keep_alive = False
-							sleep(5)
+							sleep(20)
 							break
 						except:
 							print('let us go  sleep!!!')

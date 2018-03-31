@@ -198,11 +198,22 @@ def test6():
 		f1.write(line)
 		f1.close()
 	f.close()
+
+
+def test7(xx):
+	f= open('baiduzhidao_url_list_sh.txt','rb')
+	f1= open('baiduzhidao_url_list_sh_4.txt','a')
+	ids = []
+	for line in f.readlines()[30000:40833]:
+		id_ = line[33:-7]
+		if id_ not in ids:
+			ids.append(id_)
+			f1.write(line.replace('\r',''))
+	f1.close()
+	f.close()
 	
-test6()
 args = ['xxxx']
 pool = tp.ThreadPool(10)
-reqs = tp.makeRequests(test6, args)
+reqs = tp.makeRequests(test7, args)
 [pool.putRequest(req) for req in reqs]
 pool.wait()
-test2()

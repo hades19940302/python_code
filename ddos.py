@@ -55,11 +55,17 @@ def test(xx):
 					sleep(20)
 					print('ogo')
 					continue	
-				print(r)
+				html = r.content.decode("utf-8")  # 解码
+				html = re.sub(r'<br[ ]?/?>', '\n', html)
+				selector = etree.HTML(html)
+				question = selector.xpath('//div[@class="wgt-question-title"]/h2')
+				f = open('test.txt','a')
+				f.write(question[0].xpath('string(.)').strip())	
+				f.close()				
 
 
 
-args = ['xxxx','aaa','a']
+args = ['xxxx','aaa','a','aa','xx','xxx']
 pool = tp.ThreadPool(20)
 reqs = tp.makeRequests(test, args)
 [pool.putRequest(req) for req in reqs]
