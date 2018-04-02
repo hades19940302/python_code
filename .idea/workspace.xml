@@ -12,33 +12,65 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_code$ctrip2.coverage" NAME="ctrip2 Coverage Results" MODIFIED="1521174163963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$ctrip.coverage" NAME="ctrip Coverage Results" MODIFIED="1521173825718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$filter_repeat.coverage" NAME="filter_repeat Coverage Results" MODIFIED="1522648740587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$cut.coverage" NAME="cut Coverage Results" MODIFIED="1522389252504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail.coverage" NAME="zhidai_detail Coverage Results" MODIFIED="1522226182596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail__1_.coverage" NAME="zhidai_detail (1) Coverage Results" MODIFIED="1522228234043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$oshiete.coverage" NAME="oshiete Coverage Results" MODIFIED="1521422891985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$lvmama.coverage" NAME="lvmama Coverage Results" MODIFIED="1521168234879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$kNN2.coverage" NAME="kNN2 Coverage Results" MODIFIED="1522224352052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MachineLearning" />
+    <SUITE FILE_PATH="coverage/python_code$zhidao.coverage" NAME="zhidao Coverage Results" MODIFIED="1522640090164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
       <file leaf-file-name="zhidao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhidao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="2107">
+              <caret line="217" column="43" lean-forward="false" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sh_zhidao.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sh_zhidao.py">
+      <file leaf-file-name="关键字.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/关键字.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1047">
-              <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="-15920">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter_repeat.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filter_repeat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1370">
+              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baiduzhidao_topics_list_3.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baiduzhidao_topics_list_3.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baiduzhidao_url_list_5.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_5.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1873478">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,6 +142,11 @@
         <option value="$PROJECT_DIR$/zhidao_question__min_2.txt" />
         <option value="$PROJECT_DIR$/百度知道-问题和答案-敏感词过滤-part1.txt" />
         <option value="$PROJECT_DIR$/sh_zhidao.py" />
+        <option value="$PROJECT_DIR$/over/百度知道/part1/百度知道-问题和答案-敏感词过滤-part1.txt" />
+        <option value="$PROJECT_DIR$/zhidao.py" />
+        <option value="$PROJECT_DIR$/baiduzhidao_topics_list_2.txt" />
+        <option value="$PROJECT_DIR$/baiduzhidao_topics_list_3.txt" />
+        <option value="$PROJECT_DIR$/filter_repeat.py" />
       </list>
     </option>
   </component>
@@ -140,7 +177,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,6 +188,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cut">
+  <component name="RunManager" selected="Python.filter_repeat">
     <configuration name="cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,26 +240,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="kNN2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MachineLearning" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MachineLearning/kNN2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="oshiete" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="filter_repeat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -235,7 +253,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\git\python_code\scrapy\oshiete.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter_repeat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,6 +311,25 @@
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapy/zhidai_detail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="zhidao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhidao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -513,19 +550,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.python_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.oshiete" />
-      <item index="2" class="java.lang.String" itemvalue="Python.kNN2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zhidai_detail" />
-      <item index="4" class="java.lang.String" itemvalue="Python.zhidai_detail (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="1" class="java.lang.String" itemvalue="Python.zhidai_detail" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zhidai_detail (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="4" class="java.lang.String" itemvalue="Python.filter_repeat" />
+      <item index="5" class="java.lang.String" itemvalue="Python.zhidao" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cut" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zhidai_detail (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.zhidai_detail" />
-        <item index="3" class="java.lang.String" itemvalue="Python.kNN2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.oshiete" />
+        <item index="0" class="java.lang.String" itemvalue="Python.filter_repeat" />
+        <item index="1" class="java.lang.String" itemvalue="Python.zhidao" />
+        <item index="2" class="java.lang.String" itemvalue="Python.cut" />
+        <item index="3" class="java.lang.String" itemvalue="Python.zhidai_detail (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zhidai_detail" />
       </list>
     </recent_temporary>
   </component>
@@ -605,71 +642,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/百度知道-问题和答案-敏感词过滤-part1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10728">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhidao_question_to_question_man.txt" />
-    <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cut.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuniu_ect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cut.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhidao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidai_detail.py" />
     <entry file="file://$PROJECT_DIR$/zhidao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3015">
@@ -835,13 +808,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhidao_question_to_question_man.txt" />
-    <entry file="file://$PROJECT_DIR$/zhidai_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1437">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidai_detail.py" />
     <entry file="file://$PROJECT_DIR$/cut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
@@ -853,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="716">
           <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,38 +827,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/百度知道-问题和问题-敏感词过滤-part1.txt" />
+    <entry file="file://$PROJECT_DIR$/百度知道-问题和答案-敏感词过滤-part1.txt" />
+    <entry file="file://$PROJECT_DIR$/sh_zhidao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/百度知道-问题和问题-敏感词过滤-part1.txt">
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_topics_list_2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-501312">
-          <caret line="16758" column="157" lean-forward="false" selection-start-line="16758" selection-start-column="157" selection-end-line="16758" selection-end-column="157" />
+        <state relative-caret-position="-26972">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/百度知道-问题和答案-敏感词过滤-part1.txt">
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_topics_list_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638249">
-          <caret line="5534" column="0" lean-forward="false" selection-start-line="5534" selection-start-column="0" selection-end-line="5534" selection-end-column="0" />
+        <state relative-caret-position="-2700">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_topics_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34280">
+          <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/over/百度知道/part1/百度知道-问题和问题-敏感词过滤-part1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104600">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhidao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="2107">
+          <caret line="217" column="43" lean-forward="false" selection-start-line="217" selection-start-column="43" selection-end-line="217" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sh_zhidao.py">
+    <entry file="file://$PROJECT_DIR$/over/百度知道/part1/百度知道-问题和答案-敏感词过滤-part1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1047">
-          <caret line="52" column="1" lean-forward="false" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="391">
+          <caret line="8503" column="0" lean-forward="false" selection-start-line="8503" selection-start-column="0" selection-end-line="8503" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/关键字.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15920">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1873478">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiduzhidao_topics_list_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter_repeat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1370">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
           <folding />
         </state>
       </provider>

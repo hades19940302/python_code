@@ -64,6 +64,13 @@ topics = ['去日本旅游要多少钱','日本必去十大景点排名','日本
 	'日本度假城市','日本特色建筑有哪些','日本最好玩的城市','日本最值得去的地方','日本关西包括哪些城市','日本哪个海港城市好玩','日本大阪周边城市','北海道必去的地方','日本的温泉哪里最好','日本值得去的旅游名胜','东京哪些地方值得去','日本必去的几大景点','日本有意义的地方',]
 
 
+
+def test8():
+	for topic in topics:
+		f = open('baiduzhidao_topics_list_2.txt','a')
+		f.write(topic+'\n')
+		f.close()
+		pass
 topics2 = []
 def test(xxx):
 	f =open('baiduzhidao_topics_list_1.txt','rb')
@@ -211,9 +218,10 @@ def test7(xx):
 			f1.write(line.replace('\r',''))
 	f1.close()
 	f.close()
-	
-args = ['xxxx']
-pool = tp.ThreadPool(10)
-reqs = tp.makeRequests(test7, args)
-[pool.putRequest(req) for req in reqs]
-pool.wait()
+
+test8()
+# args = ['xxxx']
+# pool = tp.ThreadPool(10)
+# reqs = tp.makeRequests(test7, args)
+# [pool.putRequest(req) for req in reqs]
+# pool.wait()
