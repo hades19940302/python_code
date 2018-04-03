@@ -219,9 +219,40 @@ def test7(xx):
 	f1.close()
 	f.close()
 
-test8()
+# test8()
 # args = ['xxxx']
 # pool = tp.ThreadPool(10)
 # reqs = tp.makeRequests(test7, args)
 # [pool.putRequest(req) for req in reqs]
 # pool.wait()
+
+
+def test9():
+	
+	f = open('baiduzhidao_ids.txt','rb')
+
+	f1 = open('baiduzhidao_url_list_4.txt','rb')
+
+	for line in f1.readlines():
+
+		id_ = line[33:-7]
+
+		if id_ not in f.readlines():
+
+			if id_ not in id_list_2:
+
+				id_list_2.append(id_)
+
+				print(id_)
+
+				with codecs.open('baiduzhidao_ids_2.txt','a','utf-8') as f2:
+
+					f2.write(id_+'\n')
+
+					f2.close()
+
+				with codecs.open('baiduzhidao_url_list_5.txt','a','utf-8') as f3:
+
+					f3.write(line)
+
+					f3.close()

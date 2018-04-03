@@ -24,7 +24,6 @@ url_list=[]
 # url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
 flags = []
-for i in range()
 from requests.adapters import HTTPAdapter
 from time  import sleep
 s = requests.Session()
@@ -54,12 +53,12 @@ header = {
 	
 	}
 
-def test(xxx):
+def test():
 	f1 = open('baiduzhidao_url_list_3.txt','rb')
 	i = 1
 	for url in f1.readlines():
 		f3 = open('has.txt','a')
-		f3.write(url)
+		f3.write(url.replace('\r',''))
 		f3.close()
 		id_ = url[33:-7]
 		if id_ not in id_list:
@@ -290,10 +289,11 @@ def test(xxx):
 
 
 
+test()
 
-args = ['xxxx','aa','xx','xxx','aaa']
-pool = tp.ThreadPool(20)
-reqs = tp.makeRequests(test6, args)
-[pool.putRequest(req) for req in reqs]
-pool.wait()
+# args = ['xxxx']
+# pool = tp.ThreadPool(20)
+# reqs = tp.makeRequests(test, args)
+# [pool.putRequest(req) for req in reqs]
+# pool.wait()
 
