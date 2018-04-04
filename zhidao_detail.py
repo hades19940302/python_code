@@ -3,6 +3,7 @@
 # author=hades
 # oshiete urls
 from __future__ import print_function
+from __future__ import division
 from bs4 import BeautifulSoup
 import urllib
 import lxml
@@ -28,6 +29,10 @@ from time  import sleep
 s = requests.Session()
 s.mount('http://', HTTPAdapter(max_retries=5))
 s.mount('https://', HTTPAdapter(max_retries=5))
+
+proxys = ['61.135.217.7:80','122.114.31.177:808','119.29.103.13:8888','60.168.206.167:18118','119.28.138.104:3128',
+
+			'58.216.202.149:8118','27.40.134.218:61234']
 headers = {
 	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 	'Accept-Encoding': 'gzip, deflate, br',
@@ -52,19 +57,25 @@ header = {
 	
 	}
 
+
+
 def test():
 	f1 = open('baiduzhidao_url_list_sh.txt','rb')
 	i = 1
-	for url in f1.readlines():
+	for url in f1.readlines()[:1000]:
 		id_ = url[33:-7]
+		print(i)
+		if (i/200) == 0:
+			sleep(200)
 		if id_ not in id_list:
 			id_list.append(id_)
 			while True:
 				try:
-					r = requests.get(url,headers=headers,timeout=20,verify=False)
+					r = requests.get(url,headers=headers,proxies={"http":'http://167.99.48.250:8080'},timeout=20,verify=False)
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
 					s.keep_alive = False
+					i+=1
 					sleep(20)
 					break
 
@@ -122,7 +133,7 @@ def test():
 							if answers == []:
 								print(url+'answers erro')
 								answers = selector.xpath('//div[@class="full-content"]')
-								with codecs.open('zhidao_question_to_answer_man.txt','a+','utf-8') as f:
+								with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
 
 									if desc == '':
 										s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'\t'+answers[0].xpath('string(.)').strip()+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
@@ -139,7 +150,7 @@ def test():
 					if answers == [] or like == []:
 						print(url+'bingo answer erro')
 
-					with codecs.open('zhidao_question_to_answer_man.txt','a+','utf-8') as f:
+					with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
 							if desc == '':
 								s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'\t'+answers[0].xpath('string(.)').strip()+'\t'+'1'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 								f.write(s+'\r\n')
@@ -152,7 +163,7 @@ def test():
 
 				for r_question_list_title in r_question_list_titles:
 
-					with codecs.open('zhidao_question_to_question_man.txt','a+','utf-8') as f1:
+					with codecs.open('zhidao_question_to_question_man_proxy.txt','a+','utf-8') as f1:
 						if desc == '':
 							s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip()+'\t'+r_question_list_title.xpath('string(.)').strip()).strip().replace('\n','').replace('\r','')
 							f1.write(s+'\r\n')
@@ -175,10 +186,11 @@ def test():
 					}
 					while True:
 						try:
-							r2 = requests.get(r2_url,headers=headers2,timeout=50,verify=False)
+							r2 = requests.get(r2_url,headers=headers2,proxies=proxies,timeout=50,verify=False)
 							requests.adapters.DEFAULT_RETRIES = 5
 							s = requests.session()
 							s.keep_alive = False
+							i+=1
 							sleep(20)
 							break
 						except:
@@ -222,7 +234,7 @@ def test():
 															pass
 														else:
 
-															with codecs.open('zhidao_question_to_answer_man.txt','a+','utf-8') as f:
+															with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
 																	if desc == '':
 																		s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'\t'+title[0].xpath('string(.)').strip()+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 																		f.write(s+'\r\n')
@@ -244,7 +256,7 @@ def test():
 														pass
 													else:
 
-														with codecs.open('zhidao_question_to_answer_man.txt','a+','utf-8') as f:
+														with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
 																if desc == '':
 																	s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'\t'+title[0].xpath('string(.)').strip()+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 																	f.write(s+'\r\n')
@@ -265,7 +277,7 @@ def test():
 													pass
 												else:
 
-													with codecs.open('zhidao_question_to_answer_man.txt','a+','utf-8') as f:
+													with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
 
 															if desc == '':
 																s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip()+'\t'+title[0].xpath('string(.)').strip()+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
