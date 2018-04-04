@@ -185,8 +185,8 @@ def test(xx):
 	flag = 5
 	for url in f1.readlines()[:500]:
 		id_ = url[33:-7]
-		# url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
-		url = 'http://icanhazip.com/'
+		url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
+		# url = 'http://icanhazip.com/'
 		f_has_read = open('has_read.txt','a')
 		f_has_read.write(url.replace('\r','')+'\n')
 		f_has_read.close()
@@ -204,8 +204,12 @@ def test(xx):
 			while True:
 				try:
 					start = time.time()
-					proxy = random.choice(proxys)
-					response = requests.get(url,timeout=20,verify=False,proxies={"http":"http://"+proxy})
+					try:
+						proxy = random.choice(proxys)
+						response = requests.get(url,timeout=20,headers=headers,verify=False,proxies={"http":"http://"+proxy})
+
+					except:
+						continue
 					html = response.content.decode('utf-8')
 					requests.adapters.DEFAULT_RETRIES = 5
 					if response.status_code != 200:
@@ -216,9 +220,11 @@ def test(xx):
 					end = time.time()
 					print(str(flag)+':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
 					flag = flag + 1
+					print(response)
 					sleep(random.randint(10,20))
 					break
 				except:
+					print('switch proxy')
 					continue
 
 			html = re.sub(r'<br[ ]?/?>', '\n', html)
@@ -317,8 +323,12 @@ def test(xx):
 				}
 				while True:
 					try:
-						r2 = requests.get(r2_url, headers=headers2, timeout=10, verify=False)
+						proxy = random.choice(proxys)
+						r2 = requests.get(r2_url, headers=headers2,proxies={"http":"http://"+proxy} ,timeout=10, verify=False)
 						html2 = r2.content.decode('utf-8')
+						if r2.status_code != 200:
+							proxys.remove(proxy)
+							continue
 						len_content = len(r2.content)
 						requests.adapters.DEFAULT_RETRIES = 5
 						s = requests.session()
