@@ -82,9 +82,9 @@ for proxy in proxy_list:
 		proxys.append(proxy)
 
 def test(xx):
-	f1 = open('baiduzhidao_url_list.txt','rb')
+	f1 = open('baiduzhidao_url_list_sh.txt','rb')
 	flag = 5
-	for url in f1.readlines():
+	for url in f1.readlines()[:10]:
 		id_ = url[33:-7]
 		url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
 		f_has_read = open('has_read.txt','a')

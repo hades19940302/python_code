@@ -10,46 +10,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_code$ctrip2.coverage" NAME="ctrip2 Coverage Results" MODIFIED="1521174163963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$ctrip.coverage" NAME="ctrip Coverage Results" MODIFIED="1521173825718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1522805113244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
-    <SUITE FILE_PATH="coverage/python_code$zhidao_detail.coverage" NAME="zhidao_detail Coverage Results" MODIFIED="1522806115661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
-    <SUITE FILE_PATH="coverage/python_code$filter_repeat.coverage" NAME="filter_repeat Coverage Results" MODIFIED="1522648740587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$cut.coverage" NAME="cut Coverage Results" MODIFIED="1522389252504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail.coverage" NAME="zhidai_detail Coverage Results" MODIFIED="1522226182596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail__1_.coverage" NAME="zhidai_detail (1) Coverage Results" MODIFIED="1522228234043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$oshiete.coverage" NAME="oshiete Coverage Results" MODIFIED="1521422891985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$lvmama.coverage" NAME="lvmama Coverage Results" MODIFIED="1521168234879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$kNN2.coverage" NAME="kNN2 Coverage Results" MODIFIED="1522224352052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MachineLearning" />
     <SUITE FILE_PATH="coverage/python_code$zhidao.coverage" NAME="zhidao Coverage Results" MODIFIED="1522640090164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$ctrip2.coverage" NAME="ctrip2 Coverage Results" MODIFIED="1521174163963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$ctrip.coverage" NAME="ctrip Coverage Results" MODIFIED="1521173825718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$zhidao_detail.coverage" NAME="zhidao_detail Coverage Results" MODIFIED="1522806115661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
+    <SUITE FILE_PATH="coverage/python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1522813474665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
+    <SUITE FILE_PATH="coverage/python_code$zhidao_detail_sh_2.coverage" NAME="zhidao_detail_sh_2 Coverage Results" MODIFIED="1522817323096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
+    <SUITE FILE_PATH="coverage/python_code$filter_repeat.coverage" NAME="filter_repeat Coverage Results" MODIFIED="1522648740587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$oshiete.coverage" NAME="oshiete Coverage Results" MODIFIED="1521422891985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_code$lvmama.coverage" NAME="lvmama Coverage Results" MODIFIED="1521168234879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file leaf-file-name="zhidao_detail.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail.py">
+      <file leaf-file-name="zhidao_detail_sh_2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3020">
-              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+            <state relative-caret-position="738">
+              <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding>
-                <element signature="e#67#104#0" expanded="true" />
-                <element signature="e#4836#5003#0" expanded="false" />
-                <element signature="e#5330#5538#0" expanded="false" />
-                <element signature="e#5627#7197#0" expanded="false" />
-                <element signature="e#7212#8182#0" expanded="false" />
-                <element signature="e#8246#8884#0" expanded="false" />
+                <element signature="e#6304#6630#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zhidao_detail_sh_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py">
+      <file leaf-file-name="zhidao_question_to_answer_man_proxy.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8208">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="893">
+              <caret line="30" column="76" lean-forward="false" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="has_read.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPOOL/has_read.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -95,6 +101,7 @@
       <find>print</find>
       <find>i</find>
       <find>204</find>
+      <find>question</find>
     </findStrings>
     <replaceStrings>
       <replace>https</replace>
@@ -139,8 +146,9 @@
         <option value="$PROJECT_DIR$/IPOOL/zhidao_question_to_question_man_proxy.txt" />
         <option value="$PROJECT_DIR$/IPOOL/has_read.txt" />
         <option value="$PROJECT_DIR$/IPOOL/dps.txt" />
-        <option value="$PROJECT_DIR$/IPOOL/test.py" />
         <option value="$PROJECT_DIR$/IPOOL/zhidao_detail.py" />
+        <option value="$PROJECT_DIR$/IPOOL/test.py" />
+        <option value="$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py" />
       </list>
     </option>
   </component>
@@ -150,7 +158,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
@@ -220,26 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zhidao_detail">
-    <configuration name="cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cut.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.zhidao_detail_sh_2">
     <configuration name="filter_repeat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,6 +319,25 @@
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IPOOL/zhidao_detail.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="zhidao_detail_sh_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IPOOL" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -550,19 +558,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.python_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cut" />
-      <item index="2" class="java.lang.String" itemvalue="Python.filter_repeat" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zhidao" />
-      <item index="4" class="java.lang.String" itemvalue="Python.zhidao_detail" />
-      <item index="5" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.filter_repeat" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zhidao" />
+      <item index="3" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="5" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+        <item index="0" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
         <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.filter_repeat" />
-        <item index="3" class="java.lang.String" itemvalue="Python.zhidao" />
-        <item index="4" class="java.lang.String" itemvalue="Python.cut" />
+        <item index="2" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+        <item index="3" class="java.lang.String" itemvalue="Python.filter_repeat" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zhidao" />
       </list>
     </recent_temporary>
   </component>
@@ -583,7 +591,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -851,24 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/has_read.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="54" selection-end-column="28" />
-          <folding>
-            <element signature="e#89#103#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IPOOL/baiduzhidao_url_list_sh.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -877,10 +867,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt">
+    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="-252">
+          <caret line="86" column="33" lean-forward="false" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+          <folding>
+            <element signature="e#67#104#0" expanded="true" />
+            <element signature="e#4844#5011#0" expanded="false" />
+            <element signature="e#5338#5546#0" expanded="false" />
+            <element signature="e#5635#7205#0" expanded="false" />
+            <element signature="e#7220#8190#0" expanded="false" />
+            <element signature="e#8254#8892#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPOOL/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -893,25 +898,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py">
+    <entry file="file://$PROJECT_DIR$/IPOOL/has_read.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8208">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail.py">
+    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3020">
-          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+        <state relative-caret-position="893">
+          <caret line="30" column="76" lean-forward="false" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
           <folding>
-            <element signature="e#67#104#0" expanded="true" />
-            <element signature="e#4836#5003#0" expanded="false" />
-            <element signature="e#5330#5538#0" expanded="false" />
-            <element signature="e#5627#7197#0" expanded="false" />
-            <element signature="e#7212#8182#0" expanded="false" />
-            <element signature="e#8246#8884#0" expanded="false" />
+            <element signature="e#6304#6630#0" expanded="false" />
           </folding>
         </state>
       </provider>

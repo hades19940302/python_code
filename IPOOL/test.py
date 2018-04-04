@@ -32,7 +32,7 @@ def test():
             if proxy not in proxys:
                 proxys.append(proxy)
     while True:
-        url = 'http://zhidao.baidu.com'
+        url = 'http://zhidao.baidu.com/question/749768299961312012.html?fr=iks&ie=utf-8'
         # try:
         flag = flag + 1
         start = time.time()
@@ -54,7 +54,7 @@ def test():
         s = requests.session()
         s.keep_alive = False
         # html = gzipper.read()
-        print(response.content)
+        print(response)
         end = time.time()
         print('succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
         break
@@ -62,5 +62,31 @@ def test():
         #     continue
 
 
-test()
+def test_proxy():
 
+    # 要访问的目标网页
+    page_url = "http://zhidao.baidu.com/"
+
+    # 代理服务器
+    proxy = "175.146.94.156:60034"
+
+    # 用户名和密码(私密代理/独享代理)
+    # username = "myusername"
+    # password = "mypassword"
+
+    req = urllib2.Request(page_url)
+    req.add_header("Accept-Encoding", "Gzip")  # 使用gzip压缩传输数据让访问更快
+    # req.add_header("Proxy-Authorization", "Basic %s" % base64.b64encode(b'%s:%s' % (username, password)))
+    req.set_proxy(proxy, "http")
+    r = urllib2.urlopen(req)
+
+    print r.code
+    content_encoding = r.headers.getheader("Content-Encoding")
+    if content_encoding and "gzip" in content_encoding:
+        print zlib.decompress(r.read(), 16 + zlib.MAX_WBITS)  # 获取页面内容
+    else:
+        print r.read()
+
+
+
+test_proxy()
