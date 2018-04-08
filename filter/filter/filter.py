@@ -9,32 +9,32 @@ sys.setdefaultencoding('utf8')
 import codecs
 import threadpool as tp
 ids = []
-# def test():
-# 	f = codecs.open('jiang2qq.txt','rb','utf-8')
-# 	for line in f.readlines():
-# 		try:
-# 			tt = line.index('\t',2)
-# 			index = line[6:tt]
-# 			if index not in ids:
-# 				ids.append(index)
-# 				tt2 = line.index('\t',(tt+1))
-# 				print(line[:(tt2)])
-# 				f1= codecs.open('zhidao_question_to_answer_man.txt','rb','utf-8')
-# 				for line1 in f1.readlines():
-# 					if index in line1:
-# 						f3 = codecs.open('zhidao_question_to_answer_man_new_3.txt','a','utf-8')
-# 						s= line1.replace('\r','').replace(line1[:tt2],line[:tt2])
-# 						f3.write(s)
-# 						f3.close()
-# 					else:
-# 						continue
+def test():
+	f = codecs.open('liqa17837.txt','rb','utf-8')
+	for line in f.readlines():
+		try:
+			tt = line.index('\t',2)
+			index = line[6:tt]
+			if index not in ids:
+				ids.append(index)
+				tt2 = line.index('\t',(tt+1))
+				print(line[:(tt2)])
+				f1= codecs.open('zhidao_question_to_answer_man.txt','rb','utf-8')
+				for line1 in f1.readlines():
+					if index in line1:
+						f3 = codecs.open('zhidao_question_to_answer_man_new_3.txt','a','utf-8')
+						s= line1.replace('\r','').replace(line1[:tt2],line[:tt2])
+						f3.write(s)
+						f3.close()
+					else:
+						continue
 
-# 				f1.close()
-# 			else:
-# 				continue
-# 		except:
-# 			continue
-# 	f.close()
+				f1.close()
+			else:
+				continue
+		except:
+			continue
+	f.close()
 
 
 mingan_list = []
@@ -104,6 +104,25 @@ def test2():
 
 	f.close()
 
+
+def filter_by_qid():
+	f = codecs.open('liqa17837.txt','rb','utf-8')
+	for line in f.readlines():
+		tt = line.index('\t',2)
+		index = line[6:tt]
+		if index not in ids:
+			ids.append(index)
+			print(index)
+			f1 = open('part1_answ_ques.txt','rb')
+			for line1 in f1.readlines():
+				if line1.find(index) != -1:
+					f2 = open('liqa17837_ques_answ_filter_by_qid.txt','a')
+					f2.write(line1.replace('\r',''))
+					f2.close()
+
+	f.close()
+	f1.close()
+
 def test3():
 	with codecs.open('part2_min_topic.txt','rb') as f:
 		for line in f.readlines():
@@ -131,4 +150,21 @@ def test3():
 
 	f.close()
 
-test2()
+# test2()
+
+# filter_by_qid()
+topics = [u'日本',u'京都',u'富士山',u'横滨',u'奈良',u'冲绳',u'北海道',u'名古屋',u'福冈',u'神户',u'涩谷',u'新宿',u'札幌',u'洞爷湖',u'函馆',u'镰仓',
+		  u'濑户内海', u'鹿儿岛', u'富良野', u'千叶', u'静冈', u'JR', u'新干线', u'银座', u'表参道', u'药妆店',]
+def filter_by_min():
+	with codecs.open('qiu_zhidao_question_answer_topic.txt','rb') as f :
+		for line in f.readlines():
+			line = line.replace('\n','').replace('\r','').strip()
+			print(line)
+			for  topic in topics:
+				if line.find(topic) != -1:
+					f1 = open('qiu_zhidao_question_answer_topic_min.txt','a')
+					f1.write(line+'\n')
+					f1.close()
+					break
+				else:
+					continue
