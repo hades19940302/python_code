@@ -153,6 +153,20 @@ def test3():
 # test2()
 
 # filter_by_qid()
+
+texts = []
+def filter_repeat():
+	f = open('liqa17837_ques_answ_filter_by_qid.txt','r')
+	for line in f.readlines():
+		line = line.replace('\r','').replace('\n','').strip()
+		if line not in texts:
+			texts.append(line)
+			f = open('part1.txt','a')
+			f.write(line+'\n')
+			f.close()
+
+filter_repeat()
+
 topics = [u'日本',u'京都',u'富士山',u'横滨',u'奈良',u'冲绳',u'北海道',u'名古屋',u'福冈',u'神户',u'涩谷',u'新宿',u'札幌',u'洞爷湖',u'函馆',u'镰仓',
 		  u'濑户内海', u'鹿儿岛', u'富良野', u'千叶', u'静冈', u'JR', u'新干线', u'银座', u'表参道', u'药妆店',]
 def filter_by_min():
