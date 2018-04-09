@@ -108,7 +108,7 @@ filter_by_qid()
 
 
 
-filter_by_qid()
+# filter_by_qid()
 
 
 
@@ -121,14 +121,14 @@ mingan = [u'买B啊:18岁的日本妞30元RMB一炮',u'充气娃娃',u'日本人
 		  u'你老母',]
 topics = [u'日本',u'京都',u'富士山',u'横滨',u'奈良',u'冲绳',u'北海道',u'名古屋',u'福冈',u'神户',u'涩谷',u'新宿',u'札幌',u'洞爷湖',u'函馆',u'镰仓',
 		  u'濑户内海', u'鹿儿岛', u'富良野', u'千叶', u'静冈', u'JR', u'新干线', u'银座', u'表参道', u'药妆店',]
-def test2():
-	with codecs.open('part2.txt','rb') as f :
+def filter_by_topics():
+	with codecs.open('zhidao_question_to_answer_man.txt','rb') as f :
 		for line in f.readlines():
 			line = line.replace('\n','').replace('\r','').strip()
 			print(line)
 			for  topic in topics:
 				if line.find(topic) != -1:
-					f1 = open('part2_min_topic.txt','a')
+					f1 = open('zhidao_question_to_answer_man_topics.txt','a')
 					f1.write(line+'\n')
 					f1.close()
 					break
@@ -137,6 +137,8 @@ def test2():
 				# line1 = line1.decode('utf8')topic
 
 	f.close()
+
+filter_by_topics()
 
 def test3():
 	with codecs.open('part2_min_topic.txt','rb') as f:
