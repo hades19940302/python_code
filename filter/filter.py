@@ -81,17 +81,18 @@ def filter_by_qid():
 	for line in f.readlines():
 		tt = line.index('\t',2)
 		id_ = line[6:tt]
-		flag = line[:-line[::-1].index('\t')]
+		flag = line.index(line[:-line[::-1].index('\t')])
+		index = line[:-line[::-1].index('\t')]
 		if id_ not in ids_qid:
 			answers = []
 			ids_qid.append(id_)
 			f1 = open('part1_min.txt','rb')
 			for line1 in f1.readlines():
 				if line1.find(id_) != -1:
-					if line1[len(flag):].replace('\r', '') not in answers:
-						answers.append(line1[len(flag):].replace('\r', ''))
-						f = open('part1_min_filter_by_qid_3.txt','a')
-						f.write(flag+line1[len(flag):].replace('\r',''))
+					if line1[flag:].replace('\r', '') not in answers:
+						answers.append(line1[flag:].replace('\r', ''))
+						f = open('part1_min_filter_by_qid_4.txt','a')
+						f.write(index+line1[flag:].replace('\r',''))
 						f.close()
 
 			f1.close()
@@ -99,6 +100,7 @@ def filter_by_qid():
 
 
 	f.close()
+
 
 filter_by_qid()
 
