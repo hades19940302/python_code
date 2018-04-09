@@ -241,7 +241,7 @@ def test(xx):
 				end = time.time()
 				print(str(flag)+':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
 				flag = flag + 1
-				print(response)
+				sleep(random.randint(1,30))
 				break
 			except:
 				print('switch proxy')
@@ -354,6 +354,7 @@ def test(xx):
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
 					s.keep_alive = False
+					sleep(random.randint(1,30))
 					break
 				except:
 					continue

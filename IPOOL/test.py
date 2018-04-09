@@ -88,7 +88,44 @@ def test_proxy():
         print r.read()
 
 
+headers = {
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+}
+from time import sleep
+proxys = []
+def test_https():
+    flag = 5
+    url = 'https://icanhazip.com/'
+    try:
+        r_proxy = requests.get(
+            'http://ent.kuaidaili.com/api/getproxy/?orderid=938176699822329&num=1000&quality=2&sort=1&format=json')
+        json_data = json.loads(r_proxy.content)
+        data = json_data['data']
+        proxy_list = data['proxy_list']
+    except:
+        pass
+    for proxy in proxy_list:
+        if proxy not in proxys:
+            proxys.append(proxy)
+    while True:
+        start = time.time()
+        proxy = random.choice(proxys)
+        response = requests.get(url, timeout=5, headers=headers, verify=False, proxies={"https": "http://" + proxy})
+        html = response.content.decode('utf-8')
+        requests.adapters.DEFAULT_RETRIES = 5
+        if response.status_code != 200:
+            proxys.remove(proxy)
+            continue
+        s = requests.session()
+        s.keep_alive = False
+        end = time.time()
+        print(str(flag) + ':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
+        print(response.content)
+        flag = flag + 1
+        sleep(random.randint(1, 30))
+        break
 
 # test_proxy()
 
+test_https()
 
