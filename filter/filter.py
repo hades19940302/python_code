@@ -77,22 +77,21 @@ def getCoding(strInput):
 ids_qid = []
 
 def filter_by_qid():
+	# by qid
 	f = open('li7144.txt','rb')
 	for line in f.readlines():
 		tt = line.index('\t',2)
 		id_ = line[6:tt]
-		flag = line.index(line[:-line[::-1].index('\t')])
-		index = line[:-line[::-1].index('\t')]
 		if id_ not in ids_qid:
 			answers = []
 			ids_qid.append(id_)
 			f1 = open('part1_min.txt','rb')
 			for line1 in f1.readlines():
 				if line1.find(id_) != -1:
-					if line1[flag:].replace('\r', '') not in answers:
-						answers.append(line1[flag:].replace('\r', ''))
-						f = open('part1_min_filter_by_qid_4.txt','a')
-						f.write(index+line1[flag:].replace('\r',''))
+					if line1 not in answers:
+						answers.append(line1)
+						f = open('part1_min_filter_by_qid_7.txt','a')
+						f.write(line1.replace('\r',''))
 						f.close()
 
 			f1.close()
@@ -140,7 +139,7 @@ def filter_by_topics():
 
 	f.close()
 
-filter_by_topics()
+# filter_by_topics()
 
 def test3():
 	with codecs.open('part2_min_topic.txt','rb') as f:
