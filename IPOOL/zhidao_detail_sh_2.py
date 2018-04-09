@@ -228,7 +228,7 @@ def test(xx):
 				start = time.time()
 				try:
 					proxy = random.choice(proxys)
-					response = requests.get(url,timeout=20,headers=headers,verify=False,proxies={"http":"http://"+proxy})
+					response = requests.get(url,timeout=5,headers=headers,verify=False,proxies={"http":"http://"+proxy})
 				except:
 					continue
 				html = response.content.decode('utf-8')
@@ -345,7 +345,7 @@ def test(xx):
 			while True:
 				try:
 					proxy = random.choice(proxys)
-					r2 = requests.get(r2_url, headers=headers2,proxies={"http":"http://"+proxy} ,timeout=10, verify=False)
+					r2 = requests.get(r2_url, headers=headers2,proxies={"http":"http://"+proxy} ,timeout=5, verify=False)
 					html2 = r2.content.decode('utf-8')
 					if r2.status_code != 200:
 						proxys.remove(proxy)
