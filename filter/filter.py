@@ -75,6 +75,7 @@ def getCoding(strInput):
 
 
 ids_qid = []
+
 def filter_by_qid():
 	f = open('li7144.txt','rb')
 	for line in f.readlines():
@@ -82,15 +83,20 @@ def filter_by_qid():
 		id_ = line[6:tt]
 		flag = line[:-line[::-1].index('\t')]
 		if id_ not in ids_qid:
+			answers = []
 			ids_qid.append(id_)
 			f1 = open('part1_min.txt','rb')
 			for line1 in f1.readlines():
 				if line1.find(id_) != -1:
-					f = open('part1_min_filter_by_qid_2.txt','a')
-					f.write(flag+line1[len(flag):].replace('\r',''))
-					f.close()
+					if line1[len(flag):].replace('\r', '') not in answers:
+						answers.append(line1[len(flag):].replace('\r', ''))
+						f = open('part1_min_filter_by_qid_3.txt','a')
+						f.write(flag+line1[len(flag):].replace('\r',''))
+						f.close()
 
 			f1.close()
+
+
 
 	f.close()
 
