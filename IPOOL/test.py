@@ -15,6 +15,9 @@ import json
 import StringIO
 import gzip
 
+requests.packages.urllib3.disable_warnings()
+
+
 proxys = []
 def test():
     flag = 20
@@ -108,22 +111,25 @@ def test_https():
         if proxy not in proxys:
             proxys.append(proxy)
     while True:
-        start = time.time()
-        proxy = random.choice(proxys)
-        response = requests.get(url, timeout=5, headers=headers, verify=False, proxies={"https": "http://" + proxy})
-        html = response.content.decode('utf-8')
-        requests.adapters.DEFAULT_RETRIES = 5
-        if response.status_code != 200:
-            proxys.remove(proxy)
+        try:
+            start = time.time()
+            proxy = random.choice(proxys)
+            response = requests.get(url, timeout=5, headers=headers, verify=False, proxies={"https": "http://" + proxy})
+            html = response.content.decode('utf-8')
+            requests.adapters.DEFAULT_RETRIES = 5
+            if response.status_code != 200:
+                proxys.remove(proxy)
+                continue
+            s = requests.session()
+            s.keep_alive = False
+            end = time.time()
+            print(str(flag) + ':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
+            print(response.content)
+            flag = flag + 1
+            sleep(random.randint(1, 30))
+
+        except:
             continue
-        s = requests.session()
-        s.keep_alive = False
-        end = time.time()
-        print(str(flag) + ':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
-        print(response.content)
-        flag = flag + 1
-        sleep(random.randint(1, 30))
-        break
 
 # test_proxy()
 

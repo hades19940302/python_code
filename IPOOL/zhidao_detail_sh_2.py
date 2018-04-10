@@ -21,6 +21,17 @@ import threadpool as tp
 import urllib2
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.poolmanager import PoolManager
+import ssl
+
+class MyAdapter(HTTPAdapter):
+    def init_poolmanager(self, connections, maxsize, block=False):
+        self.poolmanager = PoolManager(num_pools=connections,
+                                       maxsize=maxsize,
+                                       block=block,
+                                       ssl_version=ssl.PROTOCOL_TLSv1)
+
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -33,7 +44,16 @@ from time  import sleep
 s = requests.Session()
 s.mount('http://', HTTPAdapter(max_retries=5))
 s.mount('https://', HTTPAdapter(max_retries=5))
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.poolmanager import PoolManager
+import ssl
 
+class MyAdapter(HTTPAdapter):
+    def init_poolmanager(self, connections, maxsize, block=False):
+        self.poolmanager = PoolManager(num_pools=connections,
+                                       maxsize=maxsize,
+                                       block=block,
+                                       ssl_version=ssl.PROTOCOL_TLSv1)
 headers = {
 	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 	'Accept-Encoding': 'gzip, deflate, br',
@@ -71,106 +91,6 @@ proxy_header = {
 
 	}
 
-# proxys = ['182.86.189.174:61091',
-# 	'121.237.138.249:21953',
-# 	'58.253.147.9:61924',
-# 	'117.21.111.26:32771',
-# 	'223.245.213.159:40956',
-# 	'27.31.101.152:46781',
-# 	'183.143.72.243:63565',
-# 	'117.26.41.230:13915',
-# 	'123.163.150.172:60864',
-# 	'120.33.247.128:64079',
-# 	'123.162.127.97:43263',
-# 	'49.73.240.171:47380',
-# 	'27.10.162.67:48960',
-# 	'117.68.194.238:33531',
-# 	'121.237.136.54:21731',
-# 	'180.118.135.254:64743',
-# 	'121.205.73.4:44141',
-# 	'42.54.76.31:27058',
-# 	'183.159.83.215:16841',
-# 	'121.235.194.67:30881',
-# 	'61.143.45.12:41675',
-# 	'113.57.97.222:45842',
-# 	'122.246.48.132:24788',
-# 	'113.128.27.135:34559',
-# 	'125.105.49.75:30459',
-# 	'115.223.127.197:41474',
-# 	'60.169.114.137:39516',
-# 	'114.232.163.25:61445',
-# 	'222.212.169.239:26923',
-# 	'61.176.66.50:15250',
-# 	'49.85.3.72:56330',
-# 	'183.143.8.124:18977',
-# 	'125.119.44.60:52652',
-# 	'60.168.173.122:21310',
-# 	'60.172.124.45:40446',
-# 	'117.69.179.93:65077',
-# 	'49.64.212.220:57526',
-# 	'119.127.17.6:36268',
-# 	'113.117.105.166:11969',
-# 	'123.52.76.140:19039',
-# 	'183.32.220.138:44217',
-# 	'115.223.76.109:19838',
-# 	'36.248.132.137:55048',
-# 	'59.63.53.128:65107',
-# 	'111.74.75.41:43552',
-# 	'49.76.205.129:10932',
-# 	'119.116.78.92:36255',
-# 	'223.246.121.54:13871',
-# 	'183.52.105.166:51607',
-# 	'115.213.251.231:44545',
-# 	'121.206.19.171:16793',
-# 	'153.0.49.47:25944',
-# 	'180.115.65.11:15436',
-# 	'221.225.98.107:48564',
-# 	'123.163.128.59:21521',
-# 	'221.232.234.210:21748',
-# 	'115.221.118.105:60990',
-# 	'60.167.23.224:17474',
-# 	'117.69.200.46:27655',
-# 	'113.121.243.129:59796',
-# 	'182.240.253.204:17161',
-# 	'182.126.15.223:12519',
-# 	'123.169.5.51:46695',
-# 	'113.121.241.189:52189',
-# 	'183.149.48.36:18724',
-# 	'117.95.200.64:49915',
-# 	'120.40.253.140:49950',
-# 	'221.232.193.78:65305',
-# 	'175.152.102.123:41217',
-# 	'140.250.153.180:38312',
-# 	'222.94.149.214:38909',
-# 	'117.28.163.100:52784',
-# 	'59.62.166.26:46869',
-# 	'117.68.195.27:54842',
-# 	'222.245.181.217:32334',
-# 	'218.91.94.205:64075',
-# 	'49.64.24.54:24835',
-# 	'121.206.20.250:60732',
-# 	'49.85.1.164:28205',
-# 	'113.57.35.211:48902',
-# 	'119.96.192.173:27860',
-# 	'125.112.197.104:30913',
-# 	'60.182.188.249:22961',
-# 	'117.43.0.3:18136',
-# 	'59.32.37.32:50407',
-# 	'113.122.38.182:37564',
-# 	'180.121.135.203:44061',
-# 	'121.237.138.22:17534',
-# 	'183.52.104.148:32368',
-# 	'60.175.196.30:23255',
-# 	'36.33.25.80:34670',
-# 	'42.55.180.139:20101',
-# 	'113.121.242.88:24331',
-# 	'59.57.46.146:33048',
-# 	'222.245.186.203:59950',
-# 	'1.196.158.169:65449',
-# 	'60.17.233.246:61358',
-# 	'175.146.94.156:60034',
-# 	'125.112.202.207:43541',
-# 	'180.122.144.230:54993',]
 proxys = []
 r_proxy=  requests.get('http://ent.kuaidaili.com/api/getproxy/?orderid=938176699822329&num=1000&quality=2&sort=1&format=json')
 json_data = json.loads(r_proxy.content)
@@ -189,7 +109,7 @@ def get_multi_urls(file_name):
 		if line not in lines:
 			lines.append(line)
 
-	return lines*5
+	return lines
 
 
 def get_random_url(lines):
@@ -206,29 +126,31 @@ def test(xx):
 	urls = get_multi_urls('test.txt')
 	while urls:
 		url, urls = get_random_url(urls)
-		id_ = url[33:-7]
+		# url = 'https://icanhazip.com/'
+		id_ = url[34:-5]
 		url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
-		# url = 'https://zhidao.baidu.com/question/1702054658067875940.html?fr=iks&ie=utf-8'
-		# f_has_read = open('has_read.txt','a')
-		# f_has_read.write(url.replace('\r','')+'\n')
-		# f_has_read.close()
 		try:
 			r_proxy = requests.get(
 				'http://ent.kuaidaili.com/api/getproxy/?orderid=938176699822329&num=1000&quality=2&sort=1&format=json')
 			json_data = json.loads(r_proxy.content)
 			data = json_data['data']
 			proxy_list = data['proxy_list']
+			for proxy in proxy_list:
+				if proxy not in proxys:
+					proxys.append(proxy)
 		except:
 			pass
-		for proxy in proxy_list:
-			if proxy not in proxys:
-				proxys.append(proxy)
+
 		while True:
 			try:
 				start = time.time()
 				try:
 					proxy = random.choice(proxys)
-					response = requests.get(url,timeout=5,headers=headers,verify=False,proxies={"http":"http://"+proxy})
+					s = requests.Session()
+					s.mount('https://', MyAdapter())
+					# response = s.get(url,headers=headers,verify=False, proxies={"https": "http://"+proxy},timeout=5)
+					response = requests.get(url, timeout=5, headers=headers, verify=False,
+											proxies={"https": "http://" + proxy})
 				except:
 					continue
 				html = response.content.decode('utf-8')
@@ -345,7 +267,11 @@ def test(xx):
 			while True:
 				try:
 					proxy = random.choice(proxys)
-					r2 = requests.get(r2_url, headers=headers2,proxies={"http":"http://"+proxy} ,timeout=5, verify=False)
+					s = requests.Session()
+					s.mount('https://', MyAdapter())
+					# r2 = s.get(r2_url,headers=headers2,verify=False, proxies={"https": "http://"+proxy},timeout=5)
+					r2 = requests.get(r2_url, timeout=5, headers=headers2, verify=False,
+											proxies={"https": "http://" + proxy})
 					html2 = r2.content.decode('utf-8')
 					if r2.status_code != 200:
 						proxys.remove(proxy)
