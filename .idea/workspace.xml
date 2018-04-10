@@ -25,7 +25,7 @@
     <SUITE FILE_PATH="coverage/python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1523322305943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$zhidao_detail_sh_2.coverage" NAME="zhidao_detail_sh_2 Coverage Results" MODIFIED="1523338910078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$filter_repeat.coverage" NAME="filter_repeat Coverage Results" MODIFIED="1522648740587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$filter__1_.coverage" NAME="filter (1) Coverage Results" MODIFIED="1523261133909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter" />
+    <SUITE FILE_PATH="coverage/python_code$filter__1_.coverage" NAME="filter (1) Coverage Results" MODIFIED="1523352605346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter" />
     <SUITE FILE_PATH="coverage/python_code$oshiete.coverage" NAME="oshiete Coverage Results" MODIFIED="1521422891985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$lvmama.coverage" NAME="lvmama Coverage Results" MODIFIED="1521168234879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -33,28 +33,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-      <file leaf-file-name="zhidao_detail_sh_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="148" column="8" lean-forward="false" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zhidao_question_to_answer_man_proxy.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1011">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,12 +68,12 @@
       <find>需要那些</find>
       <find>279301164</find>
       <find>36085021</find>
-      <find>�</find>
       <find>1708447530094704860</find>
       <find>http</find>
       <find>5869439</find>
-      <find>749768299961312012</find>
       <find>561991660188104804</find>
+      <find>749768299961312012</find>
+      <find>�</find>
     </findStrings>
     <replaceStrings>
       <replace>http</replace>
@@ -107,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MachineLearning/helen.txt" />
         <option value="$PROJECT_DIR$/MachineLearning/kNN2.py" />
         <option value="$PROJECT_DIR$/scrapy/zhidai_detail.py" />
         <option value="$PROJECT_DIR$/zhidao_question_to_answer_man.txt" />
@@ -147,7 +125,6 @@
         <option value="$PROJECT_DIR$/filter/zhidao_question_to_question_man.txt" />
         <option value="$PROJECT_DIR$/filter/part1_min_filter_by_qid_6.txt" />
         <option value="$PROJECT_DIR$/filter/li7144_1.txt" />
-        <option value="$PROJECT_DIR$/filter/filter.py" />
         <option value="$PROJECT_DIR$/IPOOL/proxy.py" />
         <option value="$PROJECT_DIR$/新建文件夹/part2.txt" />
         <option value="$PROJECT_DIR$/新建文件夹/filter.py" />
@@ -158,6 +135,8 @@
         <option value="$PROJECT_DIR$/IPOOL/fetch_id.py" />
         <option value="$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py" />
         <option value="$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt" />
+        <option value="$PROJECT_DIR$/filter/filter.py" />
+        <option value="$PROJECT_DIR$/filter/jy_qa_filter_by_qid_and_replace.txt" />
       </list>
     </option>
   </component>
@@ -167,7 +146,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
@@ -199,6 +178,11 @@
             <path>
               <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_code" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_code" type="462c0819:PsiDirectoryNode" />
               <item name="IPOOL" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -220,8 +204,8 @@
       <recent name="D:\git\python_code\scrapy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\git\python_code\新建文件夹" />
       <recent name="D:\git\python_code\filter" />
+      <recent name="D:\git\python_code\新建文件夹" />
       <recent name="D:\git_clone\python_code\filter" />
       <recent name="D:\git_clone\python_code\filter\filter" />
       <recent name="D:\git\python_code\filter\filter" />
@@ -239,7 +223,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zhidao_detail_sh_2">
+  <component name="RunManager" selected="Python.filter (1)">
     <configuration name="fetch_id" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,6 +243,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="filter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/filter" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter/filter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,25 +276,6 @@
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/新建文件夹/filter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IPOOL" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IPOOL/proxy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -569,19 +553,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.python_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.proxy" />
-      <item index="2" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.filter" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
-      <item index="5" class="java.lang.String" itemvalue="Python.fetch_id" />
+      <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.filter" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.fetch_id" />
+      <item index="5" class="java.lang.String" itemvalue="Python.filter (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.fetch_id" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.filter" />
-        <item index="4" class="java.lang.String" itemvalue="Python.proxy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.filter (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fetch_id" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.filter" />
       </list>
     </recent_temporary>
   </component>
@@ -602,8 +586,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
-    <editor active="true" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -611,7 +594,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951444" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27135417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27135417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -662,15 +645,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/正式提交问答/途牛+故说+驴妈妈+东京攻略/驴妈妈-问题和问题.txt" />
-    <entry file="file://E:/正式提交问答/途牛+故说+驴妈妈+东京攻略/驴妈妈-问题和答案.txt" />
-    <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_sh_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358751">
-          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baiduzhidao_url_list_sh_4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-388775">
@@ -787,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filter/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="79" column="12" lean-forward="false" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/新建文件夹/part4.txt" />
     <entry file="file://$PROJECT_DIR$/新建文件夹/part5.txt" />
     <entry file="file://$PROJECT_DIR$/新建文件夹/part33.txt" />
@@ -854,28 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="e#89#103#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IPOOL/has_read.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IPOOL/filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -982,6 +931,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1011">
           <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPOOL/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPOOL/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1743">
+          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/1_zhidao_question_to_answer_man_topics.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5161610">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/jyqq1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599624">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/jy_qa_filter_by_qid_and_replace.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15407">
+          <caret line="2432" column="195" lean-forward="false" selection-start-line="2432" selection-start-column="195" selection-end-line="2432" selection-end-column="195" />
           <folding />
         </state>
       </provider>

@@ -101,13 +101,34 @@ def filter_by_qid():
 	f.close()
 
 
-filter_by_qid()
+# filter_by_qid()
 
 
+def filter_by_qid_replace():
+	f = open('jyqq1.txt','r')
+	for line in f.readlines():
+		tt = line.index('\t',2)
+		id_ = line[6:tt]
+		if id_ not in ids_qid:
+			answer = []
+			ids_qid.append(id_)
+			index = line[:-line[::-1].index('\t')]
+			len_index = len(index)
+			f1 = open('1_zhidao_question_to_answer_man_topics.txt','r')
+			for line1 in f1.readlines():
+				if line1.find(id_) != -1:
+					if line1 not in answer:
+						answer.append(line1)
+						f = open('jy_qa_filter_by_qid_and_replace.txt','a')
+						f.write(index+line1[len_index:].replace('\r',''))
+						f.close()
 
 
+	f1.close()
+	f.close()
 
 
+filter_by_qid_replace()
 
 # filter_by_qid()
 
