@@ -109,7 +109,7 @@ def get_multi_urls(file_name):
 		if line not in lines:
 			lines.append(line)
 
-	return lines
+	return lines*2
 
 
 def get_random_url(lines):
