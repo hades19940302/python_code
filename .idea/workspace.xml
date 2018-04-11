@@ -25,7 +25,7 @@
     <SUITE FILE_PATH="coverage/python_code$test.coverage" NAME="test Coverage Results" MODIFIED="1523322305943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$zhidao_detail_sh_2.coverage" NAME="zhidao_detail_sh_2 Coverage Results" MODIFIED="1523338910078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$filter_repeat.coverage" NAME="filter_repeat Coverage Results" MODIFIED="1522648740587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python_code$filter__1_.coverage" NAME="filter (1) Coverage Results" MODIFIED="1523430031017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter" />
+    <SUITE FILE_PATH="coverage/python_code$filter__1_.coverage" NAME="filter (1) Coverage Results" MODIFIED="1523437481786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter" />
     <SUITE FILE_PATH="coverage/python_code$oshiete.coverage" NAME="oshiete Coverage Results" MODIFIED="1521422891985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_code$lvmama.coverage" NAME="lvmama Coverage Results" MODIFIED="1521168234879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -34,31 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jyqq.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filter/jyqq.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="filter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/filter/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="120" column="44" lean-forward="true" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1_zhidao_question_to_answer_man_topics.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filter/1_zhidao_question_to_answer_man_topics.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="4281" column="26" lean-forward="false" selection-start-line="4281" selection-start-column="8" selection-end-line="4281" selection-end-column="26" />
+            <state relative-caret-position="720">
+              <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -75,7 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1护照原件</find>
       <find>同一个单位的</find>
       <find>7516866426082156</find>
       <find>掸姬侧肯乇厩岔询唱墨</find>
@@ -105,6 +84,7 @@
       <find>需要买jr的7日卷</find>
       <find>需要买jr的</find>
       <find>435922774021024444</find>
+      <find>1757493430058078468</find>
     </findStrings>
     <replaceStrings>
       <replace>http</replace>
@@ -117,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scrapy/zhidai_detail.py" />
         <option value="$PROJECT_DIR$/zhidao_question_to_answer_man.txt" />
         <option value="$PROJECT_DIR$/zhidai_detail.py" />
         <option value="$PROJECT_DIR$/zhidao_question_to_question_man.txt" />
@@ -167,6 +146,7 @@
         <option value="$PROJECT_DIR$/IPOOL/zhidao_question_to_answer_man_proxy.txt" />
         <option value="$PROJECT_DIR$/filter/jy_qa_filter_by_qid_and_replace.txt" />
         <option value="$PROJECT_DIR$/filter/jy_qa_filter_by_qid_and_replace_1.txt" />
+        <option value="$PROJECT_DIR$/filter/1_zhidao_question_to_answer_man_topics.txt" />
         <option value="$PROJECT_DIR$/filter/filter.py" />
       </list>
     </option>
@@ -177,7 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
@@ -617,7 +597,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="7" />
+    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -958,16 +938,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filter/1_zhidao_question_to_answer_man_topics.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="4281" column="26" lean-forward="false" selection-start-line="4281" selection-start-column="8" selection-end-line="4281" selection-end-column="26" />
+        <state relative-caret-position="318">
+          <caret line="4275" column="14" lean-forward="false" selection-start-line="4275" selection-start-column="0" selection-end-line="4276" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filter/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="120" column="44" lean-forward="true" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
+        <state relative-caret-position="720">
+          <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
           <folding />
         </state>
       </provider>

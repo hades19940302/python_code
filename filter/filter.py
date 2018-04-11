@@ -120,7 +120,7 @@ def filter_by_qid_replace():
 					if line1 not in answer:
 						answer.append(line1)
 						f = open('jy_qa_filter_by_qid_and_replace_1.txt','a')
-						print(re.findall(r'\t',line1))
+						print(re.findall('\t',line1))
 						print(line1)
 						f.write(index+line1[len_index:].replace('\r',''))
 						f.close()
