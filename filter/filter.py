@@ -130,7 +130,7 @@ def filter_by_qid_replace():
 	f.close()
 
 
-filter_by_qid_replace()
+# filter_by_qid_replace()
 
 # filter_by_qid()
 
@@ -190,4 +190,35 @@ def test3():
 
 
 	f.close()
+
+
+def filter_by_min():
+	f = open('min2.txt','rb')
+	for line in f.readlines():
+		line = line.replace('\n','').replace('\r','').strip()
+		if line not in mingan:
+			mingan.append(line)
+	f1 = open('qq_3_28235.txt','rb')
+	for line in f1.readlines():
+		hang = ''
+		for mingan_item in mingan:
+			if line.find(mingan_item) != -1:
+				flag = 1
+				break
+
+			else:
+				hang = line
+				flag = 0
+				continue
+		if flag == 0:
+			f1 = open('qq_3_28235_filter_by_min.txt', 'a')
+			f1.write(hang.replace('\r',''))
+			f1.close()
+			print(line)
+		elif flag == 1:
+			continue
+
+
+filter_by_min()
+
 
