@@ -77,22 +77,28 @@ def getCoding(strInput):
 ids_qid = []
 
 def filter_by_qid():
-	# by qid
-	f = open('li7144.txt','rb')
+	# filter by qid
+	f = open('qq_3_26505.txt','rb')
 	for line in f.readlines():
-		tt = line.index('\t',2)
-		id_ = line[6:tt]
-		if id_ not in ids_qid:
+		tt_qa = line.index('\t',2)
+		id_qa = line[6:tt_qa]
+		if id_qa not in ids_qid:
 			answers = []
-			ids_qid.append(id_)
-			f1 = open('part1_min.txt','rb')
+			ids_qid.append(id_qa)
+			f1 = open('qa_3_9176.txt','rb')
 			for line1 in f1.readlines():
-				if line1.find(id_) != -1:
+				tt_qq = line1.index('\t',2)
+				id_qq = line1[6:tt_qq]
+				line1 = line1.replace('\r','').replace('\n','').strip()
+				if id_qa == id_qq:
 					if line1 not in answers:
 						answers.append(line1)
-						f = open('part1_min_filter_by_qid_7.txt','a')
-						f.write(line1.replace('\r',''))
+						print(id_qa,id_qq)
+						print(line1)
+						f = open('qa_3_9176_filter_by_qid_3.txt','a')
+						f.write(line1.replace('\r','')+'\n')
 						f.close()
+
 
 			f1.close()
 
@@ -146,23 +152,27 @@ mingan = [u'买B啊:18岁的日本妞30元RMB一炮',u'充气娃娃',u'日本人
 topics = [u'日本',u'京都',u'富士山',u'横滨',u'奈良',u'冲绳',u'北海道',u'名古屋',u'福冈',u'神户',u'涩谷',u'新宿',u'札幌',u'洞爷湖',u'函馆',u'镰仓',
 		  u'濑户内海', u'鹿儿岛', u'富良野', u'千叶', u'静冈', u'JR', u'新干线', u'银座', u'表参道', u'药妆店',]
 def filter_by_topics():
-	with codecs.open('zhidao_question_to_answer_man.txt','rb') as f :
+	with codecs.open('zhidao_question_to_question_man.txt','rb') as f :
 		for line in f.readlines():
 			line = line.replace('\n','').replace('\r','').strip()
 			print(line)
-			for  topic in topics:
-				if line.find(topic) != -1:
-					f1 = open('zhidao_question_to_answer_man_topics.txt','a')
-					f1.write(line+'\n')
-					f1.close()
-					break
-				else:
-					continue
+			try:
+				for  topic in topics:
+					if line.find(topic) != -1:
+						f1 = open('zhidao_question_to_question_man_topics.txt','a')
+						f1.write(line+'\n')
+						f1.close()
+						break
+					else:
+						continue
+
+			except:
+				pass
 				# line1 = line1.decode('utf8')topic
 
 	f.close()
 
-# filter_by_topics()
+filter_by_topics()
 
 def test3():
 	with codecs.open('part2_min_topic.txt','rb') as f:
@@ -198,7 +208,7 @@ def filter_by_min():
 		line = line.replace('\n','').replace('\r','').strip()
 		if line not in mingan:
 			mingan.append(line)
-	f1 = open('qq_3_28235.txt','rb')
+	f1 = open('qa_3_9176_filter_by_qid_3.txt','rb')
 	for line in f1.readlines():
 		hang = ''
 		for mingan_item in mingan:
@@ -211,7 +221,7 @@ def filter_by_min():
 				flag = 0
 				continue
 		if flag == 0:
-			f1 = open('qq_3_28235_filter_by_min.txt', 'a')
+			f1 = open('qa_3_9176_min.txt', 'a')
 			f1.write(hang.replace('\r',''))
 			f1.close()
 			print(line)
@@ -219,6 +229,6 @@ def filter_by_min():
 			continue
 
 
-filter_by_min()
+# filter_by_min()
 
 
