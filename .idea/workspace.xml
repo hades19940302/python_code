@@ -241,11 +241,6 @@
               <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_code" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_code" type="462c0819:PsiDirectoryNode" />
-              <item name="IPOOL" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -265,11 +260,11 @@
       <recent name="D:\git\python_code\scrapy" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_clone\python_code" />
       <recent name="D:\git_clone\python_code\IPOOL" />
       <recent name="D:\git_clone\python_code\filter" />
       <recent name="D:\git\python_code\filter" />
       <recent name="D:\git\python_code\新建文件夹" />
-      <recent name="D:\git_clone\python_code\filter\filter" />
     </key>
   </component>
   <component name="RunDashboard">
