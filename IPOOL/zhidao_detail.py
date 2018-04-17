@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author=hades
-# oshiete urls
 from __future__ import print_function
 from __future__ import division
 from bs4 import BeautifulSoup
