@@ -78,14 +78,14 @@ ids_qid = []
 
 def filter_by_qid():
 	# filter by qid
-	f = open('qq_3_26505.txt','rb')
+	f = open('lyq_qq.txt','rb')
 	for line in f.readlines():
 		tt_qa = line.index('\t',2)
 		id_qa = line[6:tt_qa]
 		if id_qa not in ids_qid:
 			answers = []
 			ids_qid.append(id_qa)
-			f1 = open('qa_3_9176.txt','rb')
+			f1 = open('zhidao_question_to_answer_man_topics.txt','rb')
 			for line1 in f1.readlines():
 				tt_qq = line1.index('\t',2)
 				id_qq = line1[6:tt_qq]
@@ -95,7 +95,7 @@ def filter_by_qid():
 						answers.append(line1)
 						print(id_qa,id_qq)
 						print(line1)
-						f = open('qa_3_9176_filter_by_qid_3.txt','a')
+						f = open('lyq_qa_filter_by_qid.txt','a')
 						f.write(line1.replace('\r','')+'\n')
 						f.close()
 
@@ -110,7 +110,7 @@ def filter_by_qid():
 # filter_by_qid()
 
 
-def filter_by_qid_replace():
+def filter_by_qid_and_replace():
 	f = open('jyqq.txt','r')
 	for line in f.readlines()[:10]:
 		tt = line.index('\t',2)
@@ -120,7 +120,7 @@ def filter_by_qid_replace():
 			ids_qid.append(id_)
 			index = line[:-line[::-1].index('\t')]
 			len_index = len(index)
-			f1 = open('1_zhidao_question_to_answer_man_topics.txt','r')
+			f1 = open('test.txt','r')
 			for line1 in f1.readlines()[:10000]:
 				if line1.find(id_) != -1:
 					if line1 not in answer:
@@ -172,7 +172,7 @@ def filter_by_topics():
 
 	f.close()
 
-filter_by_topics()
+# filter_by_topics()
 
 def test3():
 	with codecs.open('part2_min_topic.txt','rb') as f:
@@ -208,7 +208,7 @@ def filter_by_min():
 		line = line.replace('\n','').replace('\r','').strip()
 		if line not in mingan:
 			mingan.append(line)
-	f1 = open('qa_3_9176_filter_by_qid_3.txt','rb')
+	f1 = open('lyq_qq.txt','rb')
 	for line in f1.readlines():
 		hang = ''
 		for mingan_item in mingan:
@@ -221,7 +221,7 @@ def filter_by_min():
 				flag = 0
 				continue
 		if flag == 0:
-			f1 = open('qa_3_9176_min.txt', 'a')
+			f1 = open('lyq_qq_min.txt', 'a')
 			f1.write(hang.replace('\r',''))
 			f1.close()
 			print(line)
