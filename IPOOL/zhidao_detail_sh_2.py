@@ -37,7 +37,6 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # import pymysql
 url_list=[]
-# url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
 from requests.adapters import HTTPAdapter
 from time  import sleep
@@ -78,28 +77,7 @@ header = {
 	
 	}
 
-proxy_header = {
-	'Host': 'ent.kuaidaili.com',
-	'Connection': 'keep-alive',
-	'Cache-Control': 'max-age=0',
-	'Upgrade-Insecure-Requests': '1',
-	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
-	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-	'Accept-Encoding': 'gzip, deflate',
-	'Accept-Language': 'zh-CN,zh;q=0.9',
-	
 
-	}
-
-proxys = []
-r_proxy=  requests.get('http://ent.kuaidaili.com/api/getproxy/?orderid=938176699822329&num=1000&quality=2&sort=1&format=json')
-json_data = json.loads(r_proxy.content)
-data = json_data['data']
-proxy_list = data['proxy_list']
-
-for proxy in proxy_list:
-	if proxy not in proxys:
-		proxys.append(proxy)
 
 def get_multi_urls(file_name):
 	lines = []
@@ -109,7 +87,7 @@ def get_multi_urls(file_name):
 		if line not in lines:
 			lines.append(line)
 
-	return lines*2
+	return lines
 
 
 def get_random_url(lines):
@@ -122,24 +100,12 @@ def get_random_url(lines):
 	return lines.pop(url_pos), lines
 
 def test(xx):
-	flag = 5
 	urls = get_multi_urls('test.txt')
 	while urls:
 		url, urls = get_random_url(urls)
-		# url = 'https://icanhazip.com/'
 		id_ = url[34:-5]
+		print(id_)
 		url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
-		try:
-			r_proxy = requests.get(
-				'http://ent.kuaidaili.com/api/getproxy/?orderid=938176699822329&num=1000&quality=2&sort=1&format=json')
-			json_data = json.loads(r_proxy.content)
-			data = json_data['data']
-			proxy_list = data['proxy_list']
-			for proxy in proxy_list:
-				if proxy not in proxys:
-					proxys.append(proxy)
-		except:
-			pass
 
 		while True:
 			try:
@@ -149,21 +115,17 @@ def test(xx):
 					s = requests.Session()
 					s.mount('https://', MyAdapter())
 					# response = s.get(url,headers=headers,verify=False, proxies={"https": "http://"+proxy},timeout=5)
-					response = requests.get(url, timeout=5, headers=headers, verify=False,
-											proxies={"https": "http://" + proxy})
+					# response = requests.get(url, timeout=5, headers=headers, verify=False,
+					# 						proxies={"https": "http://" + proxy})
+					response = requests.get(url, timeout=5, headers=headers, verify=False)
+					html = response.content.decode('utf-8')
+					requests.adapters.DEFAULT_RETRIES = 5
 				except:
-					continue
-				html = response.content.decode('utf-8')
-				requests.adapters.DEFAULT_RETRIES = 5
-				if response.status_code != 200:
-					proxys.remove(proxy)
 					continue
 				s = requests.session()
 				s.keep_alive = False
 				end = time.time()
 				print(str(flag)+':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
-				flag = flag + 1
-				sleep(random.randint(1,30))
 				break
 			except:
 				print('switch proxy')
@@ -213,7 +175,7 @@ def test(xx):
 					if answers == []:
 						print(url+'answers erro')
 						answers = selector.xpath('//div[@class="full-content"]')
-						with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
+						with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 
 							if desc == '':
 								s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+answers[0].xpath('string(.)').strip().replace('\t','')+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
@@ -231,7 +193,7 @@ def test(xx):
 				answers = selector.xpath('//div[@class="full-content"]')
 				like = selector.xpath('//span[@class="js-question-meta-num question-meta-support-num"]/@data-support')
 
-			with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
+			with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 					if desc == '':
 						s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+answers[0].xpath('string(.)').strip().replace('\t','')+'\t'+'1'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 						f.write(s+'\r\n')
@@ -244,7 +206,7 @@ def test(xx):
 
 		for r_question_list_title in r_question_list_titles:
 
-			with codecs.open('zhidao_question_to_question_man_proxy.txt','a+','utf-8') as f1:
+			with codecs.open('zhidao_question_to_question.txt','a+','utf-8') as f1:
 				if desc == '':
 					s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+r_question_list_title.xpath('string(.)').strip().replace('\t','')).strip().replace('\n','').replace('\r','')
 					f1.write(s+'\r\n')
@@ -266,21 +228,17 @@ def test(xx):
 			}
 			while True:
 				try:
-					proxy = random.choice(proxys)
 					s = requests.Session()
 					s.mount('https://', MyAdapter())
 					# r2 = s.get(r2_url,headers=headers2,verify=False, proxies={"https": "http://"+proxy},timeout=5)
-					r2 = requests.get(r2_url, timeout=5, headers=headers2, verify=False,
-											proxies={"https": "http://" + proxy})
+					# r2 = requests.get(r2_url, timeout=5, headers=headers2, verify=False,
+					# 						proxies={"https": "http://" + proxy})
+					r2 = requests.get(r2_url, timeout=5, headers=headers2, verify=False)
 					html2 = r2.content.decode('utf-8')
-					if r2.status_code != 200:
-						proxys.remove(proxy)
-						continue
 					len_content = len(r2.content)
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
 					s.keep_alive = False
-					sleep(random.randint(1,30))
 					break
 				except:
 					continue
@@ -317,7 +275,7 @@ def test(xx):
 											else:
 												try:
 
-													with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
+													with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 															if desc == '':
 																s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+title[0].xpath('string(.)').strip().replace('\t','')+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 																f.write(s+'\r\n')
@@ -342,7 +300,7 @@ def test(xx):
 											pass
 										else:
 
-											with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
+											with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 													if desc == '':
 														s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+title[0].xpath('string(.)').strip().replace('\t','')+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
 														f.write(s+'\r\n')
@@ -363,7 +321,7 @@ def test(xx):
 										pass
 									else:
 
-										with codecs.open('zhidao_question_to_answer_man_proxy.txt','a+','utf-8') as f:
+										with codecs.open('zhidao_question_to_answer.txt','a+','utf-8') as f:
 
 												if desc == '':
 													s = ('1'+'\t'+'qid:'+id_+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+title[0].xpath('string(.)').strip().replace('\t','')+'\t'+'0'+'\t'+str(like[0])).strip().replace('\n','').replace('\r','').strip('\n')
