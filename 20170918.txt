@@ -1,6 +1,0 @@
-新增api未读消息总数和清空未读消息
-读消息总数 ：根据前端提交的session找到对应的用户，在帖子互动这个表找到该用户相关的未读消息，取总数返回到前端
-清空未读消息 ：　根据前端提交的session找到对应的用户，在帖子互动这个表找到该用户相关的未读消息，设置为已读。
-将session_key 改为session
-
-学习google map api https://developers.google.com/maps/documentation/embed/

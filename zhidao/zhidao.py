@@ -74,23 +74,23 @@ def test(xx):
         f_has_read.close()
         if id_ not in id_list:
             id_list.append(id_)
-            # while True:
-            # 	try:
-            start = time.time()
-            # response = requests.get(url,headers=headers,timeout=20,verify=False,proxies={"http":"http://"+proxy})
-            response = requests.get(url, headers=headers, timeout=5, verify=False)
-            html = response.content.decode('utf-8')
-            requests.adapters.DEFAULT_RETRIES = 5
-            s = requests.session()
-            html = re.sub(r'<br[ ]?/?>', '\n', html)
-            selector = etree.HTML(html)
-            s.keep_alive = False
-            end = time.time()
-            print(str(flag) + ':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
-            flag += 1
-            # break
-            # except:
-            # 	continue
+            while True:
+                try:
+                    start = time.time()
+                    # response = requests.get(url,headers=headers,timeout=20,verify=False,proxies={"http":"http://"+proxy})
+                    response = requests.get(url, headers=headers, timeout=5, verify=False)
+                    html = response.content.decode('utf-8')
+                    requests.adapters.DEFAULT_RETRIES = 5
+                    s = requests.session()
+                    html = re.sub(r'<br[ ]?/?>', '\n', html)
+                    selector = etree.HTML(html)
+                    s.keep_alive = False
+                    end = time.time()
+                    print(str(flag) + ':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
+                    flag += 1
+                    break
+                except:
+                    continue
 
             question = selector.xpath('//div[@class="wgt-question-title"]/h2')
             if question == []:
