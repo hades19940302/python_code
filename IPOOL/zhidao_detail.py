@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author=hades
+# oshiete urls
 from __future__ import print_function
 from __future__ import division
 from bs4 import BeautifulSoup
@@ -59,9 +60,9 @@ header = {
 
 
 def test(xx):
-	f1 = open('test.txt','rb')
+	f1 = open('qr_urls_not_in_1.txt','rb')
 	flag = 1
-	for url in f1.readlines()[:1000]:
+	for url in f1.readlines():
 		id_ = url[34:-7]
 		url = url.replace('\r','').replace('\n','').strip()+'?fr=iks&ie=utf-8'
 		f_has_read = open('has_read.txt','a')
@@ -77,6 +78,8 @@ def test(xx):
 					html = response.content.decode('utf-8')
 					requests.adapters.DEFAULT_RETRIES = 5
 					s = requests.session()
+					html = re.sub(r'<br[ ]?/?>', '\n', html)
+					selector = etree.HTML(html)
 					s.keep_alive = False
 					end = time.time()
 					print(str(flag)+':' + 'succeed: ' + url + '\t' + " succeed in " + format(end - start, '0.4f') + 's!')
@@ -85,8 +88,7 @@ def test(xx):
 				except:
 					continue
 
-			html = re.sub(r'<br[ ]?/?>', '\n', html)
-			selector = etree.HTML(html)
+
 			question = selector.xpath('//div[@class="wgt-question-title"]/h2')
 			if question == []:
 				question = selector.xpath('//div[@class="mm-content-line w-question-box"]/div[@class="title"]/h2')
@@ -162,18 +164,21 @@ def test(xx):
 							f.write(s+'\r\n')
 							f.close()
 
+			try:
+				for r_question_list_title in r_question_list_titles:
 
-			for r_question_list_title in r_question_list_titles:
+					with codecs.open('zhidao_question_to_question.txt','a+','utf-8') as f1:
+						if desc == '':
+							s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+r_question_list_title.xpath('string(.)').strip().replace('\t','')).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()
+						else:
+							s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip().replace('\t','')+'#'+desc.replace('\t','')+'\t'+r_question_list_title.xpath('string(.)').strip().replace('\t','')).strip().replace('\n','').replace('\r','')
+							f1.write(s+'\r\n')
+							f1.close()
 
-				with codecs.open('zhidao_question_to_question.txt','a+','utf-8') as f1:
-					if desc == '':
-						s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip().replace('\t','')+'\t'+r_question_list_title.xpath('string(.)').strip().replace('\t','')).strip().replace('\n','').replace('\r','')
-						f1.write(s+'\r\n')
-						f1.close()
-					else:
-						s = ('1'+'\t'+'qid:'+str(id_)+'\t'+question.xpath('string(.)').strip().replace('\t','')+'#'+desc.replace('\t','')+'\t'+r_question_list_title.xpath('string(.)').strip().replace('\t','')).strip().replace('\n','').replace('\r','')
-						f1.write(s+'\r\n')
-						f1.close()
+			except:
+				pass
 			answers2_list = []
 			for i in range(5):
 				r2_url = 'http://zhidao.baidu.com/mobile/replies?rn=6&new=1&hasLoadArgue=0&qid='+id_+'&samp_hit=246&pn='+str(i)+'&deleteArgue=0'
