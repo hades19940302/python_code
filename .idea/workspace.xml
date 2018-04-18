@@ -11,6 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_code$filter.coverage" NAME="filter Coverage Results" MODIFIED="1523267775694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/新建文件夹" />
+    <SUITE FILE_PATH="coverage/python_code$zhidao_try_except.coverage" NAME="zhidao_try_except Coverage Results" MODIFIED="1524035568073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhidao" />
     <SUITE FILE_PATH="coverage/python_code$cut.coverage" NAME="cut Coverage Results" MODIFIED="1523946872311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail.coverage" NAME="zhidai_detail Coverage Results" MODIFIED="1522226182596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail__1_.coverage" NAME="zhidai_detail (1) Coverage Results" MODIFIED="1522228234043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -34,13 +35,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zhidao.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zhidao/zhidao.py">
+      <file leaf-file-name="zhidao_try_except.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zhidao/zhidao_try_except.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="202" column="42" lean-forward="true" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
               <folding>
-                <element signature="e#126#163#0" expanded="true" />
+                <element signature="e#138#175#0" expanded="true" />
+                <element signature="e#3999#4238#0" expanded="false" />
+                <element signature="e#4682#5049#0" expanded="false" />
+                <element signature="e#5196#7828#0" expanded="false" />
+                <element signature="e#6172#7828#0" expanded="false" />
+                <element signature="e#7872#10035#0" expanded="false" />
+                <element signature="e#8769#10035#0" expanded="false" />
+                <element signature="e#10078#11293#0" expanded="false" />
+                <element signature="e#11434#22669#0" expanded="false" />
+                <element signature="e#12948#22607#0" expanded="false" />
+                <element signature="e#13175#22607#0" expanded="false" />
+                <element signature="e#13236#22607#0" expanded="false" />
+                <element signature="e#15135#15994#0" expanded="false" />
+                <element signature="e#16141#17309#0" expanded="false" />
+                <element signature="e#17670#20184#0" expanded="false" />
+                <element signature="e#17955#20184#0" expanded="false" />
+                <element signature="e#18166#20184#0" expanded="false" />
+                <element signature="e#18297#20184#0" expanded="false" />
+                <element signature="e#18376#19174#0" expanded="false" />
+                <element signature="e#19305#20184#0" expanded="false" />
+                <element signature="e#20268#22607#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/百度知道-问题和问题-敏感词过滤-part1.txt" />
         <option value="$PROJECT_DIR$/cut.py" />
         <option value="$PROJECT_DIR$/zhidao_question__min_2.txt" />
         <option value="$PROJECT_DIR$/百度知道-问题和答案-敏感词过滤-part1.txt" />
@@ -158,6 +178,7 @@
         <option value="$PROJECT_DIR$/filter/filter.py" />
         <option value="$USER_HOME$/Desktop/zhidao_detail.py" />
         <option value="$PROJECT_DIR$/zhidao/zhidao.py" />
+        <option value="$PROJECT_DIR$/zhidao/zhidao_try_except.py" />
       </list>
     </option>
   </component>
@@ -167,7 +188,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
@@ -198,11 +219,6 @@
             <path>
               <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_code" type="462c0819:PsiDirectoryNode" />
-              <item name="openstack部署" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_code" type="462c0819:PsiDirectoryNode" />
               <item name="zhidao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -221,15 +237,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\git\python_code\scrapy" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_clone\python_code\zhidao" />
       <recent name="D:\git_clone\python_code\filter" />
       <recent name="D:\git_clone\python_code" />
       <recent name="D:\git_clone\python_code\IPOOL" />
       <recent name="D:\git\python_code\filter" />
-      <recent name="D:\git\python_code\新建文件夹" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\python_code\scrapy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -244,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.filter (1)">
+  <component name="RunManager" selected="Python.zhidao_try_except">
     <configuration name="cut" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,25 +294,6 @@
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter/filter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/新建文件夹" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python_code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/新建文件夹/filter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,6 +351,25 @@
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="zhidao_try_except" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zhidao" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zhidao/zhidao_try_except.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -575,18 +591,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.python_code" />
       <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
-      <item index="2" class="java.lang.String" itemvalue="Python.filter" />
-      <item index="3" class="java.lang.String" itemvalue="Python.filter (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.zhidao_detail" />
-      <item index="5" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="2" class="java.lang.String" itemvalue="Python.filter (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="5" class="java.lang.String" itemvalue="Python.zhidao_try_except" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.filter (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cut" />
-        <item index="3" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
-        <item index="4" class="java.lang.String" itemvalue="Python.filter" />
+        <item index="0" class="java.lang.String" itemvalue="Python.zhidao_try_except" />
+        <item index="1" class="java.lang.String" itemvalue="Python.filter (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cut" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zhidao_detail_sh_2" />
       </list>
     </recent_temporary>
   </component>
@@ -607,13 +623,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951444" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26605505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26605505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -666,9 +682,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/新建文件夹/part22.txt" />
-    <entry file="file://$PROJECT_DIR$/新建文件夹/part2.txt" />
-    <entry file="file://$PROJECT_DIR$/新建文件夹/part1.txt" />
     <entry file="file://$PROJECT_DIR$/新建文件夹/filter.py" />
     <entry file="file://$PROJECT_DIR$/新建文件夹/part55.txt" />
     <entry file="file://$PROJECT_DIR$/新建文件夹/part11.txt" />
@@ -891,10 +904,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/zhidao/zhidao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+        <state relative-caret-position="175">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
           <folding>
             <element signature="e#126#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidao/zhidao_question_to_question.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidao/zhidao_question_to_answer.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhidao/zhidao_try_except.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="202" column="42" lean-forward="true" selection-start-line="202" selection-start-column="42" selection-end-line="202" selection-end-column="42" />
+          <folding>
+            <element signature="e#138#175#0" expanded="true" />
+            <element signature="e#3999#4238#0" expanded="false" />
+            <element signature="e#4682#5049#0" expanded="false" />
+            <element signature="e#5196#7828#0" expanded="false" />
+            <element signature="e#6172#7828#0" expanded="false" />
+            <element signature="e#7872#10035#0" expanded="false" />
+            <element signature="e#8769#10035#0" expanded="false" />
+            <element signature="e#10078#11293#0" expanded="false" />
+            <element signature="e#11434#22669#0" expanded="false" />
+            <element signature="e#12948#22607#0" expanded="false" />
+            <element signature="e#13175#22607#0" expanded="false" />
+            <element signature="e#13236#22607#0" expanded="false" />
+            <element signature="e#15135#15994#0" expanded="false" />
+            <element signature="e#16141#17309#0" expanded="false" />
+            <element signature="e#17670#20184#0" expanded="false" />
+            <element signature="e#17955#20184#0" expanded="false" />
+            <element signature="e#18166#20184#0" expanded="false" />
+            <element signature="e#18297#20184#0" expanded="false" />
+            <element signature="e#18376#19174#0" expanded="false" />
+            <element signature="e#19305#20184#0" expanded="false" />
+            <element signature="e#20268#22607#0" expanded="false" />
           </folding>
         </state>
       </provider>
