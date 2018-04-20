@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author=hades
-# oshiete urls
 from __future__ import print_function
 from bs4 import BeautifulSoup
 import urllib
@@ -17,11 +16,8 @@ import threadpool as tp
 reload(sys)
 sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-# 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-# import pymysql
 url_list=[]
-# url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
 from requests.adapters import HTTPAdapter
 from time  import sleep

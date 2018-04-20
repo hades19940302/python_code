@@ -135,14 +135,14 @@ mingan = [u'买B啊:18岁的日本妞30元RMB一炮',u'充气娃娃',u'日本人
 topics = [u'日本',u'京都',u'富士山',u'横滨',u'奈良',u'冲绳',u'北海道',u'名古屋',u'福冈',u'神户',u'涩谷',u'新宿',u'札幌',u'洞爷湖',u'函馆',u'镰仓',
 		  u'濑户内海', u'鹿儿岛', u'富良野', u'千叶', u'静冈', u'JR', u'新干线', u'银座', u'表参道', u'药妆店',]
 def filter_by_topics():
-	with codecs.open('zhidao_question_to_answer.txt','rb') as f :
+	with codecs.open('zhidao.txt','rb') as f :
 		for line in f.readlines():
 			line = line.replace('\n','').replace('\r','').strip()
 			print(line)
 			try:
 				for  topic in topics:
 					if line.find(topic) != -1:
-						f1 = open('zhidao_question_to_answer_topics.txt','a')
+						f1 = open('zhidao_topics.txt','a')
 						f1.write(line+'\n')
 						f1.close()
 						break
@@ -161,7 +161,7 @@ def filter_by_min():
 		line = line.replace('\n','').replace('\r','').strip()
 		if line not in mingan:
 			mingan.append(line)
-	f1 = open('zhidao_question_to_answer_topics.txt','rb')
+	f1 = open('zhidao_topics.txt','rb')
 	for line in f1.readlines():
 		hang = ''
 		for mingan_item in mingan:
@@ -174,7 +174,7 @@ def filter_by_min():
 				flag = 0
 				continue
 		if flag == 0:
-			f1 = open('zhidao_question_to_answer_topics_min.txt', 'a')
+			f1 = open('zhidao_min.txt', 'a')
 			f1.write(hang.replace('\r',''))
 			f1.close()
 			print(line)
@@ -182,6 +182,6 @@ def filter_by_min():
 			continue
 
 
-# filter_by_min()
+filter_by_min()
 
-
+# filter_by_topics()

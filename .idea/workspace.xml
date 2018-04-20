@@ -11,7 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_code$zhidao_try_except.coverage" NAME="zhidao_try_except Coverage Results" MODIFIED="1524035568073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhidao" />
-    <SUITE FILE_PATH="coverage/python_code$filter.coverage" NAME="filter Coverage Results" MODIFIED="1524043680722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/zhidao" />
+    <SUITE FILE_PATH="coverage/python_code$filter.coverage" NAME="filter Coverage Results" MODIFIED="1524208927270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/filter" />
     <SUITE FILE_PATH="coverage/python_code$cut.coverage" NAME="cut Coverage Results" MODIFIED="1524190455690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IPOOL" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail.coverage" NAME="zhidai_detail Coverage Results" MODIFIED="1522226182596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapy" />
     <SUITE FILE_PATH="coverage/python_code$zhidai_detail__1_.coverage" NAME="zhidai_detail (1) Coverage Results" MODIFIED="1522228234043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -37,25 +37,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="filter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/filter/filter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-              <folding>
-                <element signature="e#924#1315#0" expanded="false" />
-                <element signature="e#1344#1522#0" expanded="false" />
-                <element signature="e#1559#2241#0" expanded="false" />
-                <element signature="e#2277#2877#0" expanded="false" />
-                <element signature="e#3308#3750#0" expanded="false" />
-                <element signature="e#3774#4340#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -66,7 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>需要那些</find>
       <find>279301164</find>
       <find>36085021</find>
       <find>1708447530094704860</find>
@@ -96,6 +77,7 @@
       <find>5122634</find>
       <find>536233127</find>
       <find>print</find>
+      <find>1900082084904232900</find>
     </findStrings>
     <replaceStrings>
       <replace>http</replace>
@@ -108,8 +90,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/code/dowload_double/dowload.py" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ddos.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/filter/filter.py" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/zhidao_detail.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/code/dowload_double/zhidao_detail.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IPOOL/zhidao_detail_sh_2.py" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IPOOL/zhidao_detail.py" root0="SKIP_HIGHLIGHTING" />
@@ -118,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baiduzhidao_topics_list_3.txt" />
         <option value="$PROJECT_DIR$/filter_repeat.py" />
         <option value="$PROJECT_DIR$/IPOOL/zhidao_question_to_question_man_proxy.txt" />
         <option value="$PROJECT_DIR$/IPOOL/has_read.txt" />
@@ -168,6 +149,7 @@
         <option value="$PROJECT_DIR$/IPOOL/qr_ids_not_in_ids_by_2018_04_20.txt" />
         <option value="$PROJECT_DIR$/IPOOL/cut.py" />
         <option value="$PROJECT_DIR$/IPOOL/zhidao_detail.py" />
+        <option value="$PROJECT_DIR$/ddos.py" />
         <option value="$PROJECT_DIR$/filter/filter.py" />
       </list>
     </option>
@@ -199,6 +181,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,22 +192,27 @@
             <path>
               <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_code" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_code" type="462c0819:PsiDirectoryNode" />
-              <item name="IPOOL" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="dowload_double" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_code" type="462c0819:PsiDirectoryNode" />
+              <item name="zhidao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/zhidao" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -232,15 +220,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\git\python_code\scrapy" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_clone\python_code\filter" />
       <recent name="D:\git_clone\python_code\IPOOL" />
       <recent name="D:\git_clone\python_code\code\dowload_double" />
-      <recent name="D:\git_clone\python_code\filter" />
       <recent name="D:\git_clone\python_code\zhidao" />
       <recent name="D:\git_clone\python_code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\python_code\scrapy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cut">
+  <component name="RunManager" selected="Python.filter">
     <configuration name="analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,20 +282,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dowload" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/dowload_double" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/filter" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/dowload_double/dowload.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/filter/filter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -585,19 +573,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.python_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dowload" />
-      <item index="2" class="java.lang.String" itemvalue="Python.zhidao_detail (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.analysis" />
-      <item index="4" class="java.lang.String" itemvalue="Python.zhidao_detail" />
-      <item index="5" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.analysis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cut" />
+      <item index="5" class="java.lang.String" itemvalue="Python.filter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cut" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zhidao_detail" />
-        <item index="2" class="java.lang.String" itemvalue="Python.analysis" />
-        <item index="3" class="java.lang.String" itemvalue="Python.zhidao_detail (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dowload" />
+        <item index="0" class="java.lang.String" itemvalue="Python.filter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cut" />
+        <item index="2" class="java.lang.String" itemvalue="Python.zhidao_detail" />
+        <item index="3" class="java.lang.String" itemvalue="Python.analysis" />
+        <item index="4" class="java.lang.String" itemvalue="Python.zhidao_detail (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -619,7 +607,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -627,7 +614,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951444" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26605505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -678,8 +665,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/filter/zhidao_question_to_answer_man.txt" />
-    <entry file="file://$PROJECT_DIR$/code/dowload_double/qq_4_21964.txt" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_not_in.txt" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/count1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -718,33 +703,13 @@
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_urls_4.txt" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_2.txt" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_2_not_in_ids.txt" />
-    <entry file="file://$USER_HOME$/Desktop/zhidao_detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2950">
-          <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/zhidao_detail.py" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_2_not_in_qr_ids.txt" />
     <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_not_repeat.txt" />
-    <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="61668" column="0" lean-forward="true" selection-start-line="61668" selection-start-column="0" selection-end-line="61668" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/dowload_double/dowload.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/dowload_double/ids.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173316">
-          <caret line="13112" column="19" lean-forward="false" selection-start-line="13112" selection-start-column="19" selection-end-line="13112" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -779,20 +744,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IPOOL/zhidao_question_to_answer.txt" />
-    <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_not_in_ids_by_2018_04_20.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="52926" column="9" lean-forward="false" selection-start-line="52926" selection-start-column="0" selection-end-line="52926" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/NetSarang/Xftp/Temporary/zhidao_detail [2].py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/NetSarang/Xftp/Temporary/zhidao_detail [2].py" />
     <entry file="file://$PROJECT_DIR$/IPOOL/qr_ids_not_in_ids_by_2018_04_20_15000.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -881,34 +833,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding>
-            <element signature="e#3022#3185#0" expanded="false" />
-            <element signature="e#3505#3778#0" expanded="false" />
-            <element signature="e#3863#5398#0" expanded="false" />
-            <element signature="e#4236#4494#0" expanded="false" />
-            <element signature="e#4535#5398#0" expanded="false" />
-            <element signature="e#4595#5398#0" expanded="false" />
-            <element signature="e#4791#5398#0" expanded="false" />
-            <element signature="e#4814#5082#0" expanded="false" />
-            <element signature="e#5411#6584#0" expanded="false" />
-            <element signature="e#6631#11436#0" expanded="false" />
-            <element signature="e#8133#10434#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filter/zhidao_min.txt" />
+    <entry file="file://$PROJECT_DIR$/ddos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filter/filter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding>
-            <element signature="e#924#1315#0" expanded="false" />
-            <element signature="e#1344#1522#0" expanded="false" />
-            <element signature="e#1559#2241#0" expanded="false" />
-            <element signature="e#2277#2877#0" expanded="false" />
-            <element signature="e#3308#3750#0" expanded="false" />
-            <element signature="e#3774#4340#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="171" column="17" lean-forward="false" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dowload_double/ids.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="13112" column="19" lean-forward="false" selection-start-line="13112" selection-start-column="19" selection-end-line="13112" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dowload_double/qr_ids_not_in_ids_by_2018_04_20.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="52926" column="9" lean-forward="true" selection-start-line="52926" selection-start-column="9" selection-end-line="52926" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
