@@ -9,7 +9,7 @@
 titles = []
 rq_titles = []
 ids = []
-def get_rq_urls(file_name):
+def get_ids_from_has(file_name):
     # 获取已知有效数据的qid
     for name in file_name:
         f = open(name,'rb')
@@ -19,7 +19,7 @@ def get_rq_urls(file_name):
                 id_ = line[6:tt]
                 if id_ not in ids:
                     ids.append(id_)
-                    f = open('ids.txt','a')
+                    f = open('ids_2.txt','a')
                     f.write(id_+'\n')
                     f.close()
                     print(id_)
@@ -27,19 +27,19 @@ def get_rq_urls(file_name):
         except:
             pass
 
-file_name = ['qq_1_24949.txt','qq_2_14307.txt','qq_3_26505.txt']
+file_name = ['qq_4_21964.txt','qq_5_9029.txt']
 
 
 def mosaic_urls():
-    # 根据不在原本qid集合里的id重新组织URL
-    f = open('qr_ids_not_in.txt','rb')
+    # qid构造url
+    f = open('ids_2.txt','rb')
     for line in f.readlines():
         url = 'https://zhidao.baidu.com/question/'+line.replace('\n','').replace('\r','')+'.html'
-        f = open('qr_urls_not_in.txt','a')
+        f = open('urls_2.txt','a')
         f.write(url+'\n')
         f.close()
 
     f.close()
 
 mosaic_urls()
-# get_rq_urls(file_name)
+# get_ids_from_has(file_name)
