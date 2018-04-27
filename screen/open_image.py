@@ -57,18 +57,23 @@ def open_img(folder_name):
         img =Image.open(name)
         img.show()
         screen_shot()
-        im = ImageGrab.grabclipboard()
         name = name[32:]
         root = Tk()
         root.title('choice')
 
         def save_big():
+            im = ImageGrab.grabclipboard()
             im.save('./big/' + name[:-4] + str(random.randint(1, 250)) + name[-4:])
             screen_shot()
+            im = ImageGrab.grabclipboard()
+
 
         def save_small():
+            im = ImageGrab.grabclipboard()
             im.save('./small/' + name[:-4] + str(random.randint(1, 250)) + name[-4:])
             screen_shot()
+            im = ImageGrab.grabclipboard()
+
 
         def over():
             root.destroy()
