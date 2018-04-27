@@ -53,7 +53,7 @@ def screen_shot():
 
 def open_img(folder_name):
     names = listfiels(unicode(folder_name, "utf-8"))
-    for name in names[:2]:
+    for name in names:
         img =Image.open(name)
         img.show()
         screen_shot()
