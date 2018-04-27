@@ -1,0 +1,7 @@
+decorator==4.3.0
+EasyProcess==0.2.3
+entrypoint==0.1.5.dev0
+entrypoint2==0.0.6
+Pillow==5.1.0
+pyscreenshot==0.4.2
+pywin32==214
