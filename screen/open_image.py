@@ -53,7 +53,7 @@ def screen_shot():
 
 def open_img(folder_name):
     names = listfiels(unicode(folder_name, "utf-8"))
-    for name in names:
+    for name in names[:2]:
         img =Image.open(name)
         img.show()
         screen_shot()
@@ -91,4 +91,4 @@ def open_img(folder_name):
 
 
 if __name__ == '__main__':
-    open_img('udir_of_images')
+    open_img('D:\git_clone\python_code\screen')
