@@ -7,7 +7,9 @@ autoDeploy.sh
 neutron port-list |grep 10.20.1.81
 neutron port-update b5c75055-d03d-45d1-b6c9-360d0bd65807 --allowed-address-pair ip_address=10.20.1.220 --allowed-address-pair ip_address=10.20.1.210 --allowed-address-pair ip_address=10.20.1.200 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 fdisk /dev/vda
+partprobe 
 pvcreate /dev/vda3
 vgextend centos /dev/vda3
 lvextend -L +20G /dev/mapper/centos-root   #+++20G
@@ -24,7 +26,7 @@ cd /usr/src/linux-3.18.4/
 make menuconfig
 make oldconfig
 yum install bc
-make
+make -j 2
 make modules_install install
 uname -r
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
