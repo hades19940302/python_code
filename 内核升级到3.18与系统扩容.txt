@@ -26,7 +26,9 @@ cd /usr/src/linux-3.18.4/
 make menuconfig
 make oldconfig
 yum install bc
-make -j 2
+make -j 3
 make modules_install install
 uname -r
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
+grub2-set-default 0
