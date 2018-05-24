@@ -38,7 +38,6 @@ tar -xf linux-3.18.4.tar.xz -C /usr/src/
 cd /usr/src/linux-3.18.4/
 make menuconfig
 make oldconfig
-yum install bc
 make -j 3
 make modules_install install
 uname -r
