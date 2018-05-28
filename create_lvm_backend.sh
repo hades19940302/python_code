@@ -16,6 +16,7 @@ echo "volume_group = vg_cinder" >> /etc/cinder/cinder.conf
 echo "volume_driver = cinder.volume.drivers.lvm.LVMVolumeDriver" >> /etc/cinder/cinder.conf
 echo "volume_backend_name = lvm" >> /etc/cinder/cinder.conf
 
+cinder type-create lvm
 cinder type-key lvm set volume_backend_name=lvm
 
 sleep 1
