@@ -30,7 +30,7 @@ fdisk /dev/vda
 partprobe 
 pvcreate /dev/vda3
 vgextend centos /dev/vda3
-lvextend -L +10G /dev/mapper/centos-root   
+lvextend -L +42G /dev/mapper/centos-root   
 xfs_growfs /dev/mapper/centos-root 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 内核升级
@@ -38,7 +38,7 @@ tar -xf linux-3.18.4.tar.xz -C /usr/src/
 cd /usr/src/linux-3.18.4/
 make menuconfig
 make oldconfig
-make -j 3
+make -j 6
 make modules_install install
 uname -r
 awk -F\' '$1=="menuentry " {print $2}' /etc/grub2.cfg
@@ -54,6 +54,7 @@ fdisk /dev/vda
 partprobe
 pvcreate /dev/vda3
 vgcreate cinder-volumes /dev/vda3
+vg_cinder
 systemctl enable openstack-cinder-volume.service target.service
 systemctl restart openstack-cinder-volume.service target.service
 cinder service-list 
@@ -99,6 +100,7 @@ cinder absolute-limits
 scp -r root@10.42.17.17:/home/centos-kernel-3.18.4-package    /home/
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 局域网yum源制作
+tar -xzvf rpm.tar -C /var/www/html
 使用 自己准备的 RPM 包 （这里以 nnit-openstack为例）
 （1）、在目录 /var/www/html/ 下建立一个文件夹，把准备的 RPM包放到里面
 （2）、创建仓库信息文件，在目录 /var/www/html/ 下执行：createrepo nnit-openstack
