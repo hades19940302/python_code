@@ -62,6 +62,6 @@ iptables -A INPUT -p tcp --dport 8388 -j ACCEPT
 
 ovs-vsctl del-port br-enp9s0f0 enp9s0f0
 		  add-port
-
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'pwssw0rd' WITH GRANT OPTION;
 
 		  
