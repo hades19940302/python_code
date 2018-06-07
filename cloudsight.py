@@ -37,7 +37,8 @@ def _api(url):
                 break
         except Exception, e:
             print '[-] False: %s' % str(e)
-            pass    if __name__ == '__main__':
+            pass
+if __name__ == '__main__':
     try:
         url = sys.argv[1]
         _api(url)
