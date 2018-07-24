@@ -1,6 +1,7 @@
 #!/bin/bash
 
-dd if=/dev/zero of=/home/vg_cinder.img bs=1M count=102400
+dd if=/dev/zero of=/home/vg_cinder.img bs=1M count=307200
+												   122880
 losetup /dev/loop0 /home/vg_cinder.img 
 partprobe /dev/loop0
 pvcreate /dev/loop0
