@@ -1,0 +1,13 @@
+:method: POST
+:scheme: https
+:path: /v1/follow/user/add.json
+:authority: api.bbobo.com
+cookie: abId=1047-219,1018-218,1013-217,999-205,994-198,952-102,931-194,887-188,885-187,843-123,771-171,603-161,151-119,61-108; fudid=DF81B0088EF80A6303CB7C68496426B9
+accept: */*
+content-type: application/x-www-form-urlencoded
+accept-encoding: br, gzip, deflate
+user-agent: KG_Video/2.2.6 (iPhone; iOS 11.3.1; Scale/3.00)
+accept-language: zh-Hans-CN;q=1, fr-FR;q=0.9
+content-length: 616
+
+_aKey=IOS&_abId=1047-219,1018-218,1013-217,999-205,994-198,952-102,931-194,887-188,885-187,843-123,771-171,603-161,151-119,61-108&_carrier=移动&_dId=iPhone X&_lang=zh_CN&_localIp=192.168.11.110&_nId=1&_pName=com.yixia.Miaokan&_pcId=appstore&_sign=ace144e35c2e6b6e3bac&_t=1532413605&_token=MXwwfDE1MzI0MTMxOTM2MTB8ODY0MDB8ZFdsa09qZzFNVEF4TnpFc2RIbHdaVG94fDhjODI3ZGIyNjU2M2E2OTQ2ZjI0YzE1YTljN2ZlMDAy&_uId=8510171&_udid=DF81B0088EF80A6303CB7C68496426B9&_vApp=40032&_vName=2.2.6&_vOs=11.3.1&requestID=6eeb501629e88254e3afe6e908441b31&requestRetryCount=0&userId=39107163971361875

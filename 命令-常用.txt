@@ -9,7 +9,7 @@ neutron开放端口
     neutron port-update b5c75055-d03d-45d1-b6c9-360d0bd65807 --allowed-address-pair ip_address=10.20.1.220 --allowed-address-pair /ip_address=10.20.1.210 --allowed-address-pair ip_address=10.20.1.200
 
 ss开放端口
-    ssserver -p 8388 -k password -m aes-256-cfb -d start
+    ssserver -p 8388 -k password -m aes-256pi-cfb -d start
 
 xss测试
 
@@ -55,3 +55,26 @@ vps root
 	port ioNt3z6jxByr
 	pass 28512
 ss ssserver -p 444 -k Ph4nt0m.org -m aes-256-cfb -d start
+
+绝地求生每日搞笑时刻集锦
+姓名：王文君
+
+公司：华信数据
+
+所在楼宇：B3
+
+联系电话：13204118563
+
+地上及地下车位均可。
+
+查看尝试登录
+	utmpdump  /var/log/btmp | tail -15
+10.23.0.10 HFCON1
+10.23.0.11 HFCON2
+10.23.0.20 HFNET1
+10.23.0.21 HFNET2
+10.23.0.30 HFCOM1
+10.23.0.31 HFCOM2
+10.23.0.32 HFCOM3
+https://www.youtube.com/watch?v=UOxEYp1tOfU
+
