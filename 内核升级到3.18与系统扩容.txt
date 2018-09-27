@@ -12,7 +12,7 @@ fdisk /dev/vda
 partprobe 
 pvcreate /dev/vda3
 vgextend centos /dev/vda3
-lvextend -L +20G /dev/mapper/centos-root   #+++20G
+lvextend -L +30G /dev/mapper/centos-root   #+++20G
 xfs_growfs /dev/mapper/centos-root 
 yum install http://cbs.centos.org/kojifiles/packages/kernel/3.18.44/20.el7/x86_64/kernel-3.18.44-20.el7.x86_64.rpm
 or

