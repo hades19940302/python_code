@@ -18,5 +18,14 @@ ovs-vsctl show
  ovs-ofctl dump-flows br-int
  ovs-ofctl dump-flows br-tun
 ```
+获取br-int 上port
+```shell
+ovs-vsctl list-ports
+```
+selinux
+```shell
+getenforce 
+setenforce 0
+```
 
 
