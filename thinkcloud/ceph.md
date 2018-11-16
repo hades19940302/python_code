@@ -38,7 +38,7 @@ int32bit-test-1        1024M 2
 int32bit-test-1@snap-1 1024M 2
 ```
 
-## 基于快照创建一个image，成为clone，clone不会立即复制原来的image，而是COW策略，即写时候copy，只有当需要写入一个对象时候，才从parent中copy那个对象到本地，因此copy也是秒级完成，并且需要注意的是，同一个快照创建的所有image，共享快照之前的image，因此clone之前我们必须保护快照，被保护快照不允许删除，clone类似git branch，clone一个image命令如下：
+* 基于快照创建一个image，成为clone，clone不会立即复制原来的image，而是COW策略，即写时候copy，只有当需要写入一个对象时候，才从parent中copy那个对象到本地，因此copy也是秒级完成，并且需要注意的是，同一个快照创建的所有image，共享快照之前的image，因此clone之前我们必须保护快照，被保护快照不允许删除，clone类似git branch，clone一个image命令如下：
 
 ```shell
 rbd -p openstack snap protect int32bit-test-1@snap-1
