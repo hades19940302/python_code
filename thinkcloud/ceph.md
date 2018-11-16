@@ -60,20 +60,20 @@ parent: openstack/int32bit-test-1@snap-1
 $ rbd -p openstack flatten int32bit-test-2
 Image flatten: 31% complete...
 ```
-## Rbd image是动态分配存储空间，通过du命令可以查看image实际占用的物理存储空间:
+* Rbd image是动态分配存储空间，通过du命令可以查看image实际占用的物理存储空间:
 ```shell
 $ rbd du int32bit-test-1
 NAME            PROVISIONED   USED
 int32bit-test-1       1024M 12288k
 ```
-## 删除image必须删除快照，保证没有依赖的children
+* 删除image必须删除快照，保证没有依赖的children
 ```shell
 rbd -p openstack snap unprotect int32bit-test-1@snap-1
 rbd -p openstack snap rm int32bit-test-1@snap-1
 rbd -p openstack rm int32bit-test-1
 ```
 
-## Cinder简介
+* Cinder简介
 * Cinder是OpenStack的块存储服务，类似AWS的EBS，管理的实体为volume。Cinder并没有实现volume provide功能，而是负责管理各种存储系统的volume，比如Ceph、fujitsu、netapp等，支持volume的创建、快照、备份等功能，对接的存储系统我们称为backend。只要实现了cinder/volume/driver.py中VolumeDriver类定义的接口，Cinder就可以对接该存储系统。
 * Cinder不仅支持本地volume的管理，还能把本地volume备份到远端存储系统中，比如备份到另一个Ceph集群或者Swift对象存储系统中，本文将只考虑从源Ceph集群备份到远端Ceph集群中的情况。
 
