@@ -1,0 +1,5 @@
+virt-install --name vm0 \
+--memory 4096 --disk /home/kvm/img.d/vm0.qcow2,format=qcow2,size=32 \
+--network bridge=br0 \--os-type=linux \
+--cdrom /home/kvm/img.d/CentOS_64_template_newest-disk1.raw \
+--vnc --vncport=5910 --vnclisten=0.0.0.0

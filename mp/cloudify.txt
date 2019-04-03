@@ -1,7 +1,0 @@
-cfy profiles use 10.19.0.111 -u admin -p admin -t default_tenant
-cfy profiles use 10.19.0.106 -s centos -k manage.pem
-cfy profiles use 10.19.0.111 -s centos -k manage.pem -u admin -p admin -t default_tenant
-docker run --name cfy_manager -d --restart unless-stopped -v /sys/fs/cgroup:/sys/fs/cgroup:ro --tmpfs /run --tmpfs /run/lock --security-opt seccomp:unconfined --cap-add SYS_ADMIN --network host docker-cfy-manager:latest
-sudo passwd root
-
-cfy plugins upload http://repository.cloudifysource.org/cloudify/wagons/cloudify-diamond-plugin/1.3.8/cloudify_diamond_plugin-1.3.8-py27-none-linux_x86_64-centos-Core.wgn -y http://www.getcloudify.org/spec/diamond-plugin/1.3.8/plugin.yaml

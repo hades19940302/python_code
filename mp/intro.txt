@@ -1,9 +1,0 @@
-创意总监@Kilig.Corp。 制作游戏，拍照，喝茶。 个人账户。
-
-{"_id":"5b6aa967a61ac41d68daf1b3","username":"admin22","userpsw":"21232f297a57a5a743894a0e4a801fc3","logindate":"2018-08-08T08:27:19.193Z","__v":0}
-
-{"_id":"DESKTOP-KG52UT4-1533709166002","hostname":"DESKTOP-KG52UT4","startTime":"2018-08-08T06:19:26.000Z","startTimeLocal":"Wed Aug  8 14:19:26.002","cmdLine":{"config":"D:\\software\\MongoDB\\bin\\mongod.cfg","net":{"bindIp":"127.0.0.1","port":27017},"service":true,"storage":{"dbPath":"D:\\software\\MongoDB\\data","journal":{"enabled":true}},"systemLog":{"destination":"file","logAppend":true,"path":"D:\\software\\MongoDB\\log\\mongod.log"}},"pid":"11236","buildinfo":{"version":"4.0.1","gitVersion":"54f1582fc6eb01de4d4c42f26fc133e623f065fb","targetMinOS":"Windows 7/Windows Server 2008 R2","modules":[],"allocator":"tcmalloc","javascriptEngine":"mozjs","sysInfo":"deprecated","versionArray":[4,0,1,0],"openssl":{"running":"Windows SChannel"},"buildEnvironment":{"distmod":"2008plus-ssl","distarch":"x86_64","cc":"cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24223 for x64","ccflags":"/nologo /EHsc /W3 /wd4355 /wd4800 /wd4267 /wd4244 /wd4290 /wd4068 /wd4351 /wd4373 /we4013 /we4099 /we4930 /WX /errorReport:none /MD /O2 /Oy- /bigobj /utf-8 /Zc:rvalueCast /Zc:strictStrings /volatile:iso /Gw /Gy /Zc:inline","cxx":"cl: Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24223 for x64","cxxflags":"/TP","linkflags":"/nologo /DEBUG /INCREMENTAL:NO /LARGEADDRESSAWARE /OPT:REF","target_arch":"x86_64","target_os":"windows"},"bits":64,"debug":false,"maxBsonObjectSize":16777216,"storageEngines":["devnull","ephemeralForTest","mmapv1","wiredTiger"]}}
-
-1、修改AR914上线方案
-2、研习AR914上线以及投标文件
-3、配合升级DashboardUI页面及功能

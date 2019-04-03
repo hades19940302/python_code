@@ -1,0 +1,189 @@
+centos65&&centos67 没有IP地址信息
+  rm -rf /etc/udev/rules.d/70-persistent-net.rules
+
+删除无法监控镜像
+
+服务停掉之后：
+	1、IPSAN的盘重新mount
+
+永强，你干两个事情
+	1.下载一个oracle 12c程序，拷贝过去，直接下一步下一步默认配置安装一下
+	2.把文档完善下，加入怎么拖入软件
+	URL http://download.oracle.com/otn/linux/oracle18c/180000/LINUX.X64_180000_db_home.zip?AuthParam=1537517900_0514079ddbd31fae227694b1fb246f15
+
+PCS日志
+	日志沾满系统盘，导致服务器写日志卡死
+
+IPSAN
+	vi /etc/multipath.conf
+	    user_friendly_names yes
+        find_multipaths yes
+        path_grouping_policy multibus
+        failback immediate
+        no_path_retry fail
+
+        devnode "^vda"
+
+    fdisk /dev/mapper/mpatha
+    partprobe
+    pvcreate /dev/mapper/mpatha
+    vgcreate vg_ipsan /dev/mapper/mpatha
+    lvcreate -n data -L 499G vg_ipsan
+    lvextend /dev/mapper/vg_ipsan-data -L +100G
+    lvextend /dev/mapper/vg_ipsan-data -L +1020M
+    mkfs.ext4 /dev/mapper/vg_ipsan-data
+    mount /dev/mapper/vg_ipsan-data /mnt
+
+oracle12c install
+	yum -y install binutils compat-libcap1 compat-libstdc++-33 compat-libstdc++-33*.i686 elfutils-libelf-devel gcc gcc-c++ glibc*.i686 glibc glibc-devel glibc-devel*.i686 ksh libgcc*.i686 libgcc libstdc++ libstdc++*.i686 libstdc++-devel libstdc++-devel*.i686 libaio libaio*.i686 libaio-devel libaio-devel*.i686 make sysstat unixODBC unixODBC*.i686 unixODBC-devel unixODBC-devel*.i686 libXp
+
+	groupadd oinstall  
+	groupadd dba  
+	groupadd oper  
+	useradd -g oinstall -G dba,oper oracle  
+	echo "p@ssw0rd" | passwd --stdin oracle
+
+	mkdir -p /mnt/oracle/app/oracle/product/12201 
+	chown -R oracle:oinstall /mnt/oracle/
+	chmod -R 775 /mnt/oracle
+
+	vi /etc/sysctl.conf
+	fs.aio-max-nr = 1048576  
+	fs.file-max = 6815744  
+	kernel.shmall = 2097152  
+	kernel.shmmax = 4098955264    
+	kernel.shmmni = 4096  
+	kernel.sem = 250 32000 100 128  
+	net.ipv4.ip_local_port_range = 9000 65500  
+	net.core.rmem_default = 262144  
+	net.core.rmem_max = 4194304  
+	net.core.wmem_default = 262144  
+	net.core.wmem_max = 1048576
+
+	sysctl -p
+
+
+	vi /etc/security/limits.conf
+
+	改文件限制：vi /etc/security/limits.conf，添加：
+	oracle soft nproc 2047  
+	oracle hard nproc 16384  
+	oracle soft nofile 1024  
+	oracle hard nofile 65536  
+	oracle soft stack 10240
+	注意：修改此文件是即时生效的，但可能要重登录后再看
+
+	以及vi /etc/pam.d/login，添加：
+	session required pam_limits.so
+ 
+
+	修改ulimit：vi /etc/profile，添加：
+	if [ $USER = "oracle" ]; then  
+	if [ $SHELL = "/bin/ksh" ]; then  
+	ulimit -p 16384  
+	ulimit -n 65536a  
+	else  
+	ulimit -u 16384 -n 65536  
+	fi  
+	fi
+ 
+
+	修改环境变量。vi ~oracle/.bash_profile，添加：
+	ORACLE_BASE=/orcl/app/oracle  
+	ORACLE_HOME=$ORACLE_BASE/product/12.1.0/db_1  
+	ORACLE_SID=orcl  
+	export ORACLE_BASE ORACLE_HOME ORACLE_SID  
+	PATH=$ORACLE_HOME/bin:$PATH  
+	export PATH 
+
+	yum remove *openjdk* 
+
+	 
+	rpm -ivh  
+
+	su  oracle  
+	cd /orcl/app/oracle  
+	unzip linuxx64_12201_database.zip 
+	export LANG="en_US"  
+	cd /orcl/app/oracle/database  
+	./runInstaller
+
+安装X11
+	yum groupinstall "X Window System" -y 
+	yum -y install gnome-classic-session gnome-terminal nautilus-open-terminal control-center liberation-mono-fonts
+	yum -y install firefox
+	yum -y install unzip
+	unlink /etc/systemd/system/default.target
+	ln -fs /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+安装VNC
+    yum install tigervnc-server tigervnc-server-module
+    setenforce 0
+    systemctl stop firewalld.service
+IPSAN划分
+	yum -y install iscsi-initiator-utils
+	yum -y install device-mapper-multipath
+	cat /etc/iscsi/initiatorname.iscsi
+	iscsiadm -m discovery -t sendtargets -p 192.168.130.241
+	iscsiadm -m node --login
+	ll /dev/disk/by-path/
+	mpathconf --user_friendly_names y --find_multipaths y --with_module y --with_multipathd y
+	vi /etc/multipath.conf
+	    user_friendly_names yes
+        find_multipaths yes
+        path_grouping_policy multibus
+        failback immediate
+        no_path_retry fail
+
+        devnode "^vda" 
+	systemctl start multipathd
+	systemctl enable multipathd
+	systemctl enable iscsid
+	multipath -ll
+	mkfs.ext4 /dev/mapper/mpatha
+    mount /dev/mapper/mpatha /mnt
+	blkid
+	vi /etc/fstab
+	UUID=  /mnt  ext4  defaults,_netdev  0 0 
+
+YUM源
+	yum clean all
+	yum makecache
+	yum update
+unzip 
+	unzip -d /temp test.zip
+
+oracle
+	pwd password
+
+	1.#su - oracle 切换到 oracle 用户且切换到它的环境
+	2.$lsnrctl status 查看监听及数据库状态
+	3.$lsnrctl start 启动监听
+	4.$sqlplus / as sysdba 以 DBA 身份进入 sqlplus
+	5.SQL>startup 启动 db
+
+IPSAN fixed bugs
+	systemctl enable iscsid
+	systemctl enable multipathd
+	blkid
+	vi /etc/fatab
+	UUID= ext4 defaults,_netdev 0 0
+
+oracle start
+	export ORACLE_HOME=/home/oracle/app/oracle/product/11.2.0/dbhome_1
+	su - oracle 
+	lsnrctl status 		
+	lsnrctl start
+	sqlplus / as sysdba 
+	startup 
+	https://oracle:5500/em
+
+oracle stop 
+	1.#su - oracle 切换到 oracle 用户且切换到它的环境
+	2.$lsnrctl stop 停止监听
+	3.$sqlplus / as sysdba 以 DBA 身份进入 sqlplus
+
+	4.SQL>SHUTDOWN IMMEDIATE 关闭 db
+
+iqn.1991-05.com.microsoft:apriso-ads
+iqn.1991-05.com.microsoft:apriso-ats

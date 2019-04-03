@@ -1,0 +1,40 @@
+ovs-vsctl add-br br-ex
+
+ovs-vsctl add-port br-eth2 br-eth5--br-ex
+ovs-vsctl add-port br-ex br-ex--br-eth5
+
+ovs-vsctl list-ports br-ex
+ovs-vsctl list-br  
+
+
+ovs-vsctl set interface br-ex--br-eth5 type=patch 
+ovs-vsctl set  port  br-ex--br-eth5 trunks=0
+ovs-vsctl set interface br-ex--br-eth5 options:peer=br-eth5--br-ex
+
+
+ovs-vsctl set interface br-eth5--br-ex type=patch 
+ovs-vsctl set  port  br-eth5--br-ex trunks=0
+ovs-vsctl set  port  br-eth5--br-ex tag=311
+ovs-vsctl set interface br-eth5--br-ex options:peer=br-ex--br-eth5
+
+ip r del default via 192.168.1.2  #fuel ip
+ip r add default via 10.240.202.1 dev br-ex 
+
+
+
+neutron net-create public01 --provider:network_type flat --provider:physical_network physnet1 --router:external=True --shared
+
+
+neutron subnet-create --name public_subnet --enable_dhcp=False --allocation_pool start=10.240.202.20,end=10.240.202.30 --gateway=10.240.202.1 public01 10.240.202.0/25
+
+nova boot --flavor 1 --image 86653abb-f51e-40a9-b529-1bcea3a44204 --nic net-id=ee185fc7-adef-4bda-99ce-ce85198e6fb7 test_vm_1
+
+nova interface-attach --net-id de80f00e-b580-48a0-be54-25471f77ea7e  ae30027c-6241-4faf-856f-38b1f0d92b4e
+
+
+nova interface-attach --port-id 3a2036d2-6fe0-4d03-8acd-b624c9783d71 f95b2a32-7c79-42ab-a3fd-dbf134d42a1d
+
+
+
+neutron port-create --tenant-id 5b5d3a7373144f208e2df2fab67def9f --fixed-ip subnet_id=1ea8608a-c929-4c57-adfc-1d50929421cd,ip_address=10.240.202.22 de80f00e-b580-48a0-be54-25471f77ea7e
+

@@ -1,0 +1,12 @@
+[ml2]
+tenant_networks_types = flat
+extension_drivers = port_security
+type_drivers = local,flat,vlan,gre,vxlan
+mechanism_drivers = openvswitch
+[ml2_type_flat]
+flat_networks = default
+[ovs]
+bridge_mappings = default:br-eth1
+
+ovs-vsctl add-port  br-eth1 enp9s0f0
+ovs-vsctl del-port br-ex  enp9s0f0

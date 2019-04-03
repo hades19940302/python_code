@@ -116,6 +116,10 @@ oracle12c install
 	unlink /etc/systemd/system/default.target
 	ln -fs /lib/systemd/system/graphical.target /etc/systemd/system/default.target
 
+安装VNC
+    yum install tigervnc-server tigervnc-server-module
+    setenforce 0
+    systemctl stop firewalld.service
 IPSAN划分
 	yum -y install iscsi-initiator-utils
 	yum -y install device-mapper-multipath

@@ -27,5 +27,9 @@ selinux
 getenforce 
 setenforce 0
 ```
+查找到所有的paste的ini配置文件
+```shell
+find /etc/ | xargs grep paste --color=auto
+```
 
 

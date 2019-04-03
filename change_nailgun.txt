@@ -1,0 +1,3 @@
+dockerctl shell nailgun
+manage.py dropdb && manage.py syncdb && manage.py loaddefault
+killall nailgund

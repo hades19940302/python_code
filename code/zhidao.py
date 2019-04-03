@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding=utf-8
 # author=hades
-# oshiete urls
 from __future__ import print_function
 from bs4 import BeautifulSoup
 import urllib
@@ -12,84 +11,247 @@ import json
 import codecs
 import sys
 import random
-
+import re
+import threadpool as tp
 reload(sys)
-sys.setdefaultencoding("utf-8")
+sys.setdefaultencoding( "utf-8" )
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
 # 禁用安全请求警告
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # import pymysql
-# from multiprocessing.dummy import Pool as ThreadPool
-url_list = []
+from multiprocessing.dummy import Pool as ThreadPool
+url_list=[]
+# url='https://cn.oshiete.goo.ne.jp/qa/list'
 id_list = []
-rb = {}
-header = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36'}  # 构造浏览器头信息
+from requests.adapters import HTTPAdapter
+from time import sleep
+from urllib import quote
+s = requests.Session()
+s.mount('http://', HTTPAdapter(max_retries=5))
+s.mount('https://', HTTPAdapter(max_retries=5))
+
 headers = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'zh-CN,zh;q=0.9',
-    'Connection': 'keep-alive',
-    'Cookie': 'Union=SID=155952&AllianceID=4897&OUID=baidu81|index|||; Session=SmartLinkCode=U155952&SmartLinkKeyWord=&SmartLinkQuary=&SmartLinkHost=&SmartLinkLanguage=zh; _abtest_userid=61ba01de-17cd-4ee0-a4d8-a90718e4288e; MKT_Pagesource=PC; _ga=GA1.2.1600563002.1520911998; traceExt=campaign=CHNbaidu81&adid=index; _RF1=218.24.167.7; _RSG=xN4ghJMWN4CHO_5JJPx6BB; _RDG=28ae5734b11f6d2fde22ba0d23caf03836; _RGUID=c1178164-eba8-45fb-b2c6-ed94d317f611; bdshare_firstime=1520912009327; ASP.NET_SessionSvc=MTAuOC4xODkuNTZ8OTA5MHxqaW5xaWFvfGRlZmF1bHR8MTUxMjA5MzU2NjE2OA; _gid=GA1.2.1039661798.1521083434; _gat=1; appFloatCnt=3; manualclose=1; _bfa=1.1520911993569.9mocz.1.1520911993569.1521083431281.2.6; _bfs=1.4; Mkt_UnionRecord=%5B%7B%22aid%22%3A%224897%22%2C%22timestamp%22%3A1521083469782%7D%5D; _jzqco=%7C%7C%7C%7C1520912002269%7C1.726710025.1520911998566.1521083465814.1521083469804.1521083465814.1521083469804.0.0.0.6.6; __zpspc=9.2.1521083434.1521083469.4%231%7Cbaidu%7Ccpc%7Cbaidu81%7C%25E6%2590%25BA%25E7%25A8%258B%7C%23; _bfi=p1%3D290104%26p2%3D290104%26v1%3D6%26v2%3D4',
-    'Host': 'you.ctrip.com',
-    'Referer': 'http://you.ctrip.com/asks/search/?keywords=%E6%97%A5%E6%9C%AC',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36',
+	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+	'Accept-Encoding': 'gzip, deflate, br',
+	'Accept-Language': 'zh-CN,zh;q=0.9',
+	'Cache-Control': 'max-age=0',	
+	'Connection': 'keep-alive',
+	'Host': 'zhidao.baidu.com',
+	'Upgrade-Insecure-Requests': '1',
+	'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25',
+	}
+
+header = {
+	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+	'Accept-Encoding': 'gzip, deflate, br',
+	'Accept-Language': 'zh-CN,zh;q=0.9',
+	'Connection': 'keep-alive',
+	'Host': 'zhidao.baidu.com',
+	'Upgrade-Insecure-Requests': '1',
+	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
 }
+topics = ['去日本旅游要多少钱','日本必去十大景点排名','日本旅游价格表跟团','去日本必买的东西','日本旅游攻略','日本购物必买清单','日本旅游多少钱','去日本旅游必买的东西','日本旅游价格',
+	'日本好玩的地方排名榜','日本东京十大著名景点','日本著名景点有哪些','日本最值得去的地方','日本旅游景点排名','日本必游十大景点','日本东京景点介绍','东京必去的景点排行榜',
+	'2017日本购物血拼清单','2017日本十大必买清单','日本购物必买清单','男人日本购物必买清单','日本购物必买清单100','日本购物男士必买清单','日本购物男士电子产品','日本购物必买清单女生','日本购物必买清单女生',
+	'日本特色景点','日本著名景点','日本景点排名','日本著名旅游景点介绍','日本著名景点有哪些','去日本买什么最划算','去日本必买的东西','日本特色美食','日本特色景点介ppt',
+	'日本旅行报价','日本自由行7天费用','日本旅行费用','日本旅行报价','日本旅行地方','日本旅行去哪里好','日本旅行最佳时间','去日本旅行要多少钱','日本旅行团报价',
+	'日本人饮食一日三餐','日本饮食文化','古代日本饮食','日本饮食文化特点','关于日本饮食的书','日本人饮食结构','名古屋旅游必去景点','神户有什么好玩的吗','池袋附近有什么好玩的','和歌山有什么好玩的','神户有什么好玩的地方',
+	'日本交通情况','日本交通app','日本交通特点','日本交通费用','日本交通贵吗','日本交通规则','日本东京交通攻略','奈良有什么好玩的地方','京都附近有什么好玩的','冬天京都有哪些好玩的','大阪有哪些好玩的地方','京都一日游最佳路线',
+	'日本酒店贵吗','日本著名酒店','日本有名酒店','日本酒店有洗漱用品吗','日本东京酒店','日本东京五星级酒店','angsana酒店','日本攻略','名古屋有什么好玩的','日本奈良有什么好玩的','名古屋 好玩吗','关西有什么好玩的地方','名古屋和大阪哪个好玩',
+	'日本旅游北海道自由行','日本攻略购物篇','日本旅游攻略 冬季','日本旅行攻略','日本攻略 自由行','大阪晚上好玩的地方','大阪附近好玩的地方','大阪附近有什么好玩的','大阪有啥好玩的地方','千叶有哪些好玩的地方','奈良有什么好玩的',
+	'日本 奈良 鹿','日本永谷园','日本 必买 吃','去日本有历史的地方','东京有名的地方','东京必去的景点','东京哪些地方好玩','元旦到东京哪里好玩','大阪有哪些好玩的地方','东京购物去哪些地方好','京都有什么好玩的地方',
+	'日本度假城市','日本特色建筑有哪些','日本最好玩的城市','日本最值得去的地方','日本关西包括哪些城市','日本哪个海港城市好玩','日本大阪周边城市','北海道必去的地方','日本的温泉哪里最好','日本值得去的旅游名胜','东京哪些地方值得去','日本必去的几大景点','日本有意义的地方',]
 
 
-def test():
-    for i in range(51):
-        url = 'http://you.ctrip.com/asks/search/p' + str(i) + '?keywords=%E6%97%A5%E6%9C%AC&type=1'
-        response = requests.get(url, headers=headers, timeout=5, verify=False)
-        html = response.content.decode('utf-8')
-        selector = etree.HTML(html)
-        links = selector.xpath('//li[@class="cf"]/@href')
-        # links = selector.xpath('//h2[@class="ask_title"]/span/text()')
-        for link in links:
-            url = 'http://you.ctrip.com' + link
-            id_ = link[13:5]
-            # url = 'http://www.mafengwo.cn/wenda/detail-2630437.html'
-            if url not in url_list:
-                url_list.append(url)
-                r = requests.get(url, headers=headers, timeout=5)
 
-                html = r.content.decode("utf-8")  # 解码
-                selector = etree.HTML(html)
-                title = selector.xpath('//h1[@class="ask_title"]/text()')
-                # answers = selector.xpath('//div[@class="_j_answer_html"]/text()')
-                answers = selector.xpath('//p[@class="answer_text"]/text()'
-                                         )
-                if len(answers) == 0:
-                    rb['答案'] = '尚未有人回答此问题'
-                    # rb['答案'] = answer
-                    rb['问题'] = title
-                    rb['QID'] = id_
-                    rb['LIKE'] = 0
-                    rb['BEST'] = 0
-                    rb['IN'] = 1
-                    tmp = json.dumps(rb).replace(' ', '')
-                    data = tmp.decode('unicode-escape')
-                    with codecs.open('ctrip.txt', 'a+', 'utf-8') as f:
-                        f.write(str(data) + '\r\n')
-                        f.close()
-                else:
-
-                    for answer in answers:
-                        rb['答案'] = answer
-                        rb['问题'] = title
-                        rb['QID'] = id_
-                        rb['LIKE'] = 0
-                        rb['BEST'] = 0
-                        rb['IN'] = 1
-                        tmp = json.dumps(rb).replace(' ', '')
-                        data = tmp.decode('unicode-escape')
-                        with codecs.open('ctrip.txt', 'a+', 'utf-8') as f:
-                            f.write(str(data) + '\r\n')
-                            f.close()
-            else:
-                pass
+def test8():
+	for topic in topics:
+		f = open('baiduzhidao_topics_list_2.txt','a')
+		f.write(topic+'\n')
+		f.close()
+		pass
+topics2 = []
+def test(xxx):
+	f =open('baiduzhidao_topics_list_1.txt','rb')
+	for line in f.readlines():
+		line = line.replace('\n','').replace('\r','').strip()
+		if line not in topics2:
+			topics2.append(line)
+	for topic in topics2:
+		for i in range(0,770,10):
+			url = 'https://zhidao.baidu.com/search?word='+topic+'&pn='+str(i)
+			while True:
+				try:
+					r = requests.get(url,headers=header,timeout=20,verify=False)
+					requests.adapters.DEFAULT_RETRIES = 5
+					s = requests.session()
+					s.keep_alive = False
+					break
 
 
-test()
+				except:
+					print('let us go  sleep!!!')
+					sleep(20)
+					print('ogo')
+					continue
+			requests.adapters.DEFAULT_RETRIES = 5
+			s = requests.session()
+			s.keep_alive = False
+			html = r.content # 解码
+			html = re.sub(r'<br[ ]?/?>', '\n', html)
+			selector = etree.HTML(html)
+			links = selector.xpath('//dl[@class="dl"]/dt[@class="dt mb-4 line"]/a/@href')
+			for link in links:
+				# url = 'https://zhidao.baidu.com/question/1732180052597957147.html'
+				link = link[:link.index('?fr')]
+				print(link)
+				with codecs.open('baiduzhidao_url_list_4.txt','a+','utf-8') as f :
+						f.write(link+'\r\n')
+						f.close()
+
+topics_list = []
+def test2(xxx):
+	with open('baiduzhidao_topics_list_1.txt','rb') as f :
+		for line in f.readlines():
+			url = 'https://m.baidu.com/sf/vsearch?pd=wenda_tab&word='+quote(line)+'&tn=vsearch&sa=vs_tab&lid=6674709264707130762&ms=1&from=1012015a'
+			response = requests.get(url,headers=headers,timeout=20,verify=False)
+			requests.adapters.DEFAULT_RETRIES = 5
+			s = requests.session()
+			s.keep_alive = False
+			html = response.content # 解码
+			html = re.sub(r'<br[ ]?/?>', '\n', html)
+			selector = etree.HTML(html)	
+			topics = selector.xpath('//div[@class="c-result sfc-log"]/div/article/div/div/div')
+			for topic in topics:
+				topic = topic.xpath('string(.)').strip()
+				if topic not in topics_list:
+					topics_list.append(topic)
+					with codecs.open('baiduzhidao_topics_list_1.txt','a+','utf-8') as f1:
+
+						# f1 = open('baiduzhidao_topics_list.txt','a+')
+						f1.write(topic+'\n')
+						f1.close()
+
+	f.close()
+
+
+	print(topics)
+
+topics_list_has = []
+def test3(xx):
+	f= open('baiduzhidao_topics_list_1.txt','rb')
+	for line in f.readlines():
+		line = line.replace('\n','').replace('\r','').strip()
+		if line not in topics_list_has:
+			topics_list_has.append(line)
+			f1 = open('topics_list_has.txt','a+')
+			f1.write(line+'\n')
+			f1.close()
+			print(line)
+
+	f.close()
+def test4(xx):
+	with codecs.open('baiduzhidao_topics_list_1.txt','a+','utf-8') as f :
+		for line in f.readlines():
+			line = line.replace('\n','').replace('\r','').strip()
+			if line not in topics_list_has:
+				topics_list_has.append(line)
+				with codecs.open('topics_list_has.txt','a+','utf-8') as f1:
+					f1.write(line+'\n')
+					f1.close()
+
+	f.close()
+
+id_list_2 = []
+
+def test5(xx):
+
+	f = open('baiduzhidao_ids.txt','rb')
+
+	f1 = open('baiduzhidao_url_list_4.txt','rb')
+
+	for line in f1.readlines():
+
+		id_ = line[33:-7]
+
+		if id_ not in f.readlines():
+
+			if id_ not in id_list_2:
+
+				id_list_2.append(id_)
+
+				print(id_)
+
+				with codecs.open('baiduzhidao_ids_2.txt','a','utf-8') as f2:
+
+					f2.write(id_+'\n')
+
+					f2.close()
+
+				with codecs.open('baiduzhidao_url_list_5.txt','a','utf-8') as f3:
+
+					f3.write(line)
+
+					f3.close()
+
+
+
+
+def test6():
+	f = open('baiduzhidao_url_list_5.txt','rb')
+	f1 = open('1.txt','a')
+	for line in f.readlines()[:10000]:
+		f1.write(line)
+		f1.close()
+	f.close()
+
+
+def test7(xx):
+	f= open('baiduzhidao_url_list_sh.txt','rb')
+	f1= open('baiduzhidao_url_list_sh_4.txt','a')
+	ids = []
+	for line in f.readlines()[30000:40833]:
+		id_ = line[33:-7]
+		if id_ not in ids:
+			ids.append(id_)
+			f1.write(line.replace('\r',''))
+	f1.close()
+	f.close()
+
+# test8()
+# args = ['xxxx']
+# pool = tp.ThreadPool(10)
+# reqs = tp.makeRequests(test7, args)
+# [pool.putRequest(req) for req in reqs]
+# pool.wait()
+
+
+def test9():
+	
+	f = open('baiduzhidao_ids.txt','rb')
+
+	f1 = open('baiduzhidao_url_list_4.txt','rb')
+
+	for line in f1.readlines():
+
+		id_ = line[33:-7]
+
+		if id_ not in f.readlines():
+
+			if id_ not in id_list_2:
+
+				id_list_2.append(id_)
+
+				print(id_)
+
+				with codecs.open('baiduzhidao_ids_2.txt','a','utf-8') as f2:
+
+					f2.write(id_+'\n')
+
+					f2.close()
+
+				with codecs.open('baiduzhidao_url_list_5.txt','a','utf-8') as f3:
+
+					f3.write(line)
+
+					f3.close()
